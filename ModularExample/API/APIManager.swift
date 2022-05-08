@@ -7,16 +7,22 @@ import Foundation
 
 final class APIManager {
     static let shared = APIManager()
+    private struct UnknownError: Error {}
     private init() {}
 
-    typealias CompletionResult = Result<Data?, Error>
-    func request(_ request: URLRequest, completion: @escaping (CompletionResult) -> Void ) {
-        URLSession.shared.dataTask(with: request) { data, _, error in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            completion(.success(data))
+    typealias Result = Swift.Result<(Data, URLResponse), Error>
+
+    func request(_ request: URLRequest, completion: @escaping (Result) -> Void ) {
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            completion(Result {
+                if let error = error {
+                    throw error
+                } else if let data = data, let response = response {
+                    return (data, response)
+                } else {
+                    throw UnknownError()
+                }
+            })
         }.resume()
     }
 }
