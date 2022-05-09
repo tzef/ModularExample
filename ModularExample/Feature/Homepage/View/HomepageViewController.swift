@@ -26,7 +26,7 @@ final class HomepageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("didload")
         setupView()
         loadData()
     }
