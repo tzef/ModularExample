@@ -20,6 +20,9 @@
 		C9E64C2D28281035006283E7 /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C2C28281035006283E7 /* GithubSearchModel.swift */; };
 		C9E64C3028289672006283E7 /* GithubSearchResponse+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C2F28289672006283E7 /* GithubSearchResponse+Model.swift */; };
 		C9E64C3328289A72006283E7 /* JSONDecoder+DateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C3228289A72006283E7 /* JSONDecoder+DateStrategy.swift */; };
+		C9E64C382828A608006283E7 /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C372828A608006283E7 /* SearchListCell.swift */; };
+		C9E64C3A2828A6F3006283E7 /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C392828A6F3006283E7 /* UITableViewCell+ReuseIdentifier.swift */; };
+		C9E64C3F2828BEF9006283E7 /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C3E2828BEF9006283E7 /* Array+Subscript.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		C9E64C2C28281035006283E7 /* GithubSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchModel.swift; sourceTree = "<group>"; };
 		C9E64C2F28289672006283E7 /* GithubSearchResponse+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubSearchResponse+Model.swift"; sourceTree = "<group>"; };
 		C9E64C3228289A72006283E7 /* JSONDecoder+DateStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateStrategy.swift"; sourceTree = "<group>"; };
+		C9E64C372828A608006283E7 /* SearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListCell.swift; sourceTree = "<group>"; };
+		C9E64C392828A6F3006283E7 /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		C9E64C3E2828BEF9006283E7 /* Array+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				C9E64C3228289A72006283E7 /* JSONDecoder+DateStrategy.swift */,
+				C9E64C392828A6F3006283E7 /* UITableViewCell+ReuseIdentifier.swift */,
+				C9E64C3E2828BEF9006283E7 /* Array+Subscript.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -141,9 +149,18 @@
 		C9E64C352828A2C4006283E7 /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
-				C9E64C112827A2AE006283E7 /* HomepageViewController.swift */,
+				C9E64C362828A5D8006283E7 /* View */,
 			);
 			path = Homepage;
+			sourceTree = "<group>";
+		};
+		C9E64C362828A5D8006283E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64C112827A2AE006283E7 /* HomepageViewController.swift */,
+				C9E64C372828A608006283E7 /* SearchListCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E64C3028289672006283E7 /* GithubSearchResponse+Model.swift in Sources */,
+				C9E64C382828A608006283E7 /* SearchListCell.swift in Sources */,
 				C9E64C3328289A72006283E7 /* JSONDecoder+DateStrategy.swift in Sources */,
 				C9E64C282827C139006283E7 /* GithubSearchService.swift in Sources */,
+				C9E64C3F2828BEF9006283E7 /* Array+Subscript.swift in Sources */,
 				C9E64C232827B31F006283E7 /* APIManager.swift in Sources */,
 				C9E64C252827BBD5006283E7 /* GithubResource.swift in Sources */,
 				C9E64C122827A2AE006283E7 /* HomepageViewController.swift in Sources */,
@@ -227,6 +246,7 @@
 				C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */,
 				C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */,
 				C9E64C2A2828063B006283E7 /* GithubSearchResponse.swift in Sources */,
+				C9E64C3A2828A6F3006283E7 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
