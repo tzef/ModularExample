@@ -10,7 +10,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     var rootViewController: UIViewController {
-        let root =  HomepageViewController()
+        let githubSearchService = GithubSearchService()
+        let homepageViewModel = HomepageViewModel(
+            githubSearchService: githubSearchService
+        )
+        let root =  HomepageViewController(
+            viewModel: homepageViewModel
+        )
         return root
     }
 

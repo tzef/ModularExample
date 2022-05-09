@@ -17,18 +17,27 @@ final class HomepageViewController: UIViewController {
         return tableView
     }()
 
-    private let githubSearchService = GithubSearchService()
+    private let viewModel: HomepageViewModel
     private var githubSearchModel: GithubSearchModel? {
         didSet {
             tableView.reloadData()
         }
     }
 
+    init(viewModel: HomepageViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("didload")
         setupView()
-        loadData()
+        setupBinded()
+        viewModel.search()
     }
 
     private func setupView() {
@@ -42,17 +51,9 @@ final class HomepageViewController: UIViewController {
         ])
     }
 
-    private func loadData() {
-        githubSearchService.search(keyword: "swift") { [weak self] result in
-            guard let self = self else {
-                return
-            }
-            switch result {
-            case .success(let success):
-                self.githubSearchModel = success
-            case .failure:
-                self.githubSearchModel = nil
-            }
+    private func setupBinded() {
+        viewModel.onSearchLoaded = { [weak self] result in
+            self?.githubSearchModel = result
         }
     }
 }
