@@ -8,9 +8,9 @@ import Foundation
 final class GithubSearchService {
     typealias Result = Swift.Result<GithubSearchModel, Error>
 
-    func search(keyword: String, completion: @escaping (Result) -> Void) {
-        let request = GithubResource.search(keyword: "swift").request()
-        APIManager.shared.request(request) { result in
+    func search(keyword: String, page: Int, completion: @escaping (Result) -> Void) {
+        let request = GithubResource.search(keyword: "swift", page: page).request()
+        APIManager.shared.request(request) { [weak self] result in
             guard let self = self else {
                 return
             }

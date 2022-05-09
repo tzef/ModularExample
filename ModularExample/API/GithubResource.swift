@@ -6,12 +6,12 @@
 import Foundation
 
 enum GithubResource {
-    case search(keyword: String)
+    case search(keyword: String, page: Int)
 
     func path() -> String {
         switch self {
-        case .search(let keyword):
-            return "https://api.github.com/search/repositories?q=\(keyword)"
+        case let .search(keyword, page):
+            return "https://api.github.com/search/repositories?q=\(keyword)&page=\(page)"
         }
     }
 
