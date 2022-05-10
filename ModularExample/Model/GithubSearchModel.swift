@@ -11,8 +11,9 @@ struct GithubSearchModel {
 
     struct Item {
         var id: Int
-        var name: String
+        var fullName: String
         var description: String
-        var score: Int
+        var forks: Int
+        var watchers: Int
     }
 }

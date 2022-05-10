@@ -1,5 +1,5 @@
 //
-//  SearchResponse+SearchModel.swift
+//  GithubSearchResponse+DomainModel.swift
 //  ModularExample
 //
 
@@ -12,9 +12,10 @@ extension GithubSearchResponse {
             items: items.map {
                 GithubSearchModel.Item(
                     id: $0.id,
-                    name: $0.name,
+                    fullName: $0.fullName,
                     description: $0.description,
-                    score: $0.score
+                    forks: $0.forks,
+                    watchers: $0.watchers
                 )
             }
         )

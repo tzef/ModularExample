@@ -1,5 +1,5 @@
 //
-//  GIthubSearchDataModel.swift
+//  GithubSearchResponse.swift
 //  ModularExample
 //
 
@@ -27,7 +27,7 @@ struct GithubSearchResponse: Decodable {
         var size: Int
         var stargazersCount: Int
         var watchersCount: Int
-        var language: String
+        var language: String?
         var forksCount: Int
         var openIssuesCount: Int
         var masterBranch: String?

@@ -83,14 +83,14 @@ final class HomepageViewModel {
         load(search: keyword, at: page + 1)
     }
 
-    func itemAt(_ index: Int) -> GithubSearchModel.Item? {
+    func cellViewModelAt(_ index: Int) -> ShopListCellViewModel? {
         guard let item = searchResults?.items[safe: index] else {
             assertionFailure(
                 "`itemAt(_ index: Int)` index \(index) shouldn't over than search results count"
             )
             return nil
         }
-        return item
+        return item.searchListCellViewModel
     }
 
     private func load(search: String, at page: Int) {

@@ -128,7 +128,7 @@ extension HomepageViewController: UITableViewDataSource {
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         guard
-            let item = viewModel.itemAt(indexPath.row),
+            let viewModel = viewModel.cellViewModelAt(indexPath.row),
             let cell = tableView.dequeueReusableCell(
                 withIdentifier: SearchListCell.reuseIdentifier,
                 for: indexPath
@@ -137,7 +137,7 @@ extension HomepageViewController: UITableViewDataSource {
             return UITableViewCell()
         }
 
-        cell.configure(with: item)
+        cell.configure(with: viewModel)
         return cell
     }
 }
