@@ -94,7 +94,6 @@ final class HomepageViewModel {
     }
 
     private func load(search: String, at page: Int) {
-        print("load \(search) page \(page)")
         self.page = page
         githubSearchService.search(keyword: "swift", page: page) { [weak self] result in
             guard let self = self else {
@@ -109,7 +108,6 @@ final class HomepageViewModel {
                 }
                 self.status = .done
             case let .failure(error):
-                print(error)
                 self.status = .fail(message: error.localizedDescription)
             }
         }

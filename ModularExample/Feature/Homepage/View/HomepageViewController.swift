@@ -6,6 +6,12 @@
 import UIKit
 
 final class HomepageViewController: UIViewController {
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(didRefresh), for: .valueChanged)
+        return refreshControl
+    }()
+
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(
@@ -14,6 +20,7 @@ final class HomepageViewController: UIViewController {
         )
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.refreshControl = refreshControl
         return tableView
     }()
 
@@ -84,7 +91,6 @@ final class HomepageViewController: UIViewController {
 
     private func setupBinded() {
         viewModel.onSearchLoaded = { [weak self] result in
-            print("search results count \(result?.total ?? 0)")
             self?.tableView.reloadData()
         }
         viewModel.onStatusChanged = { [weak self] status in
@@ -92,10 +98,13 @@ final class HomepageViewController: UIViewController {
             case .wait:
                 self?.statusLabel.text = nil
             case let .searching(keyword):
+                self?.refreshControl.beginRefreshing()
                 self?.statusLabel.text = "Searching \(keyword)"
             case .done:
+                self?.refreshControl.endRefreshing()
                 self?.statusLabel.text = "DONE"
             case let .fail(message):
+                self?.refreshControl.endRefreshing()
                 self?.statusLabel.text = "ERROR: \(message)"
             }
             self?.nextButton.isEnabled = status.enableLoadNextPage
@@ -108,6 +117,10 @@ final class HomepageViewController: UIViewController {
 
     @objc private func loadNextPage() {
         viewModel.loadNextPage()
+    }
+
+    @objc private func didRefresh() {
+        search()
     }
 }
 
