@@ -18,6 +18,10 @@ final class HomepageViewController: UIViewController {
             SearchListCell.self,
             forCellReuseIdentifier: SearchListCell.reuseIdentifier
         )
+        tableView.register(
+            LoadingCell.self,
+            forCellReuseIdentifier: LoadingCell.reuseIdentifier
+        )
         tableView.delegate = self
         tableView.dataSource = self
         tableView.refreshControl = refreshControl
@@ -30,16 +34,6 @@ final class HomepageViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
-    }()
-
-    private lazy var nextButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("next", for: .normal)
-        button.addTarget(self, action: #selector(loadNextPage), for: .touchUpInside)
-        button.backgroundColor = UIColor.systemGroupedBackground
-        button.setTitleColor(UIColor.label, for: .normal)
-        button.setTitleColor(UIColor.tertiaryLabel, for: .disabled)
-        return button
     }()
 
     private let viewModel: HomepageViewModel
@@ -61,6 +55,7 @@ final class HomepageViewController: UIViewController {
     }
 
     private func setupView() {
+        view.backgroundColor = UIColor.systemBackground
         view.addSubview(statusLabel)
         statusLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -74,18 +69,9 @@ final class HomepageViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: statusLabel.bottomAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-
-        view.addSubview(nextButton)
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            nextButton.topAnchor.constraint(equalTo: tableView.bottomAnchor),
-            nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            nextButton.heightAnchor.constraint(equalToConstant: 44)
         ])
     }
 
@@ -107,16 +93,11 @@ final class HomepageViewController: UIViewController {
                 self?.refreshControl.endRefreshing()
                 self?.statusLabel.text = "ERROR: \(message)"
             }
-            self?.nextButton.isEnabled = status.enableLoadNextPage
         }
     }
 
     private func search() {
         viewModel.search(keyword: "swift")
-    }
-
-    @objc private func loadNextPage() {
-        viewModel.loadNextPage()
     }
 
     @objc private func didRefresh() {
@@ -133,24 +114,50 @@ extension HomepageViewController: UITableViewDataSource {
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
-        viewModel.numberOfRows
+        viewModel.numberOfRows + (viewModel.hasNextPage ? 1 : 0)
     }
 
     func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
-        guard
-            let viewModel = viewModel.cellViewModelAt(indexPath.row),
-            let cell = tableView.dequeueReusableCell(
-                withIdentifier: SearchListCell.reuseIdentifier,
-                for: indexPath
-            ) as? SearchListCell
-        else {
+        switch indexPath.row {
+        case 0..<viewModel.numberOfRows:
+            guard
+                let viewModel = viewModel.cellViewModelAt(indexPath.row),
+                let cell = tableView.dequeueReusableCell(
+                    withIdentifier: SearchListCell.reuseIdentifier,
+                    for: indexPath
+                ) as? SearchListCell
+            else {
+                assertionFailure(
+                    "Should able to create `SearchListCell`"
+                )
+                return UITableViewCell()
+            }
+
+            cell.configure(with: viewModel)
+            return cell
+        case viewModel.numberOfRows:
+            guard
+                let cell = tableView.dequeueReusableCell(
+                    withIdentifier: LoadingCell.reuseIdentifier,
+                    for: indexPath
+                ) as? LoadingCell
+            else {
+                assertionFailure(
+                    "Should able to create `LoadingCell`"
+                )
+                return UITableViewCell()
+            }
+            cell.configure()
+            viewModel.loadNextPage()
+            return cell
+        default:
+            assertionFailure(
+                "index \(indexPath.row) should between 0 to \(viewModel.numberOfRows)"
+            )
             return UITableViewCell()
         }
-
-        cell.configure(with: viewModel)
-        return cell
     }
 }

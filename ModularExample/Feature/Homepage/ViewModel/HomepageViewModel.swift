@@ -41,7 +41,7 @@ final class HomepageViewModel {
         }
     }
 
-    var haveNextPage: Bool {
+    var hasNextPage: Bool {
         guard
             let total = searchResults?.total,
             let loadedCount = searchResults?.items.count
