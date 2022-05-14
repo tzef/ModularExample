@@ -6,10 +6,10 @@
 import Foundation
 
 extension GithubSearchModel.Item {
-    var searchListCellViewModel: ShopListCellViewModel {
+    var searchListCellViewModel: SearchListCellViewModel {
         let watchers = SharedNumberFormatter.shared.format(watchers)
         let forks = SharedNumberFormatter.shared.format(forks)
-        return ShopListCellViewModel(
+        return SearchListCellViewModel(
             title: fullName,
             description: description,
             footer: "watchers: \(watchers), forks: \(forks)"

@@ -51,7 +51,7 @@ final class SearchListCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with viewModel: ShopListCellViewModel) {
+    func configure(with viewModel: SearchListCellViewModel) {
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.description
         footerLabel.text = viewModel.footer

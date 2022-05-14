@@ -23,7 +23,7 @@ final class RefreshController: NSObject {
         onRefresh?()
     }
 
-    func searchStatusChanged(_ status: HomepageViewModel.SearchStatus) {
+    func searchStatusChanged(_ status: RepositoryListViewModel.SearchStatus) {
         switch status {
         case .wait:
             break

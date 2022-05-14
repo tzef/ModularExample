@@ -35,7 +35,7 @@ final class LoadingCell: UITableViewCell {
         errorIcon.isHidden = true
     }
 
-    func searchStatusChanged(_ status: HomepageViewModel.SearchStatus) {
+    func searchStatusChanged(_ status: RepositoryListViewModel.SearchStatus) {
         guard case .fail = status else {
             return
         }

@@ -5,7 +5,7 @@
 
 import UIKit
 
-final class HomepageViewController: UIViewController {
+final class RepositoryListViewController: UIViewController {
     private lazy var githubSearchController: GithubSearchController = {
         let githubSearchController = GithubSearchController(navigationItem: navigationItem)
         return githubSearchController
@@ -38,9 +38,9 @@ final class HomepageViewController: UIViewController {
         return tableView
     }()
 
-    private let viewModel: HomepageViewModel
+    private let viewModel: RepositoryListViewModel
 
-    init(viewModel: HomepageViewModel) {
+    init(viewModel: RepositoryListViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -83,11 +83,11 @@ final class HomepageViewController: UIViewController {
     }
 }
 
-extension HomepageViewController: UITableViewDelegate {
+extension RepositoryListViewController: UITableViewDelegate {
 
 }
 
-extension HomepageViewController: UITableViewDataSource {
+extension RepositoryListViewController: UITableViewDataSource {
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int

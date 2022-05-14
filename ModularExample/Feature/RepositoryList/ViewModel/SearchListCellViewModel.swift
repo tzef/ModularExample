@@ -1,11 +1,11 @@
 //
-//  ShopListCellViewModel.swift
+//  SearchListCellViewModel.swift
 //  ModularExample
 //
 
 import Foundation
 
-struct ShopListCellViewModel {
+struct SearchListCellViewModel {
     let title: String
     let description: String
     let footer: String

@@ -1,11 +1,11 @@
 //
-//  HomepageViewModel.swift
+//  RepositoryListViewModel.swift
 //  ModularExample
 //
 
 import Foundation
 
-final class HomepageViewModel {
+final class RepositoryListViewModel {
     enum SearchStatus: Equatable {
         case wait
         case searching
@@ -82,7 +82,7 @@ final class HomepageViewModel {
         load(search: keyword, at: page + 1)
     }
 
-    func cellViewModelAt(_ index: Int) -> ShopListCellViewModel? {
+    func cellViewModelAt(_ index: Int) -> SearchListCellViewModel? {
         guard let item = searchResults?.items[safe: index] else {
             assertionFailure(
                 "`itemAt(_ index: Int)` index \(index) shouldn't over than search results count"

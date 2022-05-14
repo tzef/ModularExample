@@ -11,11 +11,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var rootViewController: UIViewController {
         let githubSearchService = GithubSearchService()
-        let homepageViewModel = HomepageViewModel(
+        let viewModel = RepositoryListViewModel(
             githubSearchService: githubSearchService
         )
-        let root =  HomepageViewController(
-            viewModel: homepageViewModel
+        let root =  RepositoryListViewController(
+            viewModel: viewModel
         )
         return root
     }
