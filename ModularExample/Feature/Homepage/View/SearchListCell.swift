@@ -32,7 +32,8 @@ final class SearchListCell: UITableViewCell {
         let stackView = UIStackView(arrangedSubviews: [
             titleLabel,
             descriptionLabel,
-            footerLabel
+            footerLabel,
+            HorizontalDivider()
         ])
         stackView.axis = .vertical
         stackView.spacing = 4

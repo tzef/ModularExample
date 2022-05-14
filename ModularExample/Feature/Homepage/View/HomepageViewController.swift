@@ -24,6 +24,7 @@ final class HomepageViewController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.separatorStyle = .none
         tableView.register(
             SearchListCell.self,
             forCellReuseIdentifier: SearchListCell.reuseIdentifier
