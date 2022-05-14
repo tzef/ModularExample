@@ -12,10 +12,10 @@ extension GithubSearchResponse {
             items: items.map {
                 GithubSearchModel.Item(
                     id: $0.id,
-                    fullName: $0.fullName,
-                    description: $0.description,
-                    forks: $0.forks,
-                    watchers: $0.watchers
+                    fullName: $0.fullName ?? "--",
+                    description: $0.description ?? "--",
+                    forks: $0.forks ?? 0,
+                    watchers: $0.watchers ?? 0
                 )
             }
         )

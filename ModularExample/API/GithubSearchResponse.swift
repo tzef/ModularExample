@@ -12,88 +12,88 @@ struct GithubSearchResponse: Decodable {
 
     struct Item: Decodable {
         var id: Int
-        var nodeId: String
-        var name: String
-        var fullName: String
-        var isPrivate: Bool
-        var htmlUrl: String
-        var description: String
-        var fork: Bool
-        var url: String
-        var createdAt: Date
-        var updatedAt: Date
-        var pushedAt: Date
+        var nodeId: String?
+        var name: String?
+        var fullName: String?
+        var isPrivate: Bool?
+        var htmlUrl: String?
+        var description: String?
+        var fork: Bool?
+        var url: String?
+        var createdAt: Date?
+        var updatedAt: Date?
+        var pushedAt: Date?
         var homepage: String?
-        var size: Int
-        var stargazersCount: Int
-        var watchersCount: Int
+        var size: Int?
+        var stargazersCount: Int?
+        var watchersCount: Int?
         var language: String?
-        var forksCount: Int
-        var openIssuesCount: Int
+        var forksCount: Int?
+        var openIssuesCount: Int?
         var masterBranch: String?
-        var defaultBranch: String
-        var score: Int
-        var archiveUrl: String
-        var assigneesUrl: String
-        var blobsUrl: String
-        var branchesUrl: String
-        var collaboratorsUrl: String
-        var commentsUrl: String
-        var commitsUrl: String
-        var compareUrl: String
-        var contentsUrl: String
-        var contributorsUrl: String
-        var deploymentsUrl: String
-        var downloadsUrl: String
-        var eventsUrl: String
-        var forksUrl: String
-        var gitCommitsUrl: String
-        var gitRefsUrl: String
-        var gitTagsUrl: String
-        var gitUrl: String
-        var issue_commentUrl: String
-        var issue_eventsUrl: String
-        var issuesUrl: String
-        var keysUrl: String
-        var labelsUrl: String
-        var languagesUrl: String
-        var mergesUrl: String
-        var milestonesUrl: String
-        var notificationsUrl: String
-        var pullsUrl: String
-        var releasesUrl: String
-        var sshUrl: String
-        var stargazersUrl: String
-        var statusesUrl: String
-        var subscribersUrl: String
-        var subscriptionUrl: String
-        var tagsUrl: String
-        var teamsUrl: String
-        var treesUrl: String
-        var cloneUrl: String
+        var defaultBranch: String?
+        var score: Int?
+        var archiveUrl: String?
+        var assigneesUrl: String?
+        var blobsUrl: String?
+        var branchesUrl: String?
+        var collaboratorsUrl: String?
+        var commentsUrl: String?
+        var commitsUrl: String?
+        var compareUrl: String?
+        var contentsUrl: String?
+        var contributorsUrl: String?
+        var deploymentsUrl: String?
+        var downloadsUrl: String?
+        var eventsUrl: String?
+        var forksUrl: String?
+        var gitCommitsUrl: String?
+        var gitRefsUrl: String?
+        var gitTagsUrl: String?
+        var gitUrl: String?
+        var issue_commentUrl: String?
+        var issue_eventsUrl: String?
+        var issuesUrl: String?
+        var keysUrl: String?
+        var labelsUrl: String?
+        var languagesUrl: String?
+        var mergesUrl: String?
+        var milestonesUrl: String?
+        var notificationsUrl: String?
+        var pullsUrl: String?
+        var releasesUrl: String?
+        var sshUrl: String?
+        var stargazersUrl: String?
+        var statusesUrl: String?
+        var subscribersUrl: String?
+        var subscriptionUrl: String?
+        var tagsUrl: String?
+        var teamsUrl: String?
+        var treesUrl: String?
+        var cloneUrl: String?
         var mirrorUrl: String?
-        var hooksUrl: String
-        var svnUrl: String
-        var forks: Int
-        var openIssues: Int
-        var watchers: Int
-        var hasIssues: Bool
-        var hasProjects: Bool
-        var hasPages: Bool
-        var hasWiki: Bool
-        var hasDownloads: Bool
-        var archived: Bool
-        var disabled: Bool
-        var visibility: String
+        var hooksUrl: String?
+        var svnUrl: String?
+        var forks: Int?
+        var openIssues: Int?
+        var watchers: Int?
+        var hasIssues: Bool?
+        var hasProjects: Bool?
+        var hasPages: Bool?
+        var hasWiki: Bool?
+        var hasDownloads: Bool?
+        var archived: Bool?
+        var disabled: Bool?
+        var visibility: String?
         var license: License?
         var owner: Owner
 
         struct License: Decodable {
-            var key: String
-            var name: String
+            var key: String?
+            var name: String?
             var url: String?
-            var spdxId: String
-            var nodeId: String
+            var spdxId: String?
+            var nodeId: String?
             var htmlUrl: String?
 
             private enum CodingKeys:  String, CodingKey {
@@ -107,28 +107,28 @@ struct GithubSearchResponse: Decodable {
         }
 
         struct Owner: Decodable {
-            var login: String
             var id: Int
-            var nodeId: String
-            var avatarUrl: String
-            var gravatarId: String
-            var url: String
-            var receivedEventsUrl: String
-            var type: String
-            var htmlUrl: String
-            var followersUrl: String
-            var followingUrl: String
-            var gistsUrl: String
-            var starredUrl: String
-            var subscriptionsUrl: String
-            var organizationsUrl: String
-            var reposUrl: String
-            var eventsUrl: String
-            var siteAdmin: Bool
+            var login: String?
+            var nodeId: String?
+            var avatarUrl: String?
+            var gravatarId: String?
+            var url: String?
+            var receivedEventsUrl: String?
+            var type: String?
+            var htmlUrl: String?
+            var followersUrl: String?
+            var followingUrl: String?
+            var gistsUrl: String?
+            var starredUrl: String?
+            var subscriptionsUrl: String?
+            var organizationsUrl: String?
+            var reposUrl: String?
+            var eventsUrl: String?
+            var siteAdmin: Bool?
 
             private enum CodingKeys: String, CodingKey {
-                case login = "login"
                 case id = "id"
+                case login = "login"
                 case nodeId = "node_id"
                 case avatarUrl = "avatar_url"
                 case gravatarId = "gravatar_id"
