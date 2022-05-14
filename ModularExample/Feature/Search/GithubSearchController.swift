@@ -49,12 +49,15 @@ final class GithubSearchController: NSObject {
 
     init(navigationItem: UINavigationItem) {
         super.init()
+        // for fixing the bug related to UIRefreshControl and UISearchController
+        // ref: https://developer.apple.com/forums/thread/118457
+        navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = self.searchController
     }
 
     func defaultSearch() {
         keyword = "swift"
-        searchStatus = .searching(keyword: "swift")
+        searchStatus = .searching
     }
 }
 

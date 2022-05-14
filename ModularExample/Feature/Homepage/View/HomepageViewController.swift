@@ -33,14 +33,6 @@ final class HomepageViewController: UIViewController {
         return tableView
     }()
 
-    private lazy var statusLabel: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = UIColor.systemGroupedBackground
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        return label
-    }()
-
     private let viewModel: HomepageViewModel
 
     init(viewModel: HomepageViewModel) {
@@ -62,19 +54,10 @@ final class HomepageViewController: UIViewController {
     private func setupView() {
         title = "GitHub Repository Search"
         view.backgroundColor = UIColor.systemBackground
-        view.addSubview(statusLabel)
-        statusLabel.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            statusLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            statusLabel.heightAnchor.constraint(equalToConstant: 44)
-        ])
-
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: statusLabel.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
@@ -92,16 +75,11 @@ final class HomepageViewController: UIViewController {
             self?.githubSearchController.searchStatus = status
             switch status {
             case .wait:
-                self?.statusLabel.text = nil
-            case let .searching(keyword):
+                break
+            case .searching:
                 self?.refreshControl.beginRefreshing()
-                self?.statusLabel.text = "Searching \(keyword)"
-            case .done:
+            case .done, .fail:
                 self?.refreshControl.endRefreshing()
-                self?.statusLabel.text = "DONE"
-            case let .fail(message):
-                self?.refreshControl.endRefreshing()
-                self?.statusLabel.text = "ERROR: \(message)"
             }
         }
     }

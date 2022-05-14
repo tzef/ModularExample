@@ -8,7 +8,7 @@ import Foundation
 final class HomepageViewModel {
     enum SearchStatus: Equatable {
         case wait
-        case searching(keyword: String)
+        case searching
         case done
         case fail(message: String)
 
@@ -60,7 +60,7 @@ final class HomepageViewModel {
 
     func search(keyword: String) {
         self.keyword = keyword
-        status = .searching(keyword: keyword)
+        status = .searching
         load(search: keyword, at: 1)
     }
 
