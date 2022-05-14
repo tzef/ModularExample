@@ -32,7 +32,12 @@ final class HomepageViewModel {
         }
     }
     private var keyword: String?
-    private var page = 0
+    private var page: Int {
+        guard let totalCount = searchResults?.items.count else {
+            return 0
+        }
+        return totalCount / GithubResource.perPage
+    }
 
     private(set) var status = SearchStatus.wait {
         didSet {
@@ -72,13 +77,6 @@ final class HomepageViewModel {
             return
         }
 
-        guard status == .done else {
-            assertionFailure(
-                "`nextPage()` Shouldn't be called if previous search was failed"
-            )
-            return
-        }
-
         load(search: keyword, at: page + 1)
     }
 
@@ -93,7 +91,6 @@ final class HomepageViewModel {
     }
 
     private func load(search: String, at page: Int) {
-        self.page = page
         githubSearchService.search(keyword: search, page: page) { [weak self] result in
             guard let self = self else {
                 return
