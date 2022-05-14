@@ -6,6 +6,11 @@
 import UIKit
 
 final class HomepageViewController: UIViewController {
+    private lazy var githubSearchController: GithubSearchController = {
+        let githubSearchController = GithubSearchController(navigationItem: navigationItem)
+        return githubSearchController
+    }()
+
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(didRefresh), for: .valueChanged)
@@ -51,10 +56,11 @@ final class HomepageViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupBinded()
-        search()
+        githubSearchController.defaultSearch()
     }
 
     private func setupView() {
+        title = "GitHub Repository Search"
         view.backgroundColor = UIColor.systemBackground
         view.addSubview(statusLabel)
         statusLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -76,10 +82,14 @@ final class HomepageViewController: UIViewController {
     }
 
     private func setupBinded() {
+        githubSearchController.onKeywordSearched = { [weak self] keyword in
+            self?.viewModel.search(keyword: keyword)
+        }
         viewModel.onSearchLoaded = { [weak self] result in
             self?.tableView.reloadData()
         }
         viewModel.onStatusChanged = { [weak self] status in
+            self?.githubSearchController.searchStatus = status
             switch status {
             case .wait:
                 self?.statusLabel.text = nil
@@ -96,12 +106,8 @@ final class HomepageViewController: UIViewController {
         }
     }
 
-    private func search() {
-        viewModel.search(keyword: "swift")
-    }
-
     @objc private func didRefresh() {
-        search()
+        viewModel.search(keyword: githubSearchController.keyword)
     }
 }
 

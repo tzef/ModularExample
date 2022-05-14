@@ -22,7 +22,6 @@ final class HomepageViewModel {
         }
     }
 
-    typealias Observer<T> = (T) -> Void
     var onSearchLoaded: Observer<GithubSearchModel?>?
     var onStatusChanged: Observer<SearchStatus>?
 
@@ -95,7 +94,7 @@ final class HomepageViewModel {
 
     private func load(search: String, at page: Int) {
         self.page = page
-        githubSearchService.search(keyword: "swift", page: page) { [weak self] result in
+        githubSearchService.search(keyword: search, page: page) { [weak self] result in
             guard let self = self else {
                 return
             }
