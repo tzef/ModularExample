@@ -1,38 +1,31 @@
 //
-//  SearchListCell.swift
+//  LabelValueCell.swift
 //  ModularExample
 //
 
 import UIKit
 
-final class SearchListCell: UITableViewCell {
-    private lazy var titleLabel: UILabel = {
+final class LabelValueCell: UITableViewCell {
+    private lazy var labelLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 0
-        return label
-    }()
-
-    private lazy var descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 3
         label.textColor = UIColor.secondaryLabel
         label.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
         return label
     }()
 
-    private lazy var footerLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.textColor = UIColor.secondaryLabel
-        label.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
-        return label
+    private lazy var valueTextView: UITextView = {
+        let textView = UITextView()
+        textView.isEditable = false
+        textView.isScrollEnabled = false
+        textView.textContainerInset = .zero
+        textView.textContainer.lineFragmentPadding = .zero
+        return textView
     }()
 
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            titleLabel,
-            descriptionLabel,
-            footerLabel,
+            labelLabel,
+            valueTextView,
             HorizontalDivider()
         ])
         stackView.axis = .vertical
@@ -51,10 +44,9 @@ final class SearchListCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with viewModel: SearchListCellViewModel) {
-        titleLabel.text = viewModel.title
-        descriptionLabel.text = viewModel.description
-        footerLabel.text = viewModel.footer
+    func configure(with viewModel: LabelValueCellViewModel) {
+        labelLabel.text = viewModel.label
+        valueTextView.attributedText = viewModel.valueAttributedText
     }
 
     private func setupView() {
