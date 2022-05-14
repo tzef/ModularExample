@@ -47,6 +47,10 @@ final class RepositoryListViewModel {
         }
     }
 
+    var title: String {
+        "GitHub Repository Search"
+    }
+
     var hasNextPage: Bool {
         guard
             let total = searchResults?.total,

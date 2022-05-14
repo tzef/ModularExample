@@ -57,7 +57,7 @@ final class RepositoryListViewController: UIViewController {
     }
 
     private func setupView() {
-        title = "GitHub Repository Search"
+        title = viewModel.title
         view.backgroundColor = UIColor.systemBackground
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +84,16 @@ final class RepositoryListViewController: UIViewController {
 }
 
 extension RepositoryListViewController: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let _ = viewModel.cellViewModelAt(indexPath.row) else {
+            assertionFailure(
+                "ViewModel for index \(indexPath.row) shouldn't be empty"
+            )
+            return
+        }
+        let vc = RepositoryDetailsViewController(viewModel: RepositoryDetailsViewModel())
+        show(vc, sender: nil)
+    }
 }
 
 extension RepositoryListViewController: UITableViewDataSource {

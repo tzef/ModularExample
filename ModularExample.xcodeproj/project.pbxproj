@@ -32,6 +32,8 @@
 		C9E64C55282F7BD7006283E7 /* GithubSearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C54282F7BD7006283E7 /* GithubSearchResultController.swift */; };
 		C9E64C59282F87F8006283E7 /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C58282F87F8006283E7 /* RefreshController.swift */; };
 		C9E64C5C282FA55F006283E7 /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C5B282FA55F006283E7 /* HorizontalDivider.swift */; };
+		C9E64C61282FAC67006283E7 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */; };
+		C9E64C63282FADD5006283E7 /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		C9E64C54282F7BD7006283E7 /* GithubSearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchResultController.swift; sourceTree = "<group>"; };
 		C9E64C58282F87F8006283E7 /* RefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
 		C9E64C5B282FA55F006283E7 /* HorizontalDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
+		C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 		C9E64C342828A2AA006283E7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				C9E64C5D282FAC40006283E7 /* RepositoryDetails */,
 				C9E64C352828A2C4006283E7 /* RepositoryList */,
 			);
 			path = Feature;
@@ -236,6 +241,31 @@
 				C9E64C5B282FA55F006283E7 /* HorizontalDivider.swift */,
 			);
 			path = Separator;
+			sourceTree = "<group>";
+		};
+		C9E64C5D282FAC40006283E7 /* RepositoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64C5F282FAC4F006283E7 /* ViewModel */,
+				C9E64C5E282FAC4B006283E7 /* View */,
+			);
+			path = RepositoryDetails;
+			sourceTree = "<group>";
+		};
+		C9E64C5E282FAC4B006283E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9E64C5F282FAC4F006283E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,12 +343,14 @@
 				C9E64C3328289A72006283E7 /* JSONDecoder+DateStrategy.swift in Sources */,
 				C9E64C53282F73D9006283E7 /* Observer.swift in Sources */,
 				C9E64C47282A29DF006283E7 /* SearchListCellViewModel.swift in Sources */,
+				C9E64C61282FAC67006283E7 /* RepositoryDetailsViewController.swift in Sources */,
 				C9E64C4C282A2FBB006283E7 /* SharedNumberFormatter.swift in Sources */,
 				C9E64C282827C139006283E7 /* GithubSearchService.swift in Sources */,
 				C9E64C4E282B2C56006283E7 /* LoadingCell.swift in Sources */,
 				C9E64C49282A2A5B006283E7 /* GithubSearchItem+ViewModel.swift in Sources */,
 				C9E64C59282F87F8006283E7 /* RefreshController.swift in Sources */,
 				C9E64C3F2828BEF9006283E7 /* Array+Subscript.swift in Sources */,
+				C9E64C63282FADD5006283E7 /* RepositoryDetailsViewModel.swift in Sources */,
 				C9E64C232827B31F006283E7 /* APIManager.swift in Sources */,
 				C9E64C5C282FA55F006283E7 /* HorizontalDivider.swift in Sources */,
 				C9E64C55282F7BD7006283E7 /* GithubSearchResultController.swift in Sources */,
