@@ -96,6 +96,10 @@ final class RepositoryListViewModel {
         return item.searchListCellViewModel
     }
 
+    func searchItemAt(_ index: Int) -> GithubSearchModel.Item? {
+        searchResults?.items[safe: index]
+    }
+
     private func load(search: String, at page: Int) {
         githubSearchService.search(keyword: search, page: page) { [weak self] result in
             guard let self = self else {

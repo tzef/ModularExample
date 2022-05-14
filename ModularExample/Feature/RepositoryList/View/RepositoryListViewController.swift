@@ -56,6 +56,13 @@ final class RepositoryListViewController: UIViewController {
         githubSearchController.defaultSearch()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: selectedIndexPath, animated: true)
+        }
+    }
+
     private func setupView() {
         title = viewModel.title
         view.backgroundColor = UIColor.systemBackground
@@ -85,14 +92,13 @@ final class RepositoryListViewController: UIViewController {
 
 extension RepositoryListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let _ = viewModel.cellViewModelAt(indexPath.row) else {
+        guard let item = viewModel.searchItemAt(indexPath.row) else {
             assertionFailure(
-                "ViewModel for index \(indexPath.row) shouldn't be empty"
+                "Search model item for index \(indexPath.row) shouldn't be empty"
             )
             return
         }
-        let vc = RepositoryDetailsViewController(viewModel: RepositoryDetailsViewModel())
-        show(vc, sender: nil)
+        show(UIFactory.repositoryDetailsViewController(item: item), sender: nil)
     }
 }
 

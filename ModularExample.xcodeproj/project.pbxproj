@@ -34,6 +34,7 @@
 		C9E64C5C282FA55F006283E7 /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C5B282FA55F006283E7 /* HorizontalDivider.swift */; };
 		C9E64C61282FAC67006283E7 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */; };
 		C9E64C63282FADD5006283E7 /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */; };
+		C9E64C66282FB121006283E7 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C65282FB121006283E7 /* UIFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		C9E64C5B282FA55F006283E7 /* HorizontalDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
 		C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
+		C9E64C65282FB121006283E7 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C9E64C262827C123006283E7 /* Service */,
 				C9E64C4A282A2FA2006283E7 /* Shared */,
 				C9E64C56282F87BB006283E7 /* Component */,
+				C9E64C64282FB106006283E7 /* Composer */,
 				C9E64C342828A2AA006283E7 /* Feature */,
 				C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */,
 				C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */,
@@ -268,6 +271,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		C9E64C64282FB106006283E7 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64C65282FB121006283E7 /* UIFactory.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +367,7 @@
 				C9E64C55282F7BD7006283E7 /* GithubSearchResultController.swift in Sources */,
 				C9E64C252827BBD5006283E7 /* GithubResource.swift in Sources */,
 				C9E64C122827A2AE006283E7 /* RepositoryListViewController.swift in Sources */,
+				C9E64C66282FB121006283E7 /* UIFactory.swift in Sources */,
 				C9E64C2D28281035006283E7 /* GithubSearchModel.swift in Sources */,
 				C9E64C51282D0706006283E7 /* GithubSearchController.swift in Sources */,
 				C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */,
