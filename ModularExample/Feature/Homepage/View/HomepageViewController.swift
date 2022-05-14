@@ -11,10 +11,15 @@ final class HomepageViewController: UIViewController {
         return githubSearchController
     }()
 
-    private lazy var refreshControl: UIRefreshControl = {
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(didRefresh), for: .valueChanged)
-        return refreshControl
+    private lazy var refreshController: RefreshController = {
+        let refreshController = RefreshController(tableView: tableView)
+        refreshController.onRefresh = { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.viewModel.search(keyword: self.githubSearchController.keyword)
+        }
+        return refreshController
     }()
 
     private lazy var tableView: UITableView = {
@@ -29,7 +34,6 @@ final class HomepageViewController: UIViewController {
         )
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.refreshControl = refreshControl
         return tableView
     }()
 
@@ -73,19 +77,8 @@ final class HomepageViewController: UIViewController {
         }
         viewModel.onStatusChanged = { [weak self] status in
             self?.githubSearchController.searchStatus = status
-            switch status {
-            case .wait:
-                break
-            case .searching:
-                self?.refreshControl.beginRefreshing()
-            case .done, .fail:
-                self?.refreshControl.endRefreshing()
-            }
+            self?.refreshController.searchStatus = status
         }
-    }
-
-    @objc private func didRefresh() {
-        viewModel.search(keyword: githubSearchController.keyword)
     }
 }
 
