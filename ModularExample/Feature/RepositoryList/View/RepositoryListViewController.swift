@@ -38,9 +38,14 @@ final class RepositoryListViewController: UIViewController {
         return tableView
     }()
 
+    private let router: RepositoryListRouter
     private let viewModel: RepositoryListViewModel
 
-    init(viewModel: RepositoryListViewModel) {
+    init(
+        router: RepositoryListRouter,
+        viewModel: RepositoryListViewModel
+    ) {
+        self.router = router
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -98,7 +103,7 @@ extension RepositoryListViewController: UITableViewDelegate {
             )
             return
         }
-        show(UIFactory.repositoryDetailsViewController(item: item), sender: nil)
+        router.showRepositoryDetailsPage(with: item)
     }
 }
 

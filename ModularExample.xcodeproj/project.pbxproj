@@ -35,6 +35,7 @@
 		C9E64C61282FAC67006283E7 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */; };
 		C9E64C63282FADD5006283E7 /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */; };
 		C9E64C66282FB121006283E7 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C65282FB121006283E7 /* UIFactory.swift */; };
+		C9E64C69282FB38D006283E7 /* RepositoryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C68282FB38D006283E7 /* RepositoryListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		C9E64C60282FAC67006283E7 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		C9E64C62282FADD5006283E7 /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		C9E64C65282FB121006283E7 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		C9E64C68282FB38D006283E7 /* RepositoryListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		C9E64C352828A2C4006283E7 /* RepositoryList */ = {
 			isa = PBXGroup;
 			children = (
+				C9E64C67282FB381006283E7 /* Router */,
 				C9E64C432828CAFD006283E7 /* ViewModel */,
 				C9E64C362828A5D8006283E7 /* View */,
 			);
@@ -279,6 +282,14 @@
 			path = Composer;
 			sourceTree = "<group>";
 		};
+		C9E64C67282FB381006283E7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64C68282FB38D006283E7 /* RepositoryListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +385,7 @@
 				C9E64C452828CB07006283E7 /* RepositoryListViewModel.swift in Sources */,
 				C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */,
 				C9E64C2A2828063B006283E7 /* GithubSearchResponse.swift in Sources */,
+				C9E64C69282FB38D006283E7 /* RepositoryListRouter.swift in Sources */,
 				C9E64C3A2828A6F3006283E7 /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
