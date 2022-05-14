@@ -108,7 +108,7 @@ extension HomepageViewController: UITableViewDataSource {
                 ) as? SearchListCell
             else {
                 assertionFailure(
-                    "Should able to create `SearchListCell`"
+                    "Should be able to create `SearchListCell`"
                 )
                 return UITableViewCell()
             }
@@ -123,7 +123,7 @@ extension HomepageViewController: UITableViewDataSource {
                 ) as? LoadingCell
             else {
                 assertionFailure(
-                    "Should able to create `LoadingCell`"
+                    "Should be able to create `LoadingCell`"
                 )
                 return UITableViewCell()
             }
