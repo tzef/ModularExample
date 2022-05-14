@@ -8,6 +8,7 @@ import UIKit
 final class LoadingCell: UITableViewCell {
     private lazy var errorIcon: UIImageView = {
         let imageView = UIImageView(image: UIImage(systemName: "xmark.octagon.fill"))
+        imageView.tintColor = .red
         imageView.isHidden = true
         return imageView
     }()
