@@ -23,7 +23,7 @@ final class HomepageViewModel {
     }
 
     var onSearchLoaded: Observer<GithubSearchModel?>?
-    var onStatusChanged: Observer<SearchStatus>?
+    var onStatusChangedObservers = [Observer<SearchStatus>]()
 
     private let githubSearchService: GithubSearchService
     private var searchResults: GithubSearchModel? {
@@ -41,7 +41,9 @@ final class HomepageViewModel {
 
     private(set) var status = SearchStatus.wait {
         didSet {
-            onStatusChanged?(status)
+            onStatusChangedObservers.forEach {
+                $0(status)
+            }
         }
     }
 

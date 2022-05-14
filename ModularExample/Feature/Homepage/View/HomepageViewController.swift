@@ -75,10 +75,10 @@ final class HomepageViewController: UIViewController {
         viewModel.onSearchLoaded = { [weak self] result in
             self?.tableView.reloadData()
         }
-        viewModel.onStatusChanged = { [weak self] status in
-            self?.githubSearchController.searchStatus = status
-            self?.refreshController.searchStatus = status
-        }
+        viewModel.onStatusChangedObservers.append(contentsOf: [
+            githubSearchController.searchStatusChanged(_:),
+            refreshController.searchStatusChanged(_:)
+        ])
     }
 }
 
@@ -128,6 +128,9 @@ extension HomepageViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.configure()
+            viewModel.onStatusChangedObservers.append(
+                cell.searchStatusChanged(_:)
+            )
             viewModel.loadNextPage()
             return cell
         default:

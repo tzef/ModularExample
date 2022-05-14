@@ -6,23 +6,6 @@
 import UIKit
 
 final class GithubSearchController: NSObject {
-    var searchStatus: HomepageViewModel.SearchStatus = .wait {
-        didSet {
-            switch searchStatus {
-            case .wait:
-                githubSearchResultController.statusTitle = "Please input the keyword"
-            case .searching:
-                githubSearchResultController.statusTitle = "Searching \(keyword)"
-                searchController.searchBar.placeholder = keyword
-            case .done:
-                githubSearchResultController.statusTitle = "Latest search: \(keyword)"
-                searchController.isActive = false
-            case let .fail(message):
-                githubSearchResultController.statusTitle = "Search Failed: \(message)"
-            }
-        }
-    }
-
     var onKeywordSearched: Observer<String>?
 
     private(set) var keyword: String = "" {
@@ -57,7 +40,21 @@ final class GithubSearchController: NSObject {
 
     func defaultSearch() {
         keyword = "swift"
-        searchStatus = .searching
+    }
+
+    func searchStatusChanged(_ status: HomepageViewModel.SearchStatus) {
+        switch status {
+        case .wait:
+            githubSearchResultController.statusTitle = "Please input the keyword"
+        case .searching:
+            githubSearchResultController.statusTitle = "Searching \(keyword)"
+            searchController.searchBar.placeholder = keyword
+        case .done:
+            githubSearchResultController.statusTitle = "Latest search: \(keyword)"
+            searchController.isActive = false
+        case let .fail(message):
+            githubSearchResultController.statusTitle = "Search Failed: \(message)"
+        }
     }
 }
 

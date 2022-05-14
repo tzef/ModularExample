@@ -6,6 +6,12 @@
 import UIKit
 
 final class LoadingCell: UITableViewCell {
+    private lazy var errorIcon: UIImageView = {
+        let imageView = UIImageView(image: UIImage(systemName: "xmark.octagon.fill"))
+        imageView.isHidden = true
+        return imageView
+    }()
+
     private lazy var loadingIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .medium)
         return indicator
@@ -25,6 +31,14 @@ final class LoadingCell: UITableViewCell {
             return
         }
         loadingIndicator.startAnimating()
+        errorIcon.isHidden = true
+    }
+
+    func searchStatusChanged(_ status: HomepageViewModel.SearchStatus) {
+        guard case .fail = status else {
+            return
+        }
+        errorIcon.isHidden = false
     }
 
     private func setupView() {
@@ -33,6 +47,12 @@ final class LoadingCell: UITableViewCell {
         NSLayoutConstraint.activate([
             loadingIndicator.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             loadingIndicator.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+        ])
+        contentView.addSubview(errorIcon)
+        errorIcon.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            errorIcon.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            errorIcon.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ])
     }
 }
