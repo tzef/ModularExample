@@ -5,7 +5,7 @@
 
 import UIKit
 
-final class GithubSearchController: NSObject {
+public final class GithubSearchController: NSObject {
     var onKeywordSearched: Observer<String>?
 
     private(set) var keyword: String = "" {
@@ -59,23 +59,23 @@ final class GithubSearchController: NSObject {
 }
 
 extension GithubSearchController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {}
+    public func updateSearchResults(for searchController: UISearchController) {}
 }
 
 extension GithubSearchController: UISearchControllerDelegate {
-    func willPresentSearchController(_ searchController: UISearchController) {
+    public func willPresentSearchController(_ searchController: UISearchController) {
         searchController.searchBar.text = searchController.searchBar.placeholder
     }
 
-    func didPresentSearchController(_ searchController: UISearchController) {}
+    public func didPresentSearchController(_ searchController: UISearchController) {}
 
-    func willDismissSearchController(_ searchController: UISearchController) {}
+    public func willDismissSearchController(_ searchController: UISearchController) {}
 
-    func didDismissSearchController(_ searchController: UISearchController) {}
+    public func didDismissSearchController(_ searchController: UISearchController) {}
 }
 
 extension GithubSearchController: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let keyword = searchBar.text, !keyword.isEmpty else {
             assertionFailure(
                 "Search button click must have valid keyword string"
