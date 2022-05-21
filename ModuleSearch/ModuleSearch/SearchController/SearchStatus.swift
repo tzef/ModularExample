@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum SearchStatus: Equatable {
+public enum SearchStatus: Equatable {
     case wait
     case searching
     case done

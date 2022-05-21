@@ -6,9 +6,9 @@
 import UIKit
 
 public final class GithubSearchController: NSObject {
-    var onKeywordSearched: Observer<String>?
+    public var onKeywordSearched: Observer<String>?
 
-    private(set) var keyword: String = "" {
+    public private(set) var keyword: String = "" {
         didSet {
             onKeywordSearched?(keyword)
         }
@@ -30,7 +30,7 @@ public final class GithubSearchController: NSObject {
         return viewController
     }()
 
-    init(navigationItem: UINavigationItem) {
+    public init(navigationItem: UINavigationItem) {
         super.init()
         // for fixing the bug related to UIRefreshControl and UISearchController
         // ref: https://developer.apple.com/forums/thread/118457
@@ -38,11 +38,11 @@ public final class GithubSearchController: NSObject {
         navigationItem.searchController = self.searchController
     }
 
-    func defaultSearch() {
+    public func defaultSearch() {
         keyword = "swift"
     }
 
-    func searchStatusChanged(_ status: SearchStatus) {
+    public func searchStatusChanged(_ status: SearchStatus) {
         switch status {
         case .wait:
             githubSearchResultController.statusTitle = "Please input the keyword"
