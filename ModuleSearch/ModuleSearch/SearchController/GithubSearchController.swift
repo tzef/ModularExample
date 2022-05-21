@@ -42,7 +42,7 @@ final class GithubSearchController: NSObject {
         keyword = "swift"
     }
 
-    func searchStatusChanged(_ status: RepositoryListViewModel.SearchStatus) {
+    func searchStatusChanged(_ status: SearchStatus) {
         switch status {
         case .wait:
             githubSearchResultController.statusTitle = "Please input the keyword"
