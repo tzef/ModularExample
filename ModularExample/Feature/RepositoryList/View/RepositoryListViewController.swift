@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleSearch
 
 final class RepositoryListViewController: UIViewController {
     private lazy var githubSearchController: GithubSearchController = {
