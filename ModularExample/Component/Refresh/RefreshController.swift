@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleSearch
 
 final class RefreshController: NSObject {
     var onRefresh: (() -> Void)?
@@ -23,7 +24,7 @@ final class RefreshController: NSObject {
         onRefresh?()
     }
 
-    func searchStatusChanged(_ status: RepositoryListViewModel.SearchStatus) {
+    func searchStatusChanged(_ status: SearchStatus) {
         switch status {
         case .wait:
             break
