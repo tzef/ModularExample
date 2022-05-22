@@ -7,12 +7,7 @@ import UIKit
 import ModuleUI
 
 final class LabelValueCell: UITableViewCell {
-    private lazy var labelLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = UIColor.secondaryLabel
-        label.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
-        return label
-    }()
+    private lazy var labelLabel = SubTitleLabel()
 
     private lazy var valueTextView: UITextView = {
         let textView = UITextView()

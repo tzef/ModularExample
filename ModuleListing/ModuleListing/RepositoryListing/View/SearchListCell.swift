@@ -7,27 +7,15 @@ import UIKit
 import ModuleUI
 
 final class SearchListCell: UITableViewCell {
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        return label
-    }()
+    private lazy var titleLabel = TitleLabel()
 
     private lazy var descriptionLabel: UILabel = {
-        let label = UILabel()
+        let label = SubTitleLabel()
         label.numberOfLines = 3
-        label.textColor = UIColor.secondaryLabel
-        label.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
         return label
     }()
 
-    private lazy var footerLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.textColor = UIColor.secondaryLabel
-        label.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
-        return label
-    }()
+    private lazy var footerLabel = SubTitleLabel()
 
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
