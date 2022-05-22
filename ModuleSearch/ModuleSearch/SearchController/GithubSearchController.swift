@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleCore
 
 public final class GithubSearchController: NSObject {
     public var onKeywordSearched: Observer<String>?

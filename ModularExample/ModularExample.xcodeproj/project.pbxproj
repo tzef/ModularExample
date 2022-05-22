@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9A7850C2839B1C400D9177B /* ModuleSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7850B2839B1C400D9177B /* ModuleSearch.framework */; };
-		C9A7850D2839B1C400D9177B /* ModuleSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7850B2839B1C400D9177B /* ModuleSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7855E283A5AC300D9177B /* ModuleListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7855D283A5AC300D9177B /* ModuleListing.framework */; };
 		C9A7855F283A5AC300D9177B /* ModuleListing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7855D283A5AC300D9177B /* ModuleListing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */; };
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C9A7850D2839B1C400D9177B /* ModuleSearch.framework in Embed Frameworks */,
 				C9A7855F283A5AC300D9177B /* ModuleListing.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -51,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A7850C2839B1C400D9177B /* ModuleSearch.framework in Frameworks */,
 				C9A7855E283A5AC300D9177B /* ModuleListing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

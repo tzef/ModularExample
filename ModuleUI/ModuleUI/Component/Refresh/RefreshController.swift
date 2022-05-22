@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import ModuleSearch
+import ModuleCore
 
 final class RefreshController: NSObject {
     var onRefresh: (() -> Void)?

@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C9A785FF283A787F00D9177B /* ModuleCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A785FE283A787F00D9177B /* ModuleCore.docc */; };
 		C9A78600283A787F00D9177B /* ModuleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A785FD283A787F00D9177B /* ModuleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A78608283A79A500D9177B /* SearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78607283A79A500D9177B /* SearchStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A785FA283A787F00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A785FD283A787F00D9177B /* ModuleCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleCore.h; sourceTree = "<group>"; };
 		C9A785FE283A787F00D9177B /* ModuleCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleCore.docc; sourceTree = "<group>"; };
+		C9A78607283A79A500D9177B /* SearchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +49,19 @@
 		C9A785FC283A787F00D9177B /* ModuleCore */ = {
 			isa = PBXGroup;
 			children = (
+				C9A78606283A798000D9177B /* SearchStatus */,
 				C9A785FD283A787F00D9177B /* ModuleCore.h */,
 				C9A785FE283A787F00D9177B /* ModuleCore.docc */,
 			);
 			path = ModuleCore;
+			sourceTree = "<group>";
+		};
+		C9A78606283A798000D9177B /* SearchStatus */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78607283A79A500D9177B /* SearchStatus.swift */,
+			);
+			path = SearchStatus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A785FF283A787F00D9177B /* ModuleCore.docc in Sources */,
+				C9A78608283A79A500D9177B /* SearchStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

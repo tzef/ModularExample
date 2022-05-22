@@ -14,7 +14,23 @@
 		C9A785CF283A76F700D9177B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785CE283A76F700D9177B /* TitleLabel.swift */; };
 		C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */; };
 		C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D8283A780C00D9177B /* RefreshController.swift */; };
+		C9A7860B283A7A5800D9177B /* ModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860A283A7A5800D9177B /* ModuleCore.framework */; };
+		C9A7860C283A7A5800D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860A283A7A5800D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A7860D283A7A5900D9177B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9A7860C283A7A5800D9177B /* ModuleCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A785AF283A73E200D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +41,7 @@
 		C9A785CE283A76F700D9177B /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
 		C9A785D8283A780C00D9177B /* RefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
+		C9A7860A283A7A5800D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A7860B283A7A5800D9177B /* ModuleCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,7 @@
 			children = (
 				C9A785B1283A73E200D9177B /* ModuleUI */,
 				C9A785B0283A73E200D9177B /* Products */,
+				C9A78609283A7A5800D9177B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +127,14 @@
 			path = Refresh;
 			sourceTree = "<group>";
 		};
+		C9A78609283A7A5800D9177B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7860A283A7A5800D9177B /* ModuleCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -130,6 +157,7 @@
 				C9A785AB283A73E200D9177B /* Sources */,
 				C9A785AC283A73E200D9177B /* Frameworks */,
 				C9A785AD283A73E200D9177B /* Resources */,
+				C9A7860D283A7A5900D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

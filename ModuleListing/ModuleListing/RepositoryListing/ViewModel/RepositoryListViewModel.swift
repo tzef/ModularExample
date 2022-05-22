@@ -4,7 +4,7 @@
 //
 
 import Foundation
-import ModuleSearch
+import ModuleCore
 
 final class RepositoryListViewModel {
     var onSearchLoaded: Observer<GithubSearchModel?>?
