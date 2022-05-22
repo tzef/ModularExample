@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		C9A7851E283A53B400D9177B /* ModuleListing.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A7851D283A53B400D9177B /* ModuleListing.docc */; };
 		C9A7851F283A53B400D9177B /* ModuleListing.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A7851C283A53B400D9177B /* ModuleListing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A78528283A551000D9177B /* RepositoryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78527283A551000D9177B /* RepositoryListRouter.swift */; };
+		C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7852A283A552900D9177B /* RepositoryListViewModel.swift */; };
+		C9A7852D283A552900D9177B /* SearchListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7852B283A552900D9177B /* SearchListCellViewModel.swift */; };
+		C9A78532283A554200D9177B /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7852F283A554200D9177B /* LoadingCell.swift */; };
+		C9A78533283A554200D9177B /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78530283A554200D9177B /* SearchListCell.swift */; };
+		C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78531283A554200D9177B /* RepositoryListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A78519283A53B400D9177B /* ModuleListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7851C283A53B400D9177B /* ModuleListing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleListing.h; sourceTree = "<group>"; };
 		C9A7851D283A53B400D9177B /* ModuleListing.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleListing.docc; sourceTree = "<group>"; };
+		C9A78527283A551000D9177B /* RepositoryListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListRouter.swift; sourceTree = "<group>"; };
+		C9A7852A283A552900D9177B /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
+		C9A7852B283A552900D9177B /* SearchListCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListCellViewModel.swift; sourceTree = "<group>"; };
+		C9A7852F283A554200D9177B /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		C9A78530283A554200D9177B /* SearchListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListCell.swift; sourceTree = "<group>"; };
+		C9A78531283A554200D9177B /* RepositoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +59,48 @@
 		C9A7851B283A53B400D9177B /* ModuleListing */ = {
 			isa = PBXGroup;
 			children = (
+				C9A78525283A54F300D9177B /* RepositoryListing */,
 				C9A7851C283A53B400D9177B /* ModuleListing.h */,
 				C9A7851D283A53B400D9177B /* ModuleListing.docc */,
 			);
 			path = ModuleListing;
+			sourceTree = "<group>";
+		};
+		C9A78525283A54F300D9177B /* RepositoryListing */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78526283A550900D9177B /* Router */,
+				C9A78529283A551A00D9177B /* ViewModel */,
+				C9A7852E283A553200D9177B /* View */,
+			);
+			path = RepositoryListing;
+			sourceTree = "<group>";
+		};
+		C9A78526283A550900D9177B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78527283A551000D9177B /* RepositoryListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C9A78529283A551A00D9177B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7852A283A552900D9177B /* RepositoryListViewModel.swift */,
+				C9A7852B283A552900D9177B /* SearchListCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9A7852E283A553200D9177B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78531283A554200D9177B /* RepositoryListViewController.swift */,
+				C9A78530283A554200D9177B /* SearchListCell.swift */,
+				C9A7852F283A554200D9177B /* LoadingCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */,
+				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
+				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
+				C9A78528283A551000D9177B /* RepositoryListRouter.swift in Sources */,
+				C9A7852D283A552900D9177B /* SearchListCellViewModel.swift in Sources */,
 				C9A7851E283A53B400D9177B /* ModuleListing.docc in Sources */,
+				C9A78532283A554200D9177B /* LoadingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
