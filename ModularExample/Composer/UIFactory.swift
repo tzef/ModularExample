@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleListing
 
 final class UIFactory {
     private init() {}
