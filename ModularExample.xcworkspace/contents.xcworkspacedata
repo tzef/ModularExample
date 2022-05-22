@@ -2,24 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ModuleAPI/ModuleAPI.xcodeproj">
+      location = "group:ModularExample/ModularExample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ModuleCore/ModuleCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ModuleUI/ModuleUI.xcodeproj">
+      location = "group:ModuleListing/ModuleListing.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ModuleDetails/ModuleDetails.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ModuleListing/ModuleListing.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:ModuleSearch/ModuleSearch.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ModularExample/ModularExample.xcodeproj">
+      location = "group:ModuleUI/ModuleUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ModuleAPI/ModuleAPI.xcodeproj">
    </FileRef>
 </Workspace>
