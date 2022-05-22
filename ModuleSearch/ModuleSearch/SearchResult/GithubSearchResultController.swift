@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleUI
 
 final class GithubSearchResultController: UIViewController {
     var statusTitle: String? {
@@ -12,11 +13,7 @@ final class GithubSearchResultController: UIViewController {
         }
     }
 
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        return label
-    }()
+    private lazy var titleLabel = TitleLabel()
 
     override func viewDidLoad() {
         setupView()
