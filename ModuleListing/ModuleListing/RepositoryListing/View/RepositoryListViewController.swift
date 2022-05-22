@@ -6,7 +6,7 @@
 import UIKit
 import ModuleSearch
 
-final class RepositoryListViewController: UIViewController {
+public final class RepositoryListViewController: UIViewController {
     private lazy var githubSearchController: GithubSearchController = {
         let githubSearchController = GithubSearchController(navigationItem: navigationItem)
         return githubSearchController
@@ -55,14 +55,14 @@ final class RepositoryListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupBinded()
         githubSearchController.defaultSearch()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: selectedIndexPath, animated: true)
@@ -97,7 +97,7 @@ final class RepositoryListViewController: UIViewController {
 }
 
 extension RepositoryListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let item = viewModel.searchItemAt(indexPath.row) else {
             assertionFailure(
                 "Search model item for index \(indexPath.row) shouldn't be empty"
@@ -109,14 +109,14 @@ extension RepositoryListViewController: UITableViewDelegate {
 }
 
 extension RepositoryListViewController: UITableViewDataSource {
-    func tableView(
+    public func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
         viewModel.numberOfRows + (viewModel.hasNextPage ? 1 : 0)
     }
 
-    func tableView(
+    public func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {

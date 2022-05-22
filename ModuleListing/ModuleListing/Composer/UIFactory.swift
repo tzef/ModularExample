@@ -5,10 +5,10 @@
 
 import UIKit
 
-final class UIFactory {
+public final class UIFactory {
     private init() {}
 
-    static func repositoryListViewController() -> RepositoryListViewController {
+    public static func repositoryListViewController() -> RepositoryListViewController {
         let githubSearchService = GithubSearchService()
         let viewModel = RepositoryListViewModel(
             githubSearchService: githubSearchService
