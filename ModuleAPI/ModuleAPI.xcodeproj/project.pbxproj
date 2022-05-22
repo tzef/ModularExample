@@ -11,6 +11,8 @@
 		C9A78632283A7DD200D9177B /* ModuleAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A7862F283A7DD200D9177B /* ModuleAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A7863B283A7E3400D9177B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7863A283A7E3400D9177B /* APIManager.swift */; };
 		C9A7863D283A7E4600D9177B /* JSONDecoder+DateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7863C283A7E4600D9177B /* JSONDecoder+DateStrategy.swift */; };
+		C9A7863F283A7F6A00D9177B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7863E283A7F6A00D9177B /* APIClient.swift */; };
+		C9A78641283A7F7C00D9177B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78640283A7F7C00D9177B /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C9A78630283A7DD200D9177B /* ModuleAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleAPI.docc; sourceTree = "<group>"; };
 		C9A7863A283A7E3400D9177B /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C9A7863C283A7E4600D9177B /* JSONDecoder+DateStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateStrategy.swift"; sourceTree = "<group>"; };
+		C9A7863E283A7F6A00D9177B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C9A78640283A7F7C00D9177B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 		C9A78638283A7E2500D9177B /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7863E283A7F6A00D9177B /* APIClient.swift */,
 				C9A7863A283A7E3400D9177B /* APIManager.swift */,
+				C9A78640283A7F7C00D9177B /* APIRequest.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 				C9A7863D283A7E4600D9177B /* JSONDecoder+DateStrategy.swift in Sources */,
 				C9A7863B283A7E3400D9177B /* APIManager.swift in Sources */,
 				C9A78631283A7DD200D9177B /* ModuleAPI.docc in Sources */,
+				C9A78641283A7F7C00D9177B /* APIRequest.swift in Sources */,
+				C9A7863F283A7F6A00D9177B /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

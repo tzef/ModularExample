@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import ModuleAPI
 
 enum GithubResource {
     static let perPage = 30
@@ -20,7 +21,7 @@ enum GithubResource {
         URL(string: path())!
     }
 
-    func request() -> URLRequest {
-        URLRequest(url: url())
+    func apiRequest<APIModel: Decodable>() -> APIRequest<APIModel> {
+        APIRequest<APIModel>(url: url())
     }
 }
