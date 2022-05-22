@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A785B3283A73E200D9177B /* ModuleUI.docc */; };
 		C9A785B5283A73E200D9177B /* ModuleUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A785B2283A73E200D9177B /* ModuleUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785BD283A744D00D9177B /* HorizontalDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A785AF283A73E200D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A785B2283A73E200D9177B /* ModuleUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleUI.h; sourceTree = "<group>"; };
 		C9A785B3283A73E200D9177B /* ModuleUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleUI.docc; sourceTree = "<group>"; };
+		C9A785BD283A744D00D9177B /* HorizontalDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +49,27 @@
 		C9A785B1283A73E200D9177B /* ModuleUI */ = {
 			isa = PBXGroup;
 			children = (
+				C9A785BB283A743E00D9177B /* Component */,
 				C9A785B2283A73E200D9177B /* ModuleUI.h */,
 				C9A785B3283A73E200D9177B /* ModuleUI.docc */,
 			);
 			path = ModuleUI;
+			sourceTree = "<group>";
+		};
+		C9A785BB283A743E00D9177B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C9A785BC283A744500D9177B /* Separator */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		C9A785BC283A744500D9177B /* Separator */ = {
+			isa = PBXGroup;
+			children = (
+				C9A785BD283A744D00D9177B /* HorizontalDivider.swift */,
+			);
+			path = Separator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */,
+				C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
