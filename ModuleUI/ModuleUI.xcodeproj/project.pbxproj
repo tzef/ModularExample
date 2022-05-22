@@ -13,6 +13,7 @@
 		C9A785C9283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A785CF283A76F700D9177B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785CE283A76F700D9177B /* TitleLabel.swift */; };
 		C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */; };
+		C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D8283A780C00D9177B /* RefreshController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A785CE283A76F700D9177B /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
+		C9A785D8283A780C00D9177B /* RefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		C9A785BB283A743E00D9177B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				C9A785D7283A780300D9177B /* Refresh */,
 				C9A785BC283A744500D9177B /* Separator */,
 			);
 			path = Component;
@@ -95,6 +98,14 @@
 				C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		C9A785D7283A780300D9177B /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				C9A785D8283A780C00D9177B /* RefreshController.swift */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */,
 				C9A785CF283A76F700D9177B /* TitleLabel.swift in Sources */,
 				C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */,
+				C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */,
 				C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */,
 				C9A785C9283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
