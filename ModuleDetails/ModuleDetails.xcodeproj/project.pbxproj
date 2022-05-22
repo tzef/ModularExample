@@ -18,8 +18,23 @@
 		C9A78593283A6E3100D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78591283A6E3000D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A78594283A6E3100D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78592283A6E3000D9177B /* Array+Subscript.swift */; };
 		C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */; };
-		C9A7859E283A6EEF00D9177B /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7859D283A6EEF00D9177B /* HorizontalDivider.swift */; };
+		C9A785C4283A74AC00D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; };
+		C9A785C5283A74AC00D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A785C6283A74AC00D9177B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9A785C5283A74AC00D9177B /* ModuleUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A7856B283A66C400D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +49,7 @@
 		C9A78591283A6E3000D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A78592283A6E3000D9177B /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
-		C9A7859D283A6EEF00D9177B /* HorizontalDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
+		C9A785C3283A74AC00D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A785C4283A74AC00D9177B /* ModuleUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +69,7 @@
 			children = (
 				C9A7856D283A66C400D9177B /* ModuleDetails */,
 				C9A7856C283A66C400D9177B /* Products */,
+				C9A785C2283A74AC00D9177B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +84,6 @@
 		C9A7856D283A66C400D9177B /* ModuleDetails */ = {
 			isa = PBXGroup;
 			children = (
-				C9A7859B283A6EDF00D9177B /* Component */,
 				C9A78590283A6E2100D9177B /* Helper */,
 				C9A7858D283A6E0600D9177B /* Shared */,
 				C9A78577283A67E900D9177B /* RepositoryDetails */,
@@ -139,20 +155,12 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		C9A7859B283A6EDF00D9177B /* Component */ = {
+		C9A785C2283A74AC00D9177B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9A7859C283A6EE800D9177B /* Separator */,
+				C9A785C3283A74AC00D9177B /* ModuleUI.framework */,
 			);
-			path = Component;
-			sourceTree = "<group>";
-		};
-		C9A7859C283A6EE800D9177B /* Separator */ = {
-			isa = PBXGroup;
-			children = (
-				C9A7859D283A6EEF00D9177B /* HorizontalDivider.swift */,
-			);
-			path = Separator;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +185,7 @@
 				C9A78567283A66C400D9177B /* Sources */,
 				C9A78568283A66C400D9177B /* Frameworks */,
 				C9A78569283A66C400D9177B /* Resources */,
+				C9A785C6283A74AC00D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,7 +251,6 @@
 				C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */,
 				C9A78593283A6E3100D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */,
-				C9A7859E283A6EEF00D9177B /* HorizontalDivider.swift in Sources */,
 				C9A7857C283A680300D9177B /* LabelValueCellViewModel.swift in Sources */,
 				C9A7858C283A6DF100D9177B /* GithubSearchModel.swift in Sources */,
 			);

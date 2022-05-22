@@ -5,7 +5,7 @@
 
 import UIKit
 
-final class HorizontalDivider: UIView {
+public final class HorizontalDivider: UIView {
     var height: CGFloat = 1 {
         didSet {
             layer.cornerRadius = height / 2
@@ -25,7 +25,7 @@ final class HorizontalDivider: UIView {
         backgroundColor = UIColor.systemGroupedBackground
     }
 
-    override var intrinsicContentSize: CGSize {
+    public override var intrinsicContentSize: CGSize {
         CGSize(width: UIView.noIntrinsicMetric, height: height)
     }
 }

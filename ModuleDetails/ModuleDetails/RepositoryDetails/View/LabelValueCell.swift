@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleUI
 
 final class LabelValueCell: UITableViewCell {
     private lazy var labelLabel: UILabel = {

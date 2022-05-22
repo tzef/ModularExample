@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleUI
 
 final class SearchListCell: UITableViewCell {
     private lazy var titleLabel: UILabel = {
