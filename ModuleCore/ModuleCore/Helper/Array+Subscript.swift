@@ -1,11 +1,11 @@
 //
 //  Array+Safe.swift
-//  ModuleListing
+//  ModuleCore
 //
 
 import Foundation
 
-extension Array {
+public extension Array {
     subscript(safe index: Index) -> Element? {
         indices.contains(index) ? self[index] : nil
     }

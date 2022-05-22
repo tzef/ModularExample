@@ -1,6 +1,6 @@
 //
 //  Observer.swift
-//  ModularSearch
+//  ModuleCore
 //
 
 import Foundation

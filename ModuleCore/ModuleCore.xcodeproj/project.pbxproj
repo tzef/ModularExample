@@ -11,6 +11,8 @@
 		C9A78600283A787F00D9177B /* ModuleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A785FD283A787F00D9177B /* ModuleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A78608283A79A500D9177B /* SearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78607283A79A500D9177B /* SearchStatus.swift */; };
 		C9A78619283A7B3B00D9177B /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78618283A7B3B00D9177B /* GithubSearchModel.swift */; };
+		C9A7861F283A7CF900D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7861E283A7CF900D9177B /* Array+Subscript.swift */; };
+		C9A78621283A7D1B00D9177B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78620283A7D1B00D9177B /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C9A785FE283A787F00D9177B /* ModuleCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleCore.docc; sourceTree = "<group>"; };
 		C9A78607283A79A500D9177B /* SearchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStatus.swift; sourceTree = "<group>"; };
 		C9A78618283A7B3B00D9177B /* GithubSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchModel.swift; sourceTree = "<group>"; };
+		C9A7861E283A7CF900D9177B /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
+		C9A78620283A7D1B00D9177B /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		C9A785FC283A787F00D9177B /* ModuleCore */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7861D283A7CF100D9177B /* Helper */,
 				C9A78617283A7B2900D9177B /* DomainModel */,
 				C9A78606283A798000D9177B /* SearchStatus */,
 				C9A785FD283A787F00D9177B /* ModuleCore.h */,
@@ -73,6 +78,15 @@
 				C9A78618283A7B3B00D9177B /* GithubSearchModel.swift */,
 			);
 			path = DomainModel;
+			sourceTree = "<group>";
+		};
+		C9A7861D283A7CF100D9177B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7861E283A7CF900D9177B /* Array+Subscript.swift */,
+				C9A78620283A7D1B00D9177B /* Observer.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A785FF283A787F00D9177B /* ModuleCore.docc in Sources */,
+				C9A78621283A7D1B00D9177B /* Observer.swift in Sources */,
+				C9A7861F283A7CF900D9177B /* Array+Subscript.swift in Sources */,
 				C9A78608283A79A500D9177B /* SearchStatus.swift in Sources */,
 				C9A78619283A7B3B00D9177B /* GithubSearchModel.swift in Sources */,
 			);

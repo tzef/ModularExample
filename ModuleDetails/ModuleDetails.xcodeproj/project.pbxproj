@@ -14,7 +14,6 @@
 		C9A78580283A68C600D9177B /* LabelValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857E283A68C600D9177B /* LabelValueCell.swift */; };
 		C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */; };
 		C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78588283A6D6C00D9177B /* UIFactory.swift */; };
-		C9A78594283A6E3100D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78592283A6E3000D9177B /* Array+Subscript.swift */; };
 		C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */; };
 		C9A785C4283A74AC00D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; };
 		C9A785C5283A74AC00D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,7 +45,6 @@
 		C9A7857E283A68C600D9177B /* LabelValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelValueCell.swift; sourceTree = "<group>"; };
 		C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		C9A78588283A6D6C00D9177B /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
-		C9A78592283A6E3000D9177B /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
 		C9A785C3283A74AC00D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7861A283A7C0800D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +83,6 @@
 		C9A7856D283A66C400D9177B /* ModuleDetails */ = {
 			isa = PBXGroup;
 			children = (
-				C9A78590283A6E2100D9177B /* Helper */,
 				C9A7858D283A6E0600D9177B /* Shared */,
 				C9A78577283A67E900D9177B /* RepositoryDetails */,
 				C9A7856E283A66C400D9177B /* ModuleDetails.h */,
@@ -136,14 +133,6 @@
 				C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */,
 			);
 			path = Shared;
-			sourceTree = "<group>";
-		};
-		C9A78590283A6E2100D9177B /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				C9A78592283A6E3000D9177B /* Array+Subscript.swift */,
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 		C9A785C2283A74AC00D9177B /* Frameworks */ = {
@@ -236,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A78580283A68C600D9177B /* LabelValueCell.swift in Sources */,
-				C9A78594283A6E3100D9177B /* Array+Subscript.swift in Sources */,
 				C9A7857D283A680300D9177B /* RepositoryDetailsViewModel.swift in Sources */,
 				C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */,
 				C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */,
