@@ -30,7 +30,24 @@
 		C9A78556283A56FE00D9177B /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78555283A56FE00D9177B /* RefreshController.swift */; };
 		C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */; };
 		C9A7855C283A578E00D9177B /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7855B283A578E00D9177B /* HorizontalDivider.swift */; };
+		C9A785A0283A71ED00D9177B /* ModuleDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7859F283A71ED00D9177B /* ModuleDetails.framework */; };
+		C9A785A1283A71ED00D9177B /* ModuleDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7859F283A71ED00D9177B /* ModuleDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A785A4283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785A3283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A785A2283A71ED00D9177B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9A785A1283A71ED00D9177B /* ModuleDetails.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A78519283A53B400D9177B /* ModuleListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +75,8 @@
 		C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedNumberFormatter.swift; sourceTree = "<group>"; };
 		C9A7855B283A578E00D9177B /* HorizontalDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
 		C9A78583283A6D4100D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A7859F283A71ED00D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A785A3283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubSearchModelItem+ModuleDetails.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A785A0283A71ED00D9177B /* ModuleDetails.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +213,7 @@
 			children = (
 				C9A7854F283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift */,
 				C9A78550283A56CE00D9177B /* GithubSearchItem+ViewModel.swift */,
+				C9A785A3283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -233,6 +254,7 @@
 		C9A78582283A6D4100D9177B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7859F283A71ED00D9177B /* ModuleDetails.framework */,
 				C9A78583283A6D4100D9177B /* ModuleDetails.framework */,
 			);
 			name = Frameworks;
@@ -260,6 +282,7 @@
 				C9A78515283A53B400D9177B /* Sources */,
 				C9A78516283A53B400D9177B /* Frameworks */,
 				C9A78517283A53B400D9177B /* Resources */,
+				C9A785A2283A71ED00D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +343,7 @@
 				C9A78547283A565F00D9177B /* Observer.swift in Sources */,
 				C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */,
 				C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */,
+				C9A785A4283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift in Sources */,
 				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
 				C9A7854A283A565F00D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,

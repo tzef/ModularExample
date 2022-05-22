@@ -8,7 +8,7 @@ import Foundation
 public final class UIFactory {
     private init() {}
 
-    static func repositoryDetailsViewController(
+    public static func repositoryDetailsViewController(
         item: GithubSearchModel.Item
     ) -> RepositoryDetailsViewController {
         let viewModel = RepositoryDetailsViewModel(
