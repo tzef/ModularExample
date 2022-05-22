@@ -15,7 +15,6 @@
 		C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */; };
 		C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78588283A6D6C00D9177B /* UIFactory.swift */; };
 		C9A7858C283A6DF100D9177B /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7858B283A6DF100D9177B /* GithubSearchModel.swift */; };
-		C9A78593283A6E3100D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78591283A6E3000D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A78594283A6E3100D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78592283A6E3000D9177B /* Array+Subscript.swift */; };
 		C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */; };
 		C9A785C4283A74AC00D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; };
@@ -46,7 +45,6 @@
 		C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		C9A78588283A6D6C00D9177B /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
 		C9A7858B283A6DF100D9177B /* GithubSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchModel.swift; sourceTree = "<group>"; };
-		C9A78591283A6E3000D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A78592283A6E3000D9177B /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
 		C9A785C3283A74AC00D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +147,6 @@
 		C9A78590283A6E2100D9177B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				C9A78591283A6E3000D9177B /* UITableViewCell+ReuseIdentifier.swift */,
 				C9A78592283A6E3000D9177B /* Array+Subscript.swift */,
 			);
 			path = Helper;
@@ -249,7 +246,6 @@
 				C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */,
 				C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */,
 				C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */,
-				C9A78593283A6E3100D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */,
 				C9A7857C283A680300D9177B /* LabelValueCellViewModel.swift in Sources */,
 				C9A7858C283A6DF100D9177B /* GithubSearchModel.swift in Sources */,

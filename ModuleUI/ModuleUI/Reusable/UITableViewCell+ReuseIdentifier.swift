@@ -1,11 +1,11 @@
 //
 //  UITableViewCell+ReuseIdentifier.swift
-//  ModuleListing
+//  ModuleUI
 //
 
 import UIKit
 
-extension UITableViewCell {
+public extension UITableViewCell {
     static var reuseIdentifier: String {
         String(describing: self)
     }

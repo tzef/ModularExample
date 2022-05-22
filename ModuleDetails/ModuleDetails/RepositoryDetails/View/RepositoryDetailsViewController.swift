@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleUI
 
 public final class RepositoryDetailsViewController: UIViewController {
     private lazy var tableView: UITableView = {

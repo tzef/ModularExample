@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleUI
 import ModuleSearch
 
 public final class RepositoryListViewController: UIViewController {

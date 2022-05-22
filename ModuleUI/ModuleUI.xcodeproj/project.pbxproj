@@ -10,6 +10,7 @@
 		C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A785B3283A73E200D9177B /* ModuleUI.docc */; };
 		C9A785B5283A73E200D9177B /* ModuleUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A785B2283A73E200D9177B /* ModuleUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785BD283A744D00D9177B /* HorizontalDivider.swift */; };
+		C9A785C9283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		C9A785B2283A73E200D9177B /* ModuleUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleUI.h; sourceTree = "<group>"; };
 		C9A785B3283A73E200D9177B /* ModuleUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleUI.docc; sourceTree = "<group>"; };
 		C9A785BD283A744D00D9177B /* HorizontalDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
+		C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A785BB283A743E00D9177B /* Component */,
+				C9A785C7283A754F00D9177B /* Reusable */,
 				C9A785B2283A73E200D9177B /* ModuleUI.h */,
 				C9A785B3283A73E200D9177B /* ModuleUI.docc */,
 			);
@@ -70,6 +73,14 @@
 				C9A785BD283A744D00D9177B /* HorizontalDivider.swift */,
 			);
 			path = Separator;
+			sourceTree = "<group>";
+		};
+		C9A785C7283A754F00D9177B /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			files = (
 				C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */,
 				C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */,
+				C9A785C9283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
