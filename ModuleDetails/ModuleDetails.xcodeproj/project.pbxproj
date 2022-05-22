@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A7856F283A66C400D9177B /* ModuleDetails.docc */; };
 		C9A78571283A66C400D9177B /* ModuleDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A7856E283A66C400D9177B /* ModuleDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A7857C283A680300D9177B /* LabelValueCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857A283A680300D9177B /* LabelValueCellViewModel.swift */; };
+		C9A7857D283A680300D9177B /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857B283A680300D9177B /* RepositoryDetailsViewModel.swift */; };
+		C9A78580283A68C600D9177B /* LabelValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857E283A68C600D9177B /* LabelValueCell.swift */; };
+		C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A7856B283A66C400D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7856E283A66C400D9177B /* ModuleDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDetails.h; sourceTree = "<group>"; };
 		C9A7856F283A66C400D9177B /* ModuleDetails.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleDetails.docc; sourceTree = "<group>"; };
+		C9A7857A283A680300D9177B /* LabelValueCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelValueCellViewModel.swift; sourceTree = "<group>"; };
+		C9A7857B283A680300D9177B /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
+		C9A7857E283A68C600D9177B /* LabelValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelValueCell.swift; sourceTree = "<group>"; };
+		C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +55,38 @@
 		C9A7856D283A66C400D9177B /* ModuleDetails */ = {
 			isa = PBXGroup;
 			children = (
+				C9A78577283A67E900D9177B /* RepositoryDetails */,
 				C9A7856E283A66C400D9177B /* ModuleDetails.h */,
 				C9A7856F283A66C400D9177B /* ModuleDetails.docc */,
 			);
 			path = ModuleDetails;
+			sourceTree = "<group>";
+		};
+		C9A78577283A67E900D9177B /* RepositoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78578283A67F100D9177B /* ViewModel */,
+				C9A78579283A67F600D9177B /* View */,
+			);
+			path = RepositoryDetails;
+			sourceTree = "<group>";
+		};
+		C9A78578283A67F100D9177B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7857B283A680300D9177B /* RepositoryDetailsViewModel.swift */,
+				C9A7857A283A680300D9177B /* LabelValueCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9A78579283A67F600D9177B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */,
+				C9A7857E283A68C600D9177B /* LabelValueCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A78580283A68C600D9177B /* LabelValueCell.swift in Sources */,
+				C9A7857D283A680300D9177B /* RepositoryDetailsViewModel.swift in Sources */,
+				C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */,
 				C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */,
+				C9A7857C283A680300D9177B /* LabelValueCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

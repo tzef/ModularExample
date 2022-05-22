@@ -2,8 +2,6 @@
 //  ModuleDetails.h
 //  ModuleDetails
 //
-//  Created by LEE ZHE YU on 2022/5/22.
-//
 
 #import <Foundation/Foundation.h>
 
