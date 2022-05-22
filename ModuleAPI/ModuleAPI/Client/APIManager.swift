@@ -5,14 +5,14 @@
 
 import Foundation
 
-final class APIManager {
-    static let shared = APIManager()
+public final class APIManager {
+    public static let shared = APIManager()
     private struct UnknownError: Error {}
     private init() {}
 
-    typealias Result = Swift.Result<(Data, URLResponse), Error>
+    public typealias Result = Swift.Result<(Data, URLResponse), Error>
 
-    func request(_ request: URLRequest, completion: @escaping (Result) -> Void ) {
+    public func request(_ request: URLRequest, completion: @escaping (Result) -> Void ) {
         URLSession.shared.dataTask(with: request) { data, response, error in
             completion(Result {
                 if let error = error {

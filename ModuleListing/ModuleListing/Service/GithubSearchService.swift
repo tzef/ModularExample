@@ -5,6 +5,7 @@
 
 import Foundation
 import ModuleCore
+import ModuleAPI
 
 final class GithubSearchService {
     typealias Result = Swift.Result<GithubSearchModel, Error>
