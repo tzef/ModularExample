@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		C9A78631283A7DD200D9177B /* ModuleAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A78630283A7DD200D9177B /* ModuleAPI.docc */; };
 		C9A78632283A7DD200D9177B /* ModuleAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A7862F283A7DD200D9177B /* ModuleAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A7863B283A7E3400D9177B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7863A283A7E3400D9177B /* APIManager.swift */; };
+		C9A7863D283A7E4600D9177B /* JSONDecoder+DateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7863C283A7E4600D9177B /* JSONDecoder+DateStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A7862C283A7DD200D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7862F283A7DD200D9177B /* ModuleAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleAPI.h; sourceTree = "<group>"; };
 		C9A78630283A7DD200D9177B /* ModuleAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleAPI.docc; sourceTree = "<group>"; };
+		C9A7863A283A7E3400D9177B /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C9A7863C283A7E4600D9177B /* JSONDecoder+DateStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateStrategy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +51,28 @@
 		C9A7862E283A7DD200D9177B /* ModuleAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C9A78638283A7E2500D9177B /* Client */,
+				C9A78639283A7E2900D9177B /* Decoder */,
 				C9A7862F283A7DD200D9177B /* ModuleAPI.h */,
 				C9A78630283A7DD200D9177B /* ModuleAPI.docc */,
 			);
 			path = ModuleAPI;
+			sourceTree = "<group>";
+		};
+		C9A78638283A7E2500D9177B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7863A283A7E3400D9177B /* APIManager.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		C9A78639283A7E2900D9177B /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7863C283A7E4600D9177B /* JSONDecoder+DateStrategy.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A7863D283A7E4600D9177B /* JSONDecoder+DateStrategy.swift in Sources */,
+				C9A7863B283A7E3400D9177B /* APIManager.swift in Sources */,
 				C9A78631283A7DD200D9177B /* ModuleAPI.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
