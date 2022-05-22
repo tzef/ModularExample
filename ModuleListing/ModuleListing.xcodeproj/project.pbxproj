@@ -57,6 +57,7 @@
 		C9A78555283A56FE00D9177B /* RefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
 		C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedNumberFormatter.swift; sourceTree = "<group>"; };
 		C9A7855B283A578E00D9177B /* HorizontalDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
+		C9A78583283A6D4100D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			children = (
 				C9A7851B283A53B400D9177B /* ModuleListing */,
 				C9A7851A283A53B400D9177B /* Products */,
+				C9A78582283A6D4100D9177B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +228,14 @@
 				C9A7855B283A578E00D9177B /* HorizontalDivider.swift */,
 			);
 			path = Separator;
+			sourceTree = "<group>";
+		};
+		C9A78582283A6D4100D9177B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78583283A6D4100D9177B /* ModuleDetails.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

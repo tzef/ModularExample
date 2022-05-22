@@ -21,16 +21,4 @@ public final class UIFactory {
         router.viewController = viewController
         return viewController
     }
-// TODO: Implement later
-//    static func repositoryDetailsViewController(
-//        item: GithubSearchModel.Item
-//    ) -> RepositoryDetailsViewController {
-//        let viewModel = RepositoryDetailsViewModel(
-//            item: item
-//        )
-//        let viewController = RepositoryDetailsViewController(
-//            viewModel: viewModel
-//        )
-//        return viewController
-//    }
 }

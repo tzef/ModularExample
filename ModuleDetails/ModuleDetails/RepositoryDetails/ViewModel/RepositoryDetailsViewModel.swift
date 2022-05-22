@@ -1,6 +1,6 @@
 //
 //  RepositoryDetailsViewModel.swift
-//  ModuleDetails
+//  ModuleExample
 //
 
 import Foundation
