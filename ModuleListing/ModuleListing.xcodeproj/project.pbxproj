@@ -15,7 +15,6 @@
 		C9A78532283A554200D9177B /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7852F283A554200D9177B /* LoadingCell.swift */; };
 		C9A78533283A554200D9177B /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78530283A554200D9177B /* SearchListCell.swift */; };
 		C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78531283A554200D9177B /* RepositoryListViewController.swift */; };
-		C9A78537283A560100D9177B /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78536283A560100D9177B /* GithubSearchModel.swift */; };
 		C9A7853A283A561800D9177B /* GithubSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78539283A561800D9177B /* GithubSearchService.swift */; };
 		C9A7853F283A563B00D9177B /* GithubSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7853C283A563B00D9177B /* GithubSearchResponse.swift */; };
 		C9A78540283A563B00D9177B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7853D283A563B00D9177B /* APIManager.swift */; };
@@ -29,7 +28,6 @@
 		C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */; };
 		C9A785A0283A71ED00D9177B /* ModuleDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7859F283A71ED00D9177B /* ModuleDetails.framework */; };
 		C9A785A1283A71ED00D9177B /* ModuleDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7859F283A71ED00D9177B /* ModuleDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9A785A4283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785A3283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift */; };
 		C9A785C0283A74A400D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785BF283A74A400D9177B /* ModuleUI.framework */; };
 		C9A785C1283A74A400D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785BF283A74A400D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7860F283A7A6A00D9177B /* ModuleSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860E283A7A6A00D9177B /* ModuleSearch.framework */; };
@@ -65,7 +63,6 @@
 		C9A7852F283A554200D9177B /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		C9A78530283A554200D9177B /* SearchListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListCell.swift; sourceTree = "<group>"; };
 		C9A78531283A554200D9177B /* RepositoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
-		C9A78536283A560100D9177B /* GithubSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchModel.swift; sourceTree = "<group>"; };
 		C9A78539283A561800D9177B /* GithubSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchService.swift; sourceTree = "<group>"; };
 		C9A7853C283A563B00D9177B /* GithubSearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchResponse.swift; sourceTree = "<group>"; };
 		C9A7853D283A563B00D9177B /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -79,7 +76,6 @@
 		C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedNumberFormatter.swift; sourceTree = "<group>"; };
 		C9A78583283A6D4100D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7859F283A71ED00D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9A785A3283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubSearchModelItem+ModuleDetails.swift"; sourceTree = "<group>"; };
 		C9A785BF283A74A400D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7860E283A7A6A00D9177B /* ModuleSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78611283A7A6F00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +120,6 @@
 				C9A7854B283A567400D9177B /* Composer */,
 				C9A78542283A564D00D9177B /* Helper */,
 				C9A7854E283A56C500D9177B /* Mapper */,
-				C9A78535283A55FA00D9177B /* Model */,
 				C9A78538283A561000D9177B /* Service */,
 				C9A78557283A570E00D9177B /* Shared */,
 				C9A78525283A54F300D9177B /* RepositoryListing */,
@@ -171,14 +166,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C9A78535283A55FA00D9177B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C9A78536283A560100D9177B /* GithubSearchModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		C9A78538283A561000D9177B /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +207,6 @@
 			children = (
 				C9A7854F283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift */,
 				C9A78550283A56CE00D9177B /* GithubSearchItem+ViewModel.swift */,
-				C9A785A3283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -328,7 +314,6 @@
 				C9A78547283A565F00D9177B /* Observer.swift in Sources */,
 				C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */,
 				C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */,
-				C9A785A4283A72B500D9177B /* GithubSearchModelItem+ModuleDetails.swift in Sources */,
 				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
 				C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */,
@@ -340,7 +325,6 @@
 				C9A7853F283A563B00D9177B /* GithubSearchResponse.swift in Sources */,
 				C9A78552283A56CE00D9177B /* GithubSearchItem+ViewModel.swift in Sources */,
 				C9A7854D283A567E00D9177B /* UIFactory.swift in Sources */,
-				C9A78537283A560100D9177B /* GithubSearchModel.swift in Sources */,
 				C9A7852D283A552900D9177B /* SearchListCellViewModel.swift in Sources */,
 				C9A78548283A565F00D9177B /* Array+Subscript.swift in Sources */,
 				C9A7851E283A53B400D9177B /* ModuleListing.docc in Sources */,

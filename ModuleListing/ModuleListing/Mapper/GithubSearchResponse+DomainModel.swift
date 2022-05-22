@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import ModuleCore
 
 extension GithubSearchResponse {
     var searchModel: GithubSearchModel {

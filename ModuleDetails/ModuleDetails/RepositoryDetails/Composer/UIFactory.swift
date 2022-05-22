@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import ModuleCore
 
 public final class UIFactory {
     private init() {}

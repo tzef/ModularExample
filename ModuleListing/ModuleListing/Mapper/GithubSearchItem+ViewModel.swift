@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import ModuleCore
 
 extension GithubSearchModel.Item {
     var searchListCellViewModel: SearchListCellViewModel {

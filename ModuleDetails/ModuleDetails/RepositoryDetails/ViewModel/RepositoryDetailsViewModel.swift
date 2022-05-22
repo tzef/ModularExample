@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import ModuleCore
 
 final class RepositoryDetailsViewModel {
     enum CellViewModel {
