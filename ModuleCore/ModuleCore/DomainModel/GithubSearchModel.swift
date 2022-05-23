@@ -3,8 +3,6 @@
 //  ModuleCore
 //
 
-import Foundation
-
 public struct GithubSearchModel {
     public var total: Int
     public var items: [Item]

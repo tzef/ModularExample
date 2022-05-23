@@ -3,7 +3,6 @@
 //  ModuleListing
 //
 
-import Foundation
 import ModuleCore
 
 final class RepositoryListViewModel {

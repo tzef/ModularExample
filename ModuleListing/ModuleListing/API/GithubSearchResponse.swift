@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import Foundation
-
 struct GithubSearchResponse: Decodable {
     var totalCount: Int
     var incompleteResults: Bool

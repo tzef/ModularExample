@@ -3,7 +3,6 @@
 //  ModuleDetails
 //
 
-import Foundation
 import ModuleCore
 
 public final class UIFactory {

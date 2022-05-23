@@ -3,7 +3,6 @@
 //  ModuleExample
 //
 
-import Foundation
 import ModuleCore
 
 final class RepositoryDetailsViewModel {

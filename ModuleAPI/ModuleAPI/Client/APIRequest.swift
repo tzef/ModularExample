@@ -3,8 +3,6 @@
 //  ModuleAPI
 //
 
-import Foundation
-
 public struct APIRequest<APIModel: Decodable> {
     var url: URL
 

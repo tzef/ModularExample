@@ -3,7 +3,6 @@
 //  ModuleListing
 //
 
-import Foundation
 import ModuleAPI
 
 enum GithubResource {

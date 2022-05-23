@@ -3,8 +3,6 @@
 //  ModuleCore
 //
 
-import Foundation
-
 public enum SearchStatus: Equatable {
     case wait
     case searching
