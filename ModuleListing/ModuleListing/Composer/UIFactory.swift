@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import UIKit
-
 public final class UIFactory {
     private init() {}
 

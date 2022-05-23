@@ -3,7 +3,6 @@
 //  ModularExample
 //
 
-import UIKit
 import ModuleListing
 
 final class UIFactory {
