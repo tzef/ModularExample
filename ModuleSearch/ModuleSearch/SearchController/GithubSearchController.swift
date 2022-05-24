@@ -5,13 +5,6 @@
 
 import UIKit
 
-public enum SearchControllerStatus {
-    case wait
-    case searching
-    case done
-    case fail(message: String)
-}
-
 public final class GithubSearchController: NSObject {
     public var onKeywordSearched: Observer<String>?
 

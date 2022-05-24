@@ -5,11 +5,6 @@
 
 import UIKit
 
-public enum RefreshControllerStatus {
-    case refreshing
-    case none
-}
-
 public final class RefreshController: NSObject {
     public var onRefresh: (() -> Void)?
 
