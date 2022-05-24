@@ -3,8 +3,6 @@
 //  ModuleExample
 //
 
-import ModuleCore
-
 final class RepositoryDetailsViewModel {
     enum CellViewModel {
         case name(value: String)
