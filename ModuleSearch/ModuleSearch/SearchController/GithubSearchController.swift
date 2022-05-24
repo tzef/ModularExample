@@ -5,6 +5,13 @@
 
 import UIKit
 
+public enum SearchControllerStatus {
+    case wait
+    case searching
+    case done
+    case fail(message: String)
+}
+
 public final class GithubSearchController: NSObject {
     public var onKeywordSearched: Observer<String>?
 
@@ -41,7 +48,7 @@ public final class GithubSearchController: NSObject {
         keyword = "swift"
     }
 
-    public func searchStatusChanged(_ status: SearchStatus) {
+    public func searchStatusChanged(_ status: SearchControllerStatus) {
         switch status {
         case .wait:
             githubSearchResultController.statusTitle = "Please input the keyword"

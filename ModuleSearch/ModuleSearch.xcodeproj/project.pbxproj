@@ -13,6 +13,7 @@
 		C9A784FF2839AC2700D9177B /* GithubSearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A784FE2839AC2700D9177B /* GithubSearchResultController.swift */; };
 		C9A785D4283A77AF00D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785D3283A77AF00D9177B /* ModuleUI.framework */; };
 		C9A785D5283A77AF00D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785D3283A77AF00D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A7865B283D116700D9177B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7865A283D116700D9177B /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		C9A784FE2839AC2700D9177B /* GithubSearchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchResultController.swift; sourceTree = "<group>"; };
 		C9A785D3283A77AF00D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78614283A7A7400D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A7865A283D116700D9177B /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		C9A784F02839AB8300D9177B /* ModuleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				C9A78659283D115500D9177B /* Helper */,
 				C9A784FB2839AC0800D9177B /* SearchResult */,
 				C9A784FA2839AC0100D9177B /* SearchController */,
 				C9A784F12839AB8300D9177B /* ModuleSearch.h */,
@@ -102,6 +105,14 @@
 				C9A785D3283A77AF00D9177B /* ModuleUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A78659283D115500D9177B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7865A283D116700D9177B /* Observer.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A784FD2839AC2200D9177B /* GithubSearchController.swift in Sources */,
+				C9A7865B283D116700D9177B /* Observer.swift in Sources */,
 				C9A784F32839AB8300D9177B /* ModuleSearch.docc in Sources */,
 				C9A784FF2839AC2700D9177B /* GithubSearchResultController.swift in Sources */,
 			);
