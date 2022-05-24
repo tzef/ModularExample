@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import ModuleCore
 
 public protocol RepositoryListRouterDelegate {
     func showRepositoryDetailsPage(

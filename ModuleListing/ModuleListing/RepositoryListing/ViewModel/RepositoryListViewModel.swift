@@ -3,7 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleCore
 import ModuleUI
 
 final class RepositoryListViewModel {

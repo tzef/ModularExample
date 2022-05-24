@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleCore
-
 extension GithubSearchModel.Item {
     var searchListCellViewModel: SearchListCellViewModel {
         let watchers = SharedNumberFormatter.shared.format(watchers)

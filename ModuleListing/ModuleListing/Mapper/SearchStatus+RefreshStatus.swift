@@ -3,7 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleCore
 import ModuleUI
 
 extension SearchStatus {

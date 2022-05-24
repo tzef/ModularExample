@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import ModuleCore
 
 final class LoadingCell: UITableViewCell {
     private lazy var errorIcon: UIImageView = {

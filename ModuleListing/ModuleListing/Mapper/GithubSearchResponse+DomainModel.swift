@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleCore
-
 extension GithubSearchResponse {
     var searchModel: GithubSearchModel {
         GithubSearchModel(
