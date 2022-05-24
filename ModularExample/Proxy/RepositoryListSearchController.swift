@@ -31,6 +31,6 @@ final class RepositoryListSearchController: ModuleListing.RepositoryListSearchCo
     }
 
     func searchStatusChanged(_ status: SearchStatus) {
-        controller.searchStatusChanged(status)
+        controller.searchStatusChanged(status.searchControllerStatus)
     }
 }
