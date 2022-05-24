@@ -28,6 +28,7 @@
 		C9A78613283A7A6F00D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78611283A7A6F00D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7867A283DB34800D9177B /* ModuleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78679283DB34800D9177B /* ModuleAPI.framework */; };
 		C9A7867B283DB34800D9177B /* ModuleAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78679283DB34800D9177B /* ModuleAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78646283CE09C00D9177B /* RepositoryListSearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,7 @@
 		C9A7860E283A7A6A00D9177B /* ModuleSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78611283A7A6F00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78679283DB34800D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A78646283CE09C00D9177B /* RepositoryListSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListSearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				C9A7853B283A563000D9177B /* API */,
 				C9A7854B283A567400D9177B /* Composer */,
+				C9A78645283CE04300D9177B /* ExternalComponent */,
 				C9A7854E283A56C500D9177B /* Mapper */,
 				C9A78538283A561000D9177B /* Service */,
 				C9A78557283A570E00D9177B /* Shared */,
@@ -209,6 +212,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9A78645283CE04300D9177B /* ExternalComponent */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78646283CE09C00D9177B /* RepositoryListSearchController.swift */,
+			);
+			path = ExternalComponent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -293,6 +304,7 @@
 				C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */,
 				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
+				C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */,
 				C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */,
 				C9A7853A283A561800D9177B /* GithubSearchService.swift in Sources */,
 				C9A78528283A551000D9177B /* RepositoryListRouter.swift in Sources */,

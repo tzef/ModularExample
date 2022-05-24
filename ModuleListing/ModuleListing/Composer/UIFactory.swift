@@ -7,7 +7,8 @@ public final class UIFactory {
     private init() {}
 
     public static func repositoryListViewController(
-        delegate: RepositoryListRouterDelegate
+        delegate: RepositoryListRouterDelegate,
+        searchController: RepositoryListSearchController
     ) -> RepositoryListViewController {
         let githubSearchService = GithubSearchService()
         let viewModel = RepositoryListViewModel(
@@ -18,7 +19,8 @@ public final class UIFactory {
         )
         let viewController = RepositoryListViewController(
             router: router,
-            viewModel: viewModel
+            viewModel: viewModel,
+            searchController: searchController
         )
         router.viewController = viewController
         return viewController

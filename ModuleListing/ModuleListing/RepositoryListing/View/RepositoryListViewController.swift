@@ -7,18 +7,13 @@ import UIKit
 import ModuleUI
 
 public final class RepositoryListViewController: UIViewController {
-    private lazy var githubSearchController: GithubSearchController = {
-        let githubSearchController = GithubSearchController(navigationItem: navigationItem)
-        return githubSearchController
-    }()
-
     private lazy var refreshController: RefreshController = {
         let refreshController = RefreshController(tableView: tableView)
         refreshController.onRefresh = { [weak self] in
             guard let self = self else {
                 return
             }
-            self.viewModel.search(keyword: self.githubSearchController.keyword)
+            self.viewModel.search(keyword: self.searchController.keyword)
         }
         return refreshController
     }()
@@ -41,13 +36,16 @@ public final class RepositoryListViewController: UIViewController {
 
     private let router: RepositoryListRouter
     private let viewModel: RepositoryListViewModel
+    private var searchController: RepositoryListSearchController
 
     init(
         router: RepositoryListRouter,
-        viewModel: RepositoryListViewModel
+        viewModel: RepositoryListViewModel,
+        searchController: RepositoryListSearchController
     ) {
         self.router = router
         self.viewModel = viewModel
+        self.searchController = searchController
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -59,7 +57,7 @@ public final class RepositoryListViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupBinded()
-        githubSearchController.defaultSearch()
+        searchController.defaultSearch()
     }
 
     public override func viewWillAppear(_ animated: Bool) {
@@ -83,14 +81,14 @@ public final class RepositoryListViewController: UIViewController {
     }
 
     private func setupBinded() {
-        githubSearchController.onKeywordSearched = { [weak self] keyword in
+        searchController.onKeywordSearched = { [weak self] keyword in
             self?.viewModel.search(keyword: keyword)
         }
         viewModel.onSearchLoaded = { [weak self] result in
             self?.tableView.reloadData()
         }
         viewModel.onStatusChangedObservers.append(contentsOf: [
-            githubSearchController.searchStatusChanged(_:),
+            searchController.searchStatusChanged(_:),
             refreshController.searchStatusChanged(_:)
         ])
     }
