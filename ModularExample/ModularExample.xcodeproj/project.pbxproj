@@ -18,6 +18,7 @@
 		C9A78655283CFA9000D9177B /* ModuleDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; };
 		C9A78656283CFA9000D9177B /* ModuleDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7865E283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */; };
+		C9A7866D283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */; };
 		C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */; };
 		C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */; };
 		C9E64C172827A2AF006283E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E64C162827A2AF006283E7 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		C9A78651283CFA4900D9177B /* ModuleSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78654283CFA9000D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchStatus+SearchControllerStatus.swift"; sourceTree = "<group>"; };
+		C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubSearchItem+DetailsSearchItem.swift"; sourceTree = "<group>"; };
 		C9E64C0A2827A2AE006283E7 /* ModularExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */,
+				C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				C9E64C66282FB121006283E7 /* UIFactory.swift in Sources */,
 				C9A78644283CAC8300D9177B /* RepositoryListRouterDelegate.swift in Sources */,
+				C9A7866D283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift in Sources */,
 				C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */,
 				C9A7865E283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift in Sources */,
 				C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */,

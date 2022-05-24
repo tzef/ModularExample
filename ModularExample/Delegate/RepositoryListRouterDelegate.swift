@@ -14,7 +14,7 @@ final class RepositoryListRouterDelegate: ModuleListing.RepositoryListRouterDele
         from viewController: UIViewController?
     ) {
         let detailsViewController = ModuleDetails.UIFactory.repositoryDetailsViewController(
-            item: item
+            item: item.detailsSearchItemModel
         )
         viewController?.show(detailsViewController, sender: nil)
     }
