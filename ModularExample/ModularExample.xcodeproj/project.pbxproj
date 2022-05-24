@@ -14,6 +14,7 @@
 		C9A78650283CE78E00D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7864E283CE78E00D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78655283CFA9000D9177B /* ModuleDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; };
 		C9A78656283CFA9000D9177B /* ModuleDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A7864A283CE55800D9177B /* RepositoryListSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78649283CE55800D9177B /* RepositoryListSearchController.swift */; };
 		C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */; };
 		C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */; };
 		C9E64C172827A2AF006283E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E64C162827A2AF006283E7 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		C9A78643283CAC8300D9177B /* RepositoryListRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRouterDelegate.swift; sourceTree = "<group>"; };
 		C9A7864E283CE78E00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78654283CFA9000D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A78649283CE55800D9177B /* RepositoryListSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListSearchController.swift; sourceTree = "<group>"; };
 		C9E64C0A2827A2AE006283E7 /* ModularExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		C9A78648283CE54B00D9177B /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78649283CE55800D9177B /* RepositoryListSearchController.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 		C9E64C012827A2AE006283E7 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 			children = (
 				C9E64C64282FB106006283E7 /* Composer */,
 				C9A78642283CAC6D00D9177B /* Delegate */,
+				C9A78648283CE54B00D9177B /* Proxy */,
 				C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */,
 				C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */,
 				C9E64C162827A2AF006283E7 /* Assets.xcassets */,
@@ -201,6 +212,7 @@
 				C9A78644283CAC8300D9177B /* RepositoryListRouterDelegate.swift in Sources */,
 				C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */,
 				C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */,
+				C9A7864A283CE55800D9177B /* RepositoryListSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

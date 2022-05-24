@@ -31,8 +31,7 @@ public final class GithubSearchController: NSObject {
         return viewController
     }()
 
-    public init(navigationItem: UINavigationItem) {
-        super.init()
+    public func setup(navigationItem: UINavigationItem) {
         // for fixing the bug related to UIRefreshControl and UISearchController
         // ref: https://developer.apple.com/forums/thread/118457
         navigationItem.hidesSearchBarWhenScrolling = false

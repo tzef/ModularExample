@@ -10,8 +10,10 @@ final class UIFactory {
 
     static func repositoryListViewController() -> RepositoryListViewController {
         let delegate = RepositoryListRouterDelegate()
+        let searchController = RepositoryListSearchController()
         return ModuleListing.UIFactory.repositoryListViewController(
-            delegate: delegate
+            delegate: delegate,
+            searchController: searchController
         )
     }
 }
