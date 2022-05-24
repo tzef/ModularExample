@@ -13,8 +13,6 @@
 		C9A784FF2839AC2700D9177B /* GithubSearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A784FE2839AC2700D9177B /* GithubSearchResultController.swift */; };
 		C9A785D4283A77AF00D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785D3283A77AF00D9177B /* ModuleUI.framework */; };
 		C9A785D5283A77AF00D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785D3283A77AF00D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9A78615283A7A7400D9177B /* ModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78614283A7A7400D9177B /* ModuleCore.framework */; };
-		C9A78616283A7A7400D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78614283A7A7400D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +23,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C9A785D5283A77AF00D9177B /* ModuleUI.framework in Embed Frameworks */,
-				C9A78616283A7A7400D9177B /* ModuleCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +45,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A785D4283A77AF00D9177B /* ModuleUI.framework in Frameworks */,
-				C9A78615283A7A7400D9177B /* ModuleCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
