@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import ModuleDetails
 import ModuleCore
 
 final class RepositoryListRouter {
