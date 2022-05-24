@@ -4,6 +4,7 @@
 //
 
 import ModuleDetails
+import ModuleListing
 
 extension GithubSearchModel.Item {
     var detailsSearchItemModel: SearchItemModel {
