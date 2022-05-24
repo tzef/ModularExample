@@ -24,8 +24,6 @@
 		C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */; };
 		C9A785C0283A74A400D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785BF283A74A400D9177B /* ModuleUI.framework */; };
 		C9A785C1283A74A400D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785BF283A74A400D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9A7860F283A7A6A00D9177B /* ModuleSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860E283A7A6A00D9177B /* ModuleSearch.framework */; };
-		C9A78610283A7A6A00D9177B /* ModuleSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860E283A7A6A00D9177B /* ModuleSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78612283A7A6F00D9177B /* ModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78611283A7A6F00D9177B /* ModuleCore.framework */; };
 		C9A78613283A7A6F00D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78611283A7A6F00D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7867A283DB34800D9177B /* ModuleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78679283DB34800D9177B /* ModuleAPI.framework */; };
@@ -41,7 +39,6 @@
 			files = (
 				C9A7867B283DB34800D9177B /* ModuleAPI.framework in Embed Frameworks */,
 				C9A785C1283A74A400D9177B /* ModuleUI.framework in Embed Frameworks */,
-				C9A78610283A7A6A00D9177B /* ModuleSearch.framework in Embed Frameworks */,
 				C9A78613283A7A6F00D9177B /* ModuleCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -81,7 +78,6 @@
 			files = (
 				C9A7867A283DB34800D9177B /* ModuleAPI.framework in Frameworks */,
 				C9A785C0283A74A400D9177B /* ModuleUI.framework in Frameworks */,
-				C9A7860F283A7A6A00D9177B /* ModuleSearch.framework in Frameworks */,
 				C9A78612283A7A6F00D9177B /* ModuleCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
