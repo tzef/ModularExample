@@ -4,10 +4,12 @@
 //
 
 import ModuleCore
+import ModuleUI
 
 final class RepositoryListViewModel {
     var onSearchLoaded: Observer<GithubSearchModel?>?
-    var onStatusChangedObservers = [Observer<SearchStatus>]()
+    var onSearchStatusChangedObservers = [Observer<SearchStatus>]()
+    var onRefreshStatusChangedObserver: Observer<RefreshControllerStatus>?
 
     private let githubSearchService: GithubSearchService
     private var searchResults: GithubSearchModel? {
@@ -25,9 +27,10 @@ final class RepositoryListViewModel {
 
     private(set) var status = SearchStatus.wait {
         didSet {
-            onStatusChangedObservers.forEach {
+            onSearchStatusChangedObservers.forEach {
                 $0(status)
             }
+            onRefreshStatusChangedObserver?(status.refreshStatus)
         }
     }
 

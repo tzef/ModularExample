@@ -29,6 +29,7 @@
 		C9A7867A283DB34800D9177B /* ModuleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78679283DB34800D9177B /* ModuleAPI.framework */; };
 		C9A7867B283DB34800D9177B /* ModuleAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78679283DB34800D9177B /* ModuleAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78646283CE09C00D9177B /* RepositoryListSearchController.swift */; };
+		C9A78658283D034E00D9177B /* SearchStatus+RefreshStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78657283D034E00D9177B /* SearchStatus+RefreshStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,7 @@
 		C9A78611283A7A6F00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78679283DB34800D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78646283CE09C00D9177B /* RepositoryListSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListSearchController.swift; sourceTree = "<group>"; };
+		C9A78657283D034E00D9177B /* SearchStatus+RefreshStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchStatus+RefreshStatus.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				C9A7854F283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift */,
 				C9A78550283A56CE00D9177B /* GithubSearchItem+ViewModel.swift */,
+				C9A78657283D034E00D9177B /* SearchStatus+RefreshStatus.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
 				C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */,
 				C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */,
+				C9A78658283D034E00D9177B /* SearchStatus+RefreshStatus.swift in Sources */,
 				C9A7853A283A561800D9177B /* GithubSearchService.swift in Sources */,
 				C9A78528283A551000D9177B /* RepositoryListRouter.swift in Sources */,
 				C9A78541283A563B00D9177B /* GithubResource.swift in Sources */,

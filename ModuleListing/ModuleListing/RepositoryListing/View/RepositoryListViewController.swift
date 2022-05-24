@@ -88,10 +88,10 @@ public final class RepositoryListViewController: UIViewController {
         viewModel.onSearchLoaded = { [weak self] result in
             self?.tableView.reloadData()
         }
-        viewModel.onStatusChangedObservers.append(contentsOf: [
-            searchController.searchStatusChanged(_:),
-            refreshController.searchStatusChanged(_:)
-        ])
+        viewModel.onSearchStatusChangedObservers.append(
+            searchController.searchStatusChanged(_:)
+        )
+        viewModel.onRefreshStatusChangedObserver = refreshController.searchStatusChanged(_:)
     }
 }
 
@@ -149,7 +149,7 @@ extension RepositoryListViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.configure()
-            viewModel.onStatusChangedObservers.append(
+            viewModel.onSearchStatusChangedObservers.append(
                 cell.searchStatusChanged(_:)
             )
             viewModel.loadNextPage()
