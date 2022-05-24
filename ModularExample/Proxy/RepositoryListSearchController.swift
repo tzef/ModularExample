@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import ModuleCore
 import ModuleSearch
 import ModuleListing
 

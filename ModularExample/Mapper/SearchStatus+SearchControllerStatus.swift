@@ -3,7 +3,6 @@
 //  ModularExample
 //
 
-import ModuleCore
 import ModuleSearch
 
 extension SearchStatus {

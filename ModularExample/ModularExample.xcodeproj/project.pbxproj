@@ -11,8 +11,6 @@
 		C9A7855F283A5AC300D9177B /* ModuleListing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7855D283A5AC300D9177B /* ModuleListing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78644283CAC8300D9177B /* RepositoryListRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78643283CAC8300D9177B /* RepositoryListRouterDelegate.swift */; };
 		C9A7864A283CE55800D9177B /* RepositoryListSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78649283CE55800D9177B /* RepositoryListSearchController.swift */; };
-		C9A7864F283CE78E00D9177B /* ModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7864E283CE78E00D9177B /* ModuleCore.framework */; };
-		C9A78650283CE78E00D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7864E283CE78E00D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78652283CFA4900D9177B /* ModuleSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78651283CFA4900D9177B /* ModuleSearch.framework */; };
 		C9A78653283CFA4900D9177B /* ModuleSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78651283CFA4900D9177B /* ModuleSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78655283CFA9000D9177B /* ModuleDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; };
@@ -34,7 +32,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C9A7855F283A5AC300D9177B /* ModuleListing.framework in Embed Frameworks */,
-				C9A78650283CE78E00D9177B /* ModuleCore.framework in Embed Frameworks */,
 				C9A78656283CFA9000D9177B /* ModuleDetails.framework in Embed Frameworks */,
 				C9A78653283CFA4900D9177B /* ModuleSearch.framework in Embed Frameworks */,
 			);
@@ -69,7 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A7855E283A5AC300D9177B /* ModuleListing.framework in Frameworks */,
-				C9A7864F283CE78E00D9177B /* ModuleCore.framework in Frameworks */,
 				C9A78655283CFA9000D9177B /* ModuleDetails.framework in Frameworks */,
 				C9A78652283CFA4900D9177B /* ModuleSearch.framework in Frameworks */,
 			);
