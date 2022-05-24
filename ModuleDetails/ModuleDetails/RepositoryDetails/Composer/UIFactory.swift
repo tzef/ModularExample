@@ -7,7 +7,7 @@ public final class UIFactory {
     private init() {}
 
     public static func repositoryDetailsViewController(
-        item: GithubSearchModel.Item
+        item: SearchItemModel
     ) -> RepositoryDetailsViewController {
         let viewModel = RepositoryDetailsViewModel(
             item: item

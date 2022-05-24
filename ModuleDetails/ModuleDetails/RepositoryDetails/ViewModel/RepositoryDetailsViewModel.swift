@@ -95,9 +95,9 @@ final class RepositoryDetailsViewModel {
     }
 
     private let tableData: [CellViewModel]
-    private let item: GithubSearchModel.Item
+    private let item: SearchItemModel
 
-    init(item: GithubSearchModel.Item) {
+    init(item: SearchItemModel) {
         self.item = item
         self.tableData = [
             .name(value: item.name),
