@@ -5,9 +5,6 @@
       location = "group:ModularExample/ModularExample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ModuleCore/ModuleCore.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:ModuleListing/ModuleListing.xcodeproj">
    </FileRef>
    <FileRef
