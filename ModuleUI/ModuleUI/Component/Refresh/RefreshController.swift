@@ -5,6 +5,11 @@
 
 import UIKit
 
+public enum RefreshControllerStatus {
+    case refreshing
+    case none
+}
+
 public final class RefreshController: NSObject {
     public var onRefresh: (() -> Void)?
 
@@ -23,13 +28,11 @@ public final class RefreshController: NSObject {
         onRefresh?()
     }
 
-    public func searchStatusChanged(_ status: SearchStatus) {
+    public func searchStatusChanged(_ status: RefreshControllerStatus) {
         switch status {
-        case .wait:
-            break
-        case .searching:
+        case .refreshing:
             refreshControl.beginRefreshing()
-        case .done, .fail:
+        case .none:
             refreshControl.endRefreshing()
         }
     }
