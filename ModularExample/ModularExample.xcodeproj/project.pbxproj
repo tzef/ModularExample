@@ -10,6 +10,8 @@
 		C9A7855E283A5AC300D9177B /* ModuleListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7855D283A5AC300D9177B /* ModuleListing.framework */; };
 		C9A7855F283A5AC300D9177B /* ModuleListing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7855D283A5AC300D9177B /* ModuleListing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78644283CAC8300D9177B /* RepositoryListRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78643283CAC8300D9177B /* RepositoryListRouterDelegate.swift */; };
+		C9A7864F283CE78E00D9177B /* ModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7864E283CE78E00D9177B /* ModuleCore.framework */; };
+		C9A78650283CE78E00D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7864E283CE78E00D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */; };
 		C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */; };
 		C9E64C172827A2AF006283E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E64C162827A2AF006283E7 /* Assets.xcassets */; };
@@ -25,6 +27,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C9A7855F283A5AC300D9177B /* ModuleListing.framework in Embed Frameworks */,
+				C9A78650283CE78E00D9177B /* ModuleCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +38,7 @@
 		C9A7850B2839B1C400D9177B /* ModuleSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7855D283A5AC300D9177B /* ModuleListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78643283CAC8300D9177B /* RepositoryListRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListRouterDelegate.swift; sourceTree = "<group>"; };
+		C9A7864E283CE78E00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64C0A2827A2AE006283E7 /* ModularExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A7855E283A5AC300D9177B /* ModuleListing.framework in Frameworks */,
+				C9A7864F283CE78E00D9177B /* ModuleCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,7 @@
 		C9A7850A2839B1C400D9177B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7864E283CE78E00D9177B /* ModuleCore.framework */,
 				C9A7855D283A5AC300D9177B /* ModuleListing.framework */,
 				C9A7850B2839B1C400D9177B /* ModuleSearch.framework */,
 			);
