@@ -14,23 +14,7 @@
 		C9A785CF283A76F700D9177B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785CE283A76F700D9177B /* TitleLabel.swift */; };
 		C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */; };
 		C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D8283A780C00D9177B /* RefreshController.swift */; };
-		C9A7860B283A7A5800D9177B /* ModuleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860A283A7A5800D9177B /* ModuleCore.framework */; };
-		C9A7860C283A7A5800D9177B /* ModuleCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7860A283A7A5800D9177B /* ModuleCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C9A7860D283A7A5900D9177B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C9A7860C283A7A5800D9177B /* ModuleCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A785AF283A73E200D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A7860B283A7A5800D9177B /* ModuleCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +140,6 @@
 				C9A785AB283A73E200D9177B /* Sources */,
 				C9A785AC283A73E200D9177B /* Frameworks */,
 				C9A785AD283A73E200D9177B /* Resources */,
-				C9A7860D283A7A5900D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
