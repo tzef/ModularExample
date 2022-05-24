@@ -4,8 +4,8 @@
 //
 
 public struct GithubSearchModel {
-    public var total: Int
-    public var items: [Item]
+    var total: Int
+    var items: [Item]
 
     public init(total: Int, items: [Item]) {
         self.total = total
@@ -27,37 +27,5 @@ public struct GithubSearchModel {
         public var license: String
         public var createdAt: Date?
         public var updatedAt: Date?
-
-        public init(
-            id: Int,
-            name: String,
-            owner: String,
-            fullName: String,
-            description: String,
-            language: String,
-            forks: Int,
-            watchers: Int,
-            openIssues: Int,
-            url: String,
-            homePage: String,
-            license: String,
-            createdAt: Date?,
-            updatedAt: Date?
-        ) {
-            self.id = id
-            self.name = name
-            self.owner = owner
-            self.fullName = fullName
-            self.description = description
-            self.language = language
-            self.forks = forks
-            self.watchers = watchers
-            self.openIssues = openIssues
-            self.url = url
-            self.homePage = homePage
-            self.license = license
-            self.createdAt = createdAt
-            self.updatedAt = updatedAt
-        }
     }
 }
