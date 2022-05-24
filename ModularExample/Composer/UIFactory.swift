@@ -9,6 +9,9 @@ final class UIFactory {
     private init() {}
 
     static func repositoryListViewController() -> RepositoryListViewController {
-        ModuleListing.UIFactory.repositoryListViewController()
+        let delegate = RepositoryListRouterDelegate()
+        return ModuleListing.UIFactory.repositoryListViewController(
+            delegate: delegate
+        )
     }
 }
