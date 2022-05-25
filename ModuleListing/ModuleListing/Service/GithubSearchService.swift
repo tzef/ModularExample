@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleAPI
-
 final class GithubSearchService {
     typealias Result = Swift.Result<GithubSearchModel, Error>
 
