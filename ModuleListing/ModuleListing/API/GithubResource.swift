@@ -17,8 +17,4 @@ enum GithubResource {
     func url() -> URL  {
         URL(string: path())!
     }
-
-    func apiRequest<APIModel: Decodable>() -> APIRequest<APIModel> {
-        APIRequest<APIModel>(url: url())
-    }
 }
