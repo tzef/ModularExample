@@ -3,7 +3,7 @@
 //  ModuleListing
 //
 
-enum GithubResource {
+public enum GithubResource {
     static let perPage = 30
     case search(keyword: String, page: Int)
 
@@ -14,7 +14,7 @@ enum GithubResource {
         }
     }
 
-    func url() -> URL  {
+    public func url() -> URL  {
         URL(string: path())!
     }
 }

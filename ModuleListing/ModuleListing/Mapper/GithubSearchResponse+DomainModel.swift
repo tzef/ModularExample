@@ -3,7 +3,7 @@
 //  ModuleListing
 //
 
-extension GithubSearchResponse {
+public extension GithubSearchResponse {
     var searchModel: GithubSearchModel {
         GithubSearchModel(
             total: totalCount,

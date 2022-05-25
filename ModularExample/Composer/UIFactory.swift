@@ -13,6 +13,7 @@ final class UIFactory {
         let searchController = RepositoryListSearchController()
         return ModuleListing.UIFactory.repositoryListViewController(
             delegate: delegate,
+            githubSearchService: GithubSearchService(),
             searchController: searchController
         )
     }
