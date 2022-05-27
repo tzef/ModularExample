@@ -8,7 +8,24 @@ final class RepositoryListViewModel {
     var onSearchStatusChangedObservers = [Observer<SearchStatus>]()
     var onRefreshControllerIsRefreshingChangedObserver: Observer<Bool>?
 
-    private let githubSearchService: GithubSearchService
+    var title: String {
+        "GitHub Repository Search"
+    }
+
+    var hasNextPage: Bool {
+        guard
+            let total = searchResults?.total,
+            let loadedCount = searchResults?.items.count
+        else {
+            return false
+        }
+        return total > loadedCount
+    }
+
+    var numberOfRows: Int {
+        searchResults?.items.count ?? 0
+    }
+
     private var searchResults: GithubSearchModel? {
         didSet {
             onSearchLoaded?(searchResults)
@@ -31,23 +48,7 @@ final class RepositoryListViewModel {
         }
     }
 
-    var title: String {
-        "GitHub Repository Search"
-    }
-
-    var hasNextPage: Bool {
-        guard
-            let total = searchResults?.total,
-            let loadedCount = searchResults?.items.count
-        else {
-            return false
-        }
-        return total > loadedCount
-    }
-
-    var numberOfRows: Int {
-        searchResults?.items.count ?? 0
-    }
+    private let githubSearchService: GithubSearchService
 
     init(githubSearchService: GithubSearchService) {
         self.githubSearchService = githubSearchService
