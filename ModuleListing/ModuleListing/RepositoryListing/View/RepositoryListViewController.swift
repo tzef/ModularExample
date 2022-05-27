@@ -78,6 +78,7 @@ public final class RepositoryListViewController: UIViewController {
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        searchController.setup(navigationItem: navigationItem)
     }
 
     private func setupBinded() {
