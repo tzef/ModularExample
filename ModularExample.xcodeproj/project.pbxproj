@@ -24,6 +24,7 @@
 		C9E64C162827A2AF006283E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E64C192827A2AF006283E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9E64C1B2827A2AF006283E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E64C6F282FF2C2006283E7 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				C9E64C162827A2AF006283E7 /* Assets.xcassets */,
 				C9E64C182827A2AF006283E7 /* LaunchScreen.storyboard */,
 				C9E64C1B2827A2AF006283E7 /* Info.plist */,
+				C9E64C6F282FF2C2006283E7 /* SampleCode.xcconfig */,
 			);
 			path = ModularExample;
 			sourceTree = "<group>";
@@ -168,6 +170,7 @@
 /* Begin XCBuildConfiguration section */
 		C9E64C1C2827A2AF006283E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E64C6F282FF2C2006283E7 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -300,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bunbunu.ModularExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beemo.modular-example.${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bunbunu.ModularExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beemo.modular-example.${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

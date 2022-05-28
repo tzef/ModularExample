@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  ModularExample
 //
-//  Created by LEE ZHE YU on 2022/5/8.
-//
 
 import UIKit
 
