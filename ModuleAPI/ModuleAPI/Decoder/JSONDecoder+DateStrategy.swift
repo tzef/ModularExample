@@ -5,7 +5,7 @@
 
 import Foundation
 
-public extension JSONDecoder {
+extension JSONDecoder {
     convenience init(dateStrategy: DateDecodingStrategy) {
         self.init()
         dateDecodingStrategy = dateStrategy
