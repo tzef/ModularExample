@@ -23,7 +23,7 @@ final class RepositoryListSearchController: ModuleListing.RepositoryListSearchCo
         controller.keyword
     }
 
-    var onKeywordSearched: Observer<String>? {
+    var onKeywordSearched: ((String) -> Void)? {
         didSet {
             controller.onKeywordSearched = onKeywordSearched
         }

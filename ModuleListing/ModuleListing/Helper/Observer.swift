@@ -3,4 +3,4 @@
 //  ModuleListing
 //
 
-public typealias Observer<T> = (T) -> Void
+typealias Observer<T> = (T) -> Void
