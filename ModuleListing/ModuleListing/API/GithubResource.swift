@@ -3,7 +3,7 @@
 //  ModuleListing
 //
 
-public enum GithubResource: APIResource {
+enum GithubResource: APIResource {
     static let perPage = 30
     case search(keyword: String, page: Int)
 
@@ -14,7 +14,7 @@ public enum GithubResource: APIResource {
         }
     }
 
-    public var url: URL {
+    var url: URL {
         URL(string: path())!
     }
 }
