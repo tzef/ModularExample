@@ -3,7 +3,7 @@
 //  ModuleListing
 //
 
-public struct GithubSearchResponse: Decodable {
+struct GithubSearchResponse: Decodable {
     var totalCount: Int
     var incompleteResults: Bool
     var items: [Item]
