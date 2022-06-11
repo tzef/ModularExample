@@ -21,6 +21,8 @@
 		C9A787502854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7874F2854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A7877E2854DCB100D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7877D2854DCB100D9177B /* ModuleDesignSystem.framework */; };
 		C9A7877F2854DCB100D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7877D2854DCB100D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A787B32855224B00D9177B /* DetailsCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787B22855224B00D9177B /* DetailsCellViewModelMapper.swift */; };
+		C9A787B52855226F00D9177B /* RepositoryDetailsViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787B42855226F00D9177B /* RepositoryDetailsViewModelMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +56,8 @@
 		C9A78669283D20F300D9177B /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		C9A7874F2854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A7877D2854DCB100D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A787B22855224B00D9177B /* DetailsCellViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCellViewModelMapper.swift; sourceTree = "<group>"; };
+		C9A787B42855226F00D9177B /* RepositoryDetailsViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModelMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		C9A78577283A67E900D9177B /* RepositoryDetails */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787B12855223500D9177B /* Mapper */,
 				C9A78578283A67F100D9177B /* ViewModel */,
 				C9A78579283A67F600D9177B /* View */,
 			);
@@ -111,6 +116,7 @@
 		C9A78578283A67F100D9177B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787B42855226F00D9177B /* RepositoryDetailsViewModelMapper.swift */,
 				C9A7857B283A680300D9177B /* RepositoryDetailsViewModel.swift */,
 				C9A7857A283A680300D9177B /* LabelValueCellViewModel.swift */,
 			);
@@ -168,6 +174,14 @@
 				C9A7874F2854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		C9A787B12855223500D9177B /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				C9A787B22855224B00D9177B /* DetailsCellViewModelMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +270,10 @@
 				C9A7857D283A680300D9177B /* RepositoryDetailsViewModel.swift in Sources */,
 				C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */,
 				C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */,
+				C9A787B52855226F00D9177B /* RepositoryDetailsViewModelMapper.swift in Sources */,
 				C9A787502854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */,
+				C9A787B32855224B00D9177B /* DetailsCellViewModelMapper.swift in Sources */,
 				C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */,
 				C9A78666283D205500D9177B /* SearchItemModel.swift in Sources */,
 				C9A7857C283A680300D9177B /* LabelValueCellViewModel.swift in Sources */,
