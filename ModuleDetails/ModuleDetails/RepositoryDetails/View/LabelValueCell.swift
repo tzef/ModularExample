@@ -6,7 +6,7 @@
 import UIKit
 
 final class LabelValueCell: UITableViewCell {
-    private lazy var labelLabel = SubTitleLabel()
+    private lazy var labelLabel = DesignSystem.SubTitleLabel()
 
     private lazy var valueTextView: UITextView = {
         let textView = UITextView()
@@ -21,7 +21,7 @@ final class LabelValueCell: UITableViewCell {
         let stackView = UIStackView(arrangedSubviews: [
             labelLabel,
             valueTextView,
-            HorizontalDivider()
+            DesignSystem.HorizontalDivider()
         ])
         stackView.axis = .vertical
         stackView.spacing = 4
