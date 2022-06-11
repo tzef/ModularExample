@@ -49,9 +49,14 @@ final class RepositoryListViewModel {
     }
 
     private let githubSearchService: GithubSearchService
+    private let itemMapper: RepositoryListViewModelItemMapper
 
-    init(githubSearchService: GithubSearchService) {
+    init(
+        githubSearchService: GithubSearchService,
+        itemMapper: RepositoryListViewModelItemMapper
+    ) {
         self.githubSearchService = githubSearchService
+        self.itemMapper = itemMapper
     }
 
     func search(keyword: String) {
@@ -78,7 +83,7 @@ final class RepositoryListViewModel {
             )
             return nil
         }
-        return item.searchListCellViewModel
+        return itemMapper.toSearchListCellViewModel(from: item)
     }
 
     func searchItemAt(_ index: Int) -> GithubSearchModel.Item? {
