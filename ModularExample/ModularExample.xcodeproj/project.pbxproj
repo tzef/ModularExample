@@ -100,37 +100,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9A78642283CAC6D00D9177B /* Delegate */ = {
+		C9A78792285517B300D9177B /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C9A78643283CAC8300D9177B /* RepositoryListRouterDelegate.swift */,
+				C9A78793285517B800D9177B /* API+Listing */,
 			);
-			path = Delegate;
+			path = API;
 			sourceTree = "<group>";
 		};
-		C9A78648283CE54B00D9177B /* Proxy */ = {
-			isa = PBXGroup;
-			children = (
-				C9A78649283CE55800D9177B /* RepositoryListSearchController.swift */,
-			);
-			path = Proxy;
-			sourceTree = "<group>";
-		};
-		C9A7865C283D11E600D9177B /* Mapper */ = {
-			isa = PBXGroup;
-			children = (
-				C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */,
-				C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */,
-			);
-			path = Mapper;
-			sourceTree = "<group>";
-		};
-		C9A7867E283DB8AF00D9177B /* Service */ = {
+		C9A78793285517B800D9177B /* API+Listing */ = {
 			isa = PBXGroup;
 			children = (
 				C9A7867F283DB8C600D9177B /* GithubSearchService.swift */,
 			);
-			path = Service;
+			path = "API+Listing";
+			sourceTree = "<group>";
+		};
+		C9A78794285518AF00D9177B /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78643283CAC8300D9177B /* RepositoryListRouterDelegate.swift */,
+				C9A787972855190E00D9177B /* Listing+Search */,
+				C9A787982855194000D9177B /* Listing+Details */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		C9A78795285518D400D9177B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78796285518DD00D9177B /* Search+Listing */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C9A78796285518DD00D9177B /* Search+Listing */ = {
+			isa = PBXGroup;
+			children = (
+				C9A78649283CE55800D9177B /* RepositoryListSearchController.swift */,
+			);
+			path = "Search+Listing";
+			sourceTree = "<group>";
+		};
+		C9A787972855190E00D9177B /* Listing+Search */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */,
+			);
+			path = "Listing+Search";
+			sourceTree = "<group>";
+		};
+		C9A787982855194000D9177B /* Listing+Details */ = {
+			isa = PBXGroup;
+			children = (
+				C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */,
+			);
+			path = "Listing+Details";
 			sourceTree = "<group>";
 		};
 		C9E64C012827A2AE006283E7 = {
@@ -154,10 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				C9E64C64282FB106006283E7 /* Composer */,
-				C9A78642283CAC6D00D9177B /* Delegate */,
-				C9A7865C283D11E600D9177B /* Mapper */,
-				C9A78648283CE54B00D9177B /* Proxy */,
-				C9A7867E283DB8AF00D9177B /* Service */,
+				C9A78792285517B300D9177B /* API */,
+				C9A78795285518D400D9177B /* Search */,
+				C9A78794285518AF00D9177B /* Listing */,
 				C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */,
 				C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */,
 				C9E64C162827A2AF006283E7 /* Assets.xcassets */,
