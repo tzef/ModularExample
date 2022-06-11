@@ -6,7 +6,7 @@
 import UIKit
 
 public final class GithubSearchController: NSObject {
-    public var onKeywordSearched: Observer<String>?
+    public var onKeywordSearched: ((String) -> Void)?
 
     public private(set) var keyword: String = "" {
         didSet {
