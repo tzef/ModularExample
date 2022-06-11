@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleDesignSystem
 
 final class LabelValueCell: UITableViewCell {
     private lazy var labelLabel = DesignSystem.SubTitleLabel()
