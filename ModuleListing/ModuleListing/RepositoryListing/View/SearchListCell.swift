@@ -6,22 +6,22 @@
 import UIKit
 
 final class SearchListCell: UITableViewCell {
-    private lazy var titleLabel = TitleLabel()
+    private lazy var titleLabel = DesignSystem.TitleLabel()
 
     private lazy var descriptionLabel: UILabel = {
-        let label = SubTitleLabel()
+        let label = DesignSystem.SubTitleLabel()
         label.numberOfLines = 3
         return label
     }()
 
-    private lazy var footerLabel = SubTitleLabel()
+    private lazy var footerLabel = DesignSystem.SubTitleLabel()
 
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
             titleLabel,
             descriptionLabel,
             footerLabel,
-            HorizontalDivider()
+            DesignSystem.HorizontalDivider()
         ])
         stackView.axis = .vertical
         stackView.spacing = 4
