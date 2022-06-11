@@ -5,7 +5,9 @@
 
 import UIKit
 
-final class GithubSearchController: NSObject, SearchControllerService {
+public class SearchController: NSObject {}
+
+final class GithubSearchController: SearchController, SearchControllerService {
     var onKeywordSearched: ((String) -> Void)?
 
     private(set) var keyword: String = "" {
