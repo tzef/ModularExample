@@ -31,6 +31,7 @@
 		C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A7877A2854DC2B00D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */; };
 		C9A7877B2854DC2B00D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A7879A28551A9100D9177B /* GithubSearchRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879928551A9100D9177B /* GithubSearchRespository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,7 @@
 		C9A78679283DB34800D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A7879928551A9100D9177B /* GithubSearchRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchRespository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				C9A7853E283A563B00D9177B /* GithubResource.swift */,
 				C9A7853C283A563B00D9177B /* GithubSearchResponse.swift */,
+				C9A7879928551A9100D9177B /* GithubSearchRespository.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A7879A28551A9100D9177B /* GithubSearchRespository.swift in Sources */,
 				C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */,
 				C9A78672283D9D3D00D9177B /* Observer.swift in Sources */,
 				C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */,

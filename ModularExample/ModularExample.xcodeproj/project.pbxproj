@@ -17,7 +17,6 @@
 		C9A78656283CFA9000D9177B /* ModuleDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7865E283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */; };
 		C9A7866D283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */; };
-		C9A78680283DB8C600D9177B /* GithubSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7867F283DB8C600D9177B /* GithubSearchService.swift */; };
 		C9A7869E283E8E1500D9177B /* ModuleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7869D283E8E1500D9177B /* ModuleAPI.framework */; };
 		C9A7869F283E8E1500D9177B /* ModuleAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7869D283E8E1500D9177B /* ModuleAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A787902854E1F200D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7878F2854E1F200D9177B /* ModuleUI.framework */; };
@@ -57,7 +56,6 @@
 		C9A78654283CFA9000D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7865D283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchStatus+SearchControllerStatus.swift"; sourceTree = "<group>"; };
 		C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubSearchItem+DetailsSearchItem.swift"; sourceTree = "<group>"; };
-		C9A7867F283DB8C600D9177B /* GithubSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchService.swift; sourceTree = "<group>"; };
 		C9A7869D283E8E1500D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7878F2854E1F200D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64C0A2827A2AE006283E7 /* ModularExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 		C9A78793285517B800D9177B /* API+Listing */ = {
 			isa = PBXGroup;
 			children = (
-				C9A7867F283DB8C600D9177B /* GithubSearchService.swift */,
 			);
 			path = "API+Listing";
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 				C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */,
 				C9A7865E283D11F900D9177B /* SearchStatus+SearchControllerStatus.swift in Sources */,
 				C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */,
-				C9A78680283DB8C600D9177B /* GithubSearchService.swift in Sources */,
 				C9A7864A283CE55800D9177B /* RepositoryListSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

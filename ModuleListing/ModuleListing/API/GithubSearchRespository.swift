@@ -1,12 +1,11 @@
 //
-//  GithubSearchService.swift
-//  ModularExample
+//  GithubSearchRepository.swift
+//  ModuleListing
 //
 
-import ModuleAPI
-import ModuleListing
+import Foundation
 
-final class GithubSearchService: ModuleListing.GithubSearchService {
+final class GithubSearchRepository: GithubSearchService {
     func search(
         keyword: String,
         page: Int,
