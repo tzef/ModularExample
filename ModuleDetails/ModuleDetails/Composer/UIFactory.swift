@@ -3,11 +3,14 @@
 //  ModuleDetails
 //
 
+import ModuleDesignSystem
+
 public final class UIFactory {
     private init() {}
 
     public static func repositoryDetailsViewController(
-        item: SearchItemModel
+        item: SearchItemModel,
+        designSystemFactory: DesignSystemFactory
     ) -> RepositoryDetailsViewController {
         let viewModel = RepositoryDetailsViewModel(
             item: item
@@ -15,6 +18,7 @@ public final class UIFactory {
         let viewController = RepositoryDetailsViewController(
             viewModel: viewModel
         )
+        DesignSystem.setup(factory: designSystemFactory)
         return viewController
     }
 }

@@ -3,13 +3,16 @@
 //  ModuleListing
 //
 
+import ModuleDesignSystem
+
 public final class UIFactory {
     private init() {}
 
     public static func repositoryListViewController(
         delegate: RepositoryListRouterDelegate,
         githubSearchService: GithubSearchService,
-        searchController: RepositoryListSearchController
+        searchController: RepositoryListSearchController,
+        designSystemFactory: DesignSystemFactory
     ) -> RepositoryListViewController {
         let viewModel = RepositoryListViewModel(
             githubSearchService: githubSearchService
@@ -23,6 +26,7 @@ public final class UIFactory {
             searchController: searchController
         )
         router.viewController = viewController
+        DesignSystem.setup(factory: designSystemFactory)
         return viewController
     }
 }

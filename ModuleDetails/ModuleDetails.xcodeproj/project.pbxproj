@@ -88,6 +88,7 @@
 		C9A7856D283A66C400D9177B /* ModuleDetails */ = {
 			isa = PBXGroup;
 			children = (
+				C9A78587283A6D6300D9177B /* Composer */,
 				C9A78667283D20EC00D9177B /* Helper */,
 				C9A78664283D204600D9177B /* Model */,
 				C9A7858D283A6E0600D9177B /* Shared */,
@@ -101,7 +102,6 @@
 		C9A78577283A67E900D9177B /* RepositoryDetails */ = {
 			isa = PBXGroup;
 			children = (
-				C9A78587283A6D6300D9177B /* Composer */,
 				C9A78578283A67F100D9177B /* ViewModel */,
 				C9A78579283A67F600D9177B /* View */,
 			);

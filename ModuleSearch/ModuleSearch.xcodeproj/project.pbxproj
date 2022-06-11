@@ -15,6 +15,7 @@
 		C9A78661283D125300D9177B /* SearchControllerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78660283D125300D9177B /* SearchControllerStatus.swift */; };
 		C9A787822854DCFB00D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787812854DCFB00D9177B /* ModuleDesignSystem.framework */; };
 		C9A787832854DCFB00D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787812854DCFB00D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A787872854E05100D9177B /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787862854E05100D9177B /* UIFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		C9A7865A283D116700D9177B /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		C9A78660283D125300D9177B /* SearchControllerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchControllerStatus.swift; sourceTree = "<group>"; };
 		C9A787812854DCFB00D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A787862854E05100D9177B /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		C9A784F02839AB8300D9177B /* ModuleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787852854E04500D9177B /* Composer */,
 				C9A78659283D115500D9177B /* Helper */,
 				C9A7865F283D124400D9177B /* Status */,
 				C9A784FB2839AC0800D9177B /* SearchResult */,
@@ -126,6 +129,14 @@
 				C9A78660283D125300D9177B /* SearchControllerStatus.swift */,
 			);
 			path = Status;
+			sourceTree = "<group>";
+		};
+		C9A787852854E04500D9177B /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				C9A787862854E05100D9177B /* UIFactory.swift */,
+			);
+			path = Composer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			files = (
 				C9A784FD2839AC2200D9177B /* GithubSearchController.swift in Sources */,
 				C9A7865B283D116700D9177B /* Observer.swift in Sources */,
+				C9A787872854E05100D9177B /* UIFactory.swift in Sources */,
 				C9A784F32839AB8300D9177B /* ModuleSearch.docc in Sources */,
 				C9A784FF2839AC2700D9177B /* GithubSearchResultController.swift in Sources */,
 				C9A78661283D125300D9177B /* SearchControllerStatus.swift in Sources */,
