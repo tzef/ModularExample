@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		C9A7876C2854DA6D00D9177B /* ModuleDesignSystem.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A7876B2854DA6D00D9177B /* ModuleDesignSystem.docc */; };
 		C9A7876D2854DA6D00D9177B /* ModuleDesignSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A7876A2854DA6D00D9177B /* ModuleDesignSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A787742854DAEE00D9177B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787732854DAEE00D9177B /* DesignSystem.swift */; };
+		C9A787762854DB3F00D9177B /* DesignSystemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787752854DB3F00D9177B /* DesignSystemFactory.swift */; };
+		C9A787782854DB5100D9177B /* TableViewRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787772854DB5100D9177B /* TableViewRefreshController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A787672854DA6D00D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7876A2854DA6D00D9177B /* ModuleDesignSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDesignSystem.h; sourceTree = "<group>"; };
 		C9A7876B2854DA6D00D9177B /* ModuleDesignSystem.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleDesignSystem.docc; sourceTree = "<group>"; };
+		C9A787732854DAEE00D9177B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		C9A787752854DB3F00D9177B /* DesignSystemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemFactory.swift; sourceTree = "<group>"; };
+		C9A787772854DB5100D9177B /* TableViewRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRefreshController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 		C9A787692854DA6D00D9177B /* ModuleDesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787732854DAEE00D9177B /* DesignSystem.swift */,
+				C9A787752854DB3F00D9177B /* DesignSystemFactory.swift */,
+				C9A787772854DB5100D9177B /* TableViewRefreshController.swift */,
 				C9A7876A2854DA6D00D9177B /* ModuleDesignSystem.h */,
 				C9A7876B2854DA6D00D9177B /* ModuleDesignSystem.docc */,
 			);
@@ -132,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A787762854DB3F00D9177B /* DesignSystemFactory.swift in Sources */,
+				C9A787742854DAEE00D9177B /* DesignSystem.swift in Sources */,
+				C9A787782854DB5100D9177B /* TableViewRefreshController.swift in Sources */,
 				C9A7876C2854DA6D00D9177B /* ModuleDesignSystem.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
