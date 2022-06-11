@@ -28,6 +28,7 @@
 		C9A78672283D9D3D00D9177B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78670283D9D3D00D9177B /* Observer.swift */; };
 		C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78674283D9D8900D9177B /* GithubSearchModel.swift */; };
 		C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78677283D9DC600D9177B /* SearchStatus.swift */; };
+		C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		C9A78674283D9D8900D9177B /* GithubSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchModel.swift; sourceTree = "<group>"; };
 		C9A78677283D9DC600D9177B /* SearchStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStatus.swift; sourceTree = "<group>"; };
 		C9A78679283DB34800D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				C9A7866F283D9D3D00D9177B /* Array+Subscript.swift */,
 				C9A78670283D9D3D00D9177B /* Observer.swift */,
+				C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */,
 				C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */,
 				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
+				C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
 				C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */,
 				C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */,

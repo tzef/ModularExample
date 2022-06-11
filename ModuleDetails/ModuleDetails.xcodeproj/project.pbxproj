@@ -18,6 +18,7 @@
 		C9A78666283D205500D9177B /* SearchItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78665283D205500D9177B /* SearchItemModel.swift */; };
 		C9A7866A283D20F300D9177B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78668283D20F300D9177B /* Observer.swift */; };
 		C9A7866B283D20F300D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78669283D20F300D9177B /* Array+Subscript.swift */; };
+		C9A787502854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7874F2854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C9A78665283D205500D9177B /* SearchItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemModel.swift; sourceTree = "<group>"; };
 		C9A78668283D20F300D9177B /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		C9A78669283D20F300D9177B /* Array+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
+		C9A7874F2854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				C9A78669283D20F300D9177B /* Array+Subscript.swift */,
 				C9A78668283D20F300D9177B /* Observer.swift */,
+				C9A7874F2854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				C9A7857D283A680300D9177B /* RepositoryDetailsViewModel.swift in Sources */,
 				C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */,
 				C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */,
+				C9A787502854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */,
 				C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */,
 				C9A78666283D205500D9177B /* SearchItemModel.swift in Sources */,

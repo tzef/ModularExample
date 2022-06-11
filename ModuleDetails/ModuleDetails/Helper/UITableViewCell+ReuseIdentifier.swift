@@ -1,6 +1,6 @@
 //
 //  UITableViewCell+ReuseIdentifier.swift
-//  ModuleUI
+//  ModuleDetails
 //
 
 import UIKit
@@ -10,3 +10,4 @@ public extension UITableViewCell {
         String(describing: self)
     }
 }
+

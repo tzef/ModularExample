@@ -10,7 +10,6 @@
 		C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = C9A785B3283A73E200D9177B /* ModuleUI.docc */; };
 		C9A785B5283A73E200D9177B /* ModuleUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A785B2283A73E200D9177B /* ModuleUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785BD283A744D00D9177B /* HorizontalDivider.swift */; };
-		C9A785C9283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A785CF283A76F700D9177B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785CE283A76F700D9177B /* TitleLabel.swift */; };
 		C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */; };
 		C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D8283A780C00D9177B /* RefreshController.swift */; };
@@ -22,7 +21,6 @@
 		C9A785B2283A73E200D9177B /* ModuleUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleUI.h; sourceTree = "<group>"; };
 		C9A785B3283A73E200D9177B /* ModuleUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ModuleUI.docc; sourceTree = "<group>"; };
 		C9A785BD283A744D00D9177B /* HorizontalDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
-		C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A785CE283A76F700D9177B /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleLabel.swift; sourceTree = "<group>"; };
 		C9A785D8283A780C00D9177B /* RefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			children = (
 				C9A785BB283A743E00D9177B /* Component */,
 				C9A785CD283A76E800D9177B /* Label */,
-				C9A785C7283A754F00D9177B /* Reusable */,
 				C9A785B2283A73E200D9177B /* ModuleUI.h */,
 				C9A785B3283A73E200D9177B /* ModuleUI.docc */,
 			);
@@ -85,14 +82,6 @@
 				C9A785BD283A744D00D9177B /* HorizontalDivider.swift */,
 			);
 			path = Separator;
-			sourceTree = "<group>";
-		};
-		C9A785C7283A754F00D9177B /* Reusable */ = {
-			isa = PBXGroup;
-			children = (
-				C9A785C8283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift */,
-			);
-			path = Reusable;
 			sourceTree = "<group>";
 		};
 		C9A785CD283A76E800D9177B /* Label */ = {
@@ -206,7 +195,6 @@
 				C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */,
 				C9A78663283D127400D9177B /* RefreshControllerStatus.swift in Sources */,
 				C9A785BE283A744D00D9177B /* HorizontalDivider.swift in Sources */,
-				C9A785C9283A756400D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
