@@ -11,10 +11,10 @@ final class UIFactory {
 
     static func repositoryListViewController() -> RepositoryListViewController {
         let apiService = RepositoryListAPIService()
-        let delegate = RepositoryListRouterDelegate()
+        let uiFactory = RepositoryDetailsUIFactory()
         let searchController = RepositoryListSearchController()
         return ModuleListing.UIFactory.repositoryListViewController(
-            delegate: delegate,
+            uiFactory: uiFactory,
             apiService: apiService,
             searchController: searchController,
             designSystemFactory: ModuleUI.DesignSystemFactory()
