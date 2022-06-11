@@ -25,4 +25,8 @@ final class DesignSystem {
     static func HorizontalDivider() -> UIView {
         DesignSystem.shared.factory.makeHorizontalDivider()
     }
+
+    static func RefreshController(tableView: UITableView) -> TableViewRefreshController {
+        DesignSystem.shared.factory.makeTableViewRefreshController()
+    }
 }

@@ -31,6 +31,7 @@
 		C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
 		C9A787582854D8DD00D9177B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787572854D8DD00D9177B /* DesignSystem.swift */; };
 		C9A7875A2854D8EE00D9177B /* DesignSystemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787592854D8EE00D9177B /* DesignSystemFactory.swift */; };
+		C9A7875C2854D96500D9177B /* TableViewRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7875B2854D96500D9177B /* TableViewRefreshController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A787572854D8DD00D9177B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		C9A787592854D8EE00D9177B /* DesignSystemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemFactory.swift; sourceTree = "<group>"; };
+		C9A7875B2854D96500D9177B /* TableViewRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRefreshController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				C9A787572854D8DD00D9177B /* DesignSystem.swift */,
 				C9A787592854D8EE00D9177B /* DesignSystemFactory.swift */,
+				C9A7875B2854D96500D9177B /* TableViewRefreshController.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
 				C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */,
 				C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */,
+				C9A7875C2854D96500D9177B /* TableViewRefreshController.swift in Sources */,
 				C9A78671283D9D3D00D9177B /* Array+Subscript.swift in Sources */,
 				C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */,
 				C9A78658283D034E00D9177B /* SearchStatus+RefreshStatus.swift in Sources */,

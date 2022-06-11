@@ -9,5 +9,5 @@ protocol DesignSystemFactory {
     func makeTitleLabel() -> UILabel
     func makeSubTitleLabel() -> UILabel
     func makeHorizontalDivider() -> UIView
+    func makeTableViewRefreshController() -> TableViewRefreshController
 }
-

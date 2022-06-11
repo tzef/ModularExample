@@ -4,12 +4,12 @@
 //
 
 extension SearchStatus {
-    var refreshStatus: RefreshControllerStatus {
+    var isRefreshing: Bool {
         switch self {
-        case .wait, .done:
-            return .none
-        case .searching, .fail:
-            return .refreshing
+        case .wait, .done, .fail:
+            return false
+        case .searching:
+            return true
         }
     }
 }

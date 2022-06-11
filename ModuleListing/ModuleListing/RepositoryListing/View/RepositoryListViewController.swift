@@ -6,8 +6,8 @@
 import UIKit
 
 public final class RepositoryListViewController: UIViewController {
-    private lazy var refreshController: RefreshController = {
-        let refreshController = RefreshController(tableView: tableView)
+    private lazy var refreshController: TableViewRefreshController = {
+        let refreshController = DesignSystem.RefreshController(tableView: tableView)
         refreshController.onRefresh = { [weak self] in
             guard let self = self else {
                 return
@@ -90,7 +90,7 @@ public final class RepositoryListViewController: UIViewController {
         viewModel.onSearchStatusChangedObservers.append(
             searchController.searchStatusChanged(_:)
         )
-        viewModel.onRefreshStatusChangedObserver = refreshController.searchStatusChanged(_:)
+        viewModel.onRefreshControllerIsRefreshingChangedObserver = refreshController.isRefreshingChanged(_:)
     }
 }
 

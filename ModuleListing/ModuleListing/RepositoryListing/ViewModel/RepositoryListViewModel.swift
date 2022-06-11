@@ -6,7 +6,7 @@
 final class RepositoryListViewModel {
     var onSearchLoaded: Observer<GithubSearchModel?>?
     var onSearchStatusChangedObservers = [Observer<SearchStatus>]()
-    var onRefreshStatusChangedObserver: Observer<RefreshControllerStatus>?
+    var onRefreshControllerIsRefreshingChangedObserver: Observer<Bool>?
 
     private let githubSearchService: GithubSearchService
     private var searchResults: GithubSearchModel? {
@@ -27,7 +27,7 @@ final class RepositoryListViewModel {
             onSearchStatusChangedObservers.forEach {
                 $0(status)
             }
-            onRefreshStatusChangedObserver?(status.refreshStatus)
+            onRefreshControllerIsRefreshingChangedObserver?(status.isRefreshing)
         }
     }
 
