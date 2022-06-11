@@ -12,7 +12,7 @@ final class GithubSearchResultController: UIViewController {
         }
     }
 
-    private lazy var titleLabel = TitleLabel()
+    private lazy var titleLabel = DesignSystem.TitleLabel()
 
     override func viewDidLoad() {
         setupView()
