@@ -3,6 +3,7 @@
 //  ModularExample
 //
 
+import ModuleUI
 import ModuleListing
 
 final class UIFactory {
@@ -14,7 +15,8 @@ final class UIFactory {
         return ModuleListing.UIFactory.repositoryListViewController(
             delegate: delegate,
             githubSearchService: GithubSearchService(),
-            searchController: searchController
+            searchController: searchController,
+            designSystemFactory: ModuleUI.DesignSystemFactory()
         )
     }
 }
