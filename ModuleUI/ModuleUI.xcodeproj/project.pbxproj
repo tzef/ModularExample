@@ -14,7 +14,24 @@
 		C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D0283A76FF00D9177B /* SubTitleLabel.swift */; };
 		C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A785D8283A780C00D9177B /* RefreshController.swift */; };
 		C9A78663283D127400D9177B /* RefreshControllerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78662283D127400D9177B /* RefreshControllerStatus.swift */; };
+		C9A7878A2854E11C00D9177B /* DesignSystemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787892854E11C00D9177B /* DesignSystemFactory.swift */; };
+		C9A7878C2854E14700D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7878B2854E14700D9177B /* ModuleDesignSystem.framework */; };
+		C9A7878D2854E14700D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7878B2854E14700D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A7878E2854E14700D9177B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9A7878D2854E14700D9177B /* ModuleDesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A785AF283A73E200D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,8 @@
 		C9A785D8283A780C00D9177B /* RefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshController.swift; sourceTree = "<group>"; };
 		C9A7860A283A7A5800D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78662283D127400D9177B /* RefreshControllerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControllerStatus.swift; sourceTree = "<group>"; };
+		C9A787892854E11C00D9177B /* DesignSystemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemFactory.swift; sourceTree = "<group>"; };
+		C9A7878B2854E14700D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A7878C2854E14700D9177B /* ModuleDesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +79,7 @@
 		C9A785B1283A73E200D9177B /* ModuleUI */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787882854E11000D9177B /* DesignSystem */,
 				C9A785BB283A743E00D9177B /* Component */,
 				C9A785CD283A76E800D9177B /* Label */,
 				C9A785B2283A73E200D9177B /* ModuleUI.h */,
@@ -105,9 +126,18 @@
 		C9A78609283A7A5800D9177B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7878B2854E14700D9177B /* ModuleDesignSystem.framework */,
 				C9A7860A283A7A5800D9177B /* ModuleCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A787882854E11000D9177B /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				C9A787892854E11C00D9177B /* DesignSystemFactory.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +162,7 @@
 				C9A785AB283A73E200D9177B /* Sources */,
 				C9A785AC283A73E200D9177B /* Frameworks */,
 				C9A785AD283A73E200D9177B /* Resources */,
+				C9A7878E2854E14700D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A785B4283A73E200D9177B /* ModuleUI.docc in Sources */,
+				C9A7878A2854E11C00D9177B /* DesignSystemFactory.swift in Sources */,
 				C9A785CF283A76F700D9177B /* TitleLabel.swift in Sources */,
 				C9A785D1283A76FF00D9177B /* SubTitleLabel.swift in Sources */,
 				C9A785D9283A780C00D9177B /* RefreshController.swift in Sources */,

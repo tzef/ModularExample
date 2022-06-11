@@ -4,18 +4,17 @@
 //
 
 import UIKit
+import ModuleDesignSystem
 
-public final class RefreshController: NSObject {
-    public var onRefresh: (() -> Void)?
-
+final class RefreshController: TableViewRefreshController {
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         return refreshControl
     }()
 
-    public init(tableView: UITableView) {
-        super.init()
+    override init(tableView: UITableView) {
+        super.init(tableView: tableView)
         tableView.refreshControl = refreshControl
     }
 
@@ -23,11 +22,10 @@ public final class RefreshController: NSObject {
         onRefresh?()
     }
 
-    public func searchStatusChanged(_ status: RefreshControllerStatus) {
-        switch status {
-        case .refreshing:
+    override func isRefreshingChanged(_ isRefreshing: Bool) {
+        if isRefreshing {
             refreshControl.beginRefreshing()
-        case .none:
+        } else {
             refreshControl.endRefreshing()
         }
     }

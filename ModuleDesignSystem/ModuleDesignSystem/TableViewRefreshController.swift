@@ -5,14 +5,14 @@
 
 import UIKit
 
-public class TableViewRefreshController: NSObject {
+open class TableViewRefreshController: NSObject {
     private let tableView: UITableView
     public var onRefresh: (() -> Void)?
 
-    init(tableView: UITableView) {
+    public init(tableView: UITableView) {
         self.tableView = tableView
         super.init()
     }
 
-    public func isRefreshingChanged(_ isRefreshing: Bool) {}
+    open func isRefreshingChanged(_ isRefreshing: Bool) {}
 }
