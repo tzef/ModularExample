@@ -35,6 +35,7 @@
 		C9A7879C28551B5200D9177B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879B28551B5200D9177B /* APIRequest.swift */; };
 		C9A7879E28551B6E00D9177B /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879D28551B6E00D9177B /* APIResource.swift */; };
 		C9A787A028551B9600D9177B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879F28551B9600D9177B /* APIService.swift */; };
+		C9A787A828551EDF00D9177B /* RepositoryDetailsUIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787A728551EDF00D9177B /* RepositoryDetailsUIFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 		C9A7879B28551B5200D9177B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		C9A7879D28551B6E00D9177B /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
 		C9A7879F28551B9600D9177B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C9A787A728551EDF00D9177B /* RepositoryDetailsUIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsUIFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A78527283A551000D9177B /* RepositoryListRouter.swift */,
+				C9A787A728551EDF00D9177B /* RepositoryDetailsUIFactory.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			files = (
 				C9A7879A28551A9100D9177B /* GithubSearchRespository.swift in Sources */,
 				C9A787A028551B9600D9177B /* APIService.swift in Sources */,
+				C9A787A828551EDF00D9177B /* RepositoryDetailsUIFactory.swift in Sources */,
 				C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */,
 				C9A78672283D9D3D00D9177B /* Observer.swift in Sources */,
 				C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */,

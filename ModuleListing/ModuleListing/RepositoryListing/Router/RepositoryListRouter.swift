@@ -5,12 +5,6 @@
 
 import UIKit
 
-public protocol RepositoryDetailsUIFactory {
-    func repositoryDetailsViewController(
-        with item: GithubSearchModel.Item
-    ) -> UIViewController
-}
-
 final class RepositoryListRouter {
     weak var viewController: UIViewController?
 
