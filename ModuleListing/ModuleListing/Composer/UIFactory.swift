@@ -20,9 +20,11 @@ public final class UIFactory {
             responseMapper: responseMapper
         )        
         let itemMapper = GithubSearchModelItemMapper()
+        let searchStatus = ListingSearchStatusMapper()
         let viewModel = RepositoryListViewModel(
             githubSearchService: searchService,
-            itemMapper: itemMapper
+            itemMapper: itemMapper,
+            searchStatusMapper: searchStatus
         )
         let router = RepositoryListRouter(
             uiFactory: uiFactory

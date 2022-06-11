@@ -44,19 +44,24 @@ final class RepositoryListViewModel {
             onSearchStatusChangedObservers.forEach {
                 $0(status)
             }
-            onRefreshControllerIsRefreshingChangedObserver?(status.isRefreshing)
+            onRefreshControllerIsRefreshingChangedObserver?(
+                searchStatusMapper.toRefreshControllerIsRefreshing(from: status)
+            )
         }
     }
 
     private let githubSearchService: GithubSearchService
     private let itemMapper: RepositoryListViewModelItemMapper
+    private let searchStatusMapper: RepositoryListViewModelStatusMapper
 
     init(
         githubSearchService: GithubSearchService,
-        itemMapper: RepositoryListViewModelItemMapper
+        itemMapper: RepositoryListViewModelItemMapper,
+        searchStatusMapper: RepositoryListViewModelStatusMapper
     ) {
         self.githubSearchService = githubSearchService
         self.itemMapper = itemMapper
+        self.searchStatusMapper = searchStatusMapper
     }
 
     func search(keyword: String) {
