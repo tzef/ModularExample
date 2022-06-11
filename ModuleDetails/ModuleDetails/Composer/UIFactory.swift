@@ -3,6 +3,7 @@
 //  ModuleDetails
 //
 
+import UIKit
 import ModuleDesignSystem
 
 public final class UIFactory {
@@ -11,7 +12,7 @@ public final class UIFactory {
     public static func repositoryDetailsViewController(
         item: SearchItemModel,
         designSystemFactory: DesignSystemFactory
-    ) -> RepositoryDetailsViewController {
+    ) -> UIViewController {
         let viewModelMapper = DetailsCellViewModelMapper()
         let viewModel = RepositoryDetailsViewModel(
             item: item,

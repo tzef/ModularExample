@@ -5,7 +5,7 @@
 
 import UIKit
 
-public final class RepositoryDetailsViewController: UIViewController {
+final class RepositoryDetailsViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.allowsSelection = false
@@ -29,7 +29,7 @@ public final class RepositoryDetailsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
@@ -49,14 +49,14 @@ public final class RepositoryDetailsViewController: UIViewController {
 }
 
 extension RepositoryDetailsViewController: UITableViewDataSource {
-    public func tableView(
+    func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
         viewModel.numberOfRows
     }
 
-    public func tableView(
+    func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
