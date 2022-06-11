@@ -7,9 +7,14 @@ import Foundation
 
 final class GithubSearchRepository: GithubSearchService {
     private let apiService: APIService
+    private let responseMapper: GithubSearchRepositoryMapper
 
-    init(apiService: APIService) {
+    init(
+        apiService: APIService,
+        responseMapper: GithubSearchRepositoryMapper
+    ) {
         self.apiService = apiService
+        self.responseMapper = responseMapper
     }
 
     func search(
@@ -29,7 +34,8 @@ final class GithubSearchRepository: GithubSearchService {
 
             switch result {
             case let .success(response):
-                self.performOnMainQueue(completion(.success(response.searchModel)))
+                let model = self.responseMapper.toSearchModel(from: response)
+                self.performOnMainQueue(completion(.success(model)))
             case let .failure(error):
                 self.performOnMainQueue(completion(.failure(error)))
             }

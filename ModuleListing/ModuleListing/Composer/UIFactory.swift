@@ -14,7 +14,11 @@ public final class UIFactory {
         searchController: RepositoryListSearchController,
         designSystemFactory: DesignSystemFactory
     ) -> RepositoryListViewController {
-        let searchService = GithubSearchRepository(apiService: apiService)
+        let responseMapper = GithubSearchAPIResponseMapper()
+        let searchService = GithubSearchRepository(
+            apiService: apiService,
+            responseMapper: responseMapper
+        )        
         let itemMapper = GithubSearchModelItemMapper()
         let viewModel = RepositoryListViewModel(
             githubSearchService: searchService,

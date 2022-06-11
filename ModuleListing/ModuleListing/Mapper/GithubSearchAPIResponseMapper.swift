@@ -1,13 +1,15 @@
 //
-//  GithubSearchResponse+DomainModel.swift
+//  GithubSearchAPIResponseMapper.swift
 //  ModuleListing
 //
 
-public extension GithubSearchResponse {
-    var searchModel: GithubSearchModel {
+final class GithubSearchAPIResponseMapper: GithubSearchRepositoryMapper {
+    func toSearchModel(
+        from response: GithubSearchResponse
+    ) -> GithubSearchModel {
         GithubSearchModel(
-            total: totalCount,
-            items: items.map {
+            total: response.totalCount,
+            items: response.items.map {
                 GithubSearchModel.Item(
                     id: $0.id,
                     name: unwrapString($0.name),
