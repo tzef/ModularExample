@@ -22,8 +22,6 @@
 		C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7854F283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift */; };
 		C9A78552283A56CE00D9177B /* GithubSearchItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78550283A56CE00D9177B /* GithubSearchItem+ViewModel.swift */; };
 		C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78558283A572A00D9177B /* SharedNumberFormatter.swift */; };
-		C9A785C0283A74A400D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785BF283A74A400D9177B /* ModuleUI.framework */; };
-		C9A785C1283A74A400D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785BF283A74A400D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78646283CE09C00D9177B /* RepositoryListSearchController.swift */; };
 		C9A78658283D034E00D9177B /* SearchStatus+RefreshStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78657283D034E00D9177B /* SearchStatus+RefreshStatus.swift */; };
 		C9A78671283D9D3D00D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7866F283D9D3D00D9177B /* Array+Subscript.swift */; };
@@ -31,20 +29,6 @@
 		C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78674283D9D8900D9177B /* GithubSearchModel.swift */; };
 		C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78677283D9DC600D9177B /* SearchStatus.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C9A785A2283A71ED00D9177B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C9A785C1283A74A400D9177B /* ModuleUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A78519283A53B400D9177B /* ModuleListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A785C0283A74A400D9177B /* ModuleUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +256,6 @@
 				C9A78515283A53B400D9177B /* Sources */,
 				C9A78516283A53B400D9177B /* Frameworks */,
 				C9A78517283A53B400D9177B /* Resources */,
-				C9A785A2283A71ED00D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

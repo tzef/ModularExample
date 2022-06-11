@@ -4,7 +4,6 @@
 //
 
 import UIKit
-import ModuleUI
 
 final class GithubSearchResultController: UIViewController {
     var statusTitle: String? {

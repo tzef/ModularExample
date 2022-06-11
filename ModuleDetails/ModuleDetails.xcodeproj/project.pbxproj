@@ -15,26 +15,10 @@
 		C9A78581283A68C600D9177B /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7857F283A68C600D9177B /* RepositoryDetailsViewController.swift */; };
 		C9A78589283A6D6C00D9177B /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78588283A6D6C00D9177B /* UIFactory.swift */; };
 		C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78597283A6E8700D9177B /* SharedDateFormatter.swift */; };
-		C9A785C4283A74AC00D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; };
-		C9A785C5283A74AC00D9177B /* ModuleUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A785C3283A74AC00D9177B /* ModuleUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78666283D205500D9177B /* SearchItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78665283D205500D9177B /* SearchItemModel.swift */; };
 		C9A7866A283D20F300D9177B /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78668283D20F300D9177B /* Observer.swift */; };
 		C9A7866B283D20F300D9177B /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78669283D20F300D9177B /* Array+Subscript.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C9A785C6283A74AC00D9177B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C9A785C5283A74AC00D9177B /* ModuleUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A7856B283A66C400D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A785C4283A74AC00D9177B /* ModuleUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +170,6 @@
 				C9A78567283A66C400D9177B /* Sources */,
 				C9A78568283A66C400D9177B /* Frameworks */,
 				C9A78569283A66C400D9177B /* Resources */,
-				C9A785C6283A74AC00D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleUI
-
 extension SearchStatus {
     var refreshStatus: RefreshControllerStatus {
         switch self {

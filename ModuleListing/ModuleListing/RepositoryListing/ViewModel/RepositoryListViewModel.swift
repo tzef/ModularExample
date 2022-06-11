@@ -3,8 +3,6 @@
 //  ModuleListing
 //
 
-import ModuleUI
-
 final class RepositoryListViewModel {
     var onSearchLoaded: Observer<GithubSearchModel?>?
     var onSearchStatusChangedObservers = [Observer<SearchStatus>]()
