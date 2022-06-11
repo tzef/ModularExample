@@ -1,14 +1,16 @@
 //
-//  SearchStatus+SearchControllerStatus.swift
+//  ListingSearchStatusMapper.swift
 //  ModularExample
 //
 
-import ModuleListing
 import ModuleSearch
+import ModuleListing
 
-extension SearchStatus {
-    var searchControllerStatus: SearchControllerStatus {
-        switch self {
+final class ListingSearchStatusMapper: SearchControllerStatusMapper {
+    func toSearchControllerStatus(
+        from status: ModuleListing.SearchStatus
+    ) -> SearchControllerStatus {
+        switch status {
         case .wait:
             return .wait
         case .searching:
@@ -20,4 +22,3 @@ extension SearchStatus {
         }
     }
 }
-

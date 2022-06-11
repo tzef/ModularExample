@@ -13,6 +13,12 @@ final class RepositoryListSearchController: ModuleListing.RepositoryListSearchCo
         designSystemFactory: ModuleUI.DesignSystemFactory()
     )
 
+    private let statusMapper: SearchControllerStatusMapper
+
+    init(statusMapper: SearchControllerStatusMapper) {
+        self.statusMapper = statusMapper
+    }
+
     var keyword: String {
         controller.keyword
     }
@@ -33,6 +39,6 @@ final class RepositoryListSearchController: ModuleListing.RepositoryListSearchCo
     }
 
     func searchStatusChanged(_ status: SearchStatus) {
-        controller.searchStatusChanged(status.searchControllerStatus)
+        controller.searchStatusChanged(statusMapper.toSearchControllerStatus(from: status))
     }
 }
