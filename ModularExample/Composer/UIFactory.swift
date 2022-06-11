@@ -11,7 +11,10 @@ final class UIFactory {
 
     static func repositoryListViewController() -> RepositoryListViewController {
         let apiService = RepositoryListAPIService()
-        let uiFactory = RepositoryDetailsUIFactory()
+        let itemMapper = ListingSearchModelItemMapper()
+        let uiFactory = RepositoryDetailsUIFactory(
+            itemMapper: itemMapper
+        )
         let statusMapper = ListingSearchStatusMapper()
         let searchController = RepositoryListSearchController(
             statusMapper: statusMapper

@@ -14,7 +14,6 @@
 		C9A78653283CFA4900D9177B /* ModuleSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78651283CFA4900D9177B /* ModuleSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A78655283CFA9000D9177B /* ModuleDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; };
 		C9A78656283CFA9000D9177B /* ModuleDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A78654283CFA9000D9177B /* ModuleDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9A7866D283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */; };
 		C9A7869E283E8E1500D9177B /* ModuleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7869D283E8E1500D9177B /* ModuleAPI.framework */; };
 		C9A7869F283E8E1500D9177B /* ModuleAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7869D283E8E1500D9177B /* ModuleAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A787902854E1F200D9177B /* ModuleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7878F2854E1F200D9177B /* ModuleUI.framework */; };
@@ -23,6 +22,8 @@
 		C9A787A628551DE600D9177B /* RepositoryDetailsUIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787A528551DE600D9177B /* RepositoryDetailsUIFactory.swift */; };
 		C9A787AA28551FCC00D9177B /* SearchControllerStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787A928551FCC00D9177B /* SearchControllerStatusMapper.swift */; };
 		C9A787AC2855200500D9177B /* ListingSearchStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787AB2855200500D9177B /* ListingSearchStatusMapper.swift */; };
+		C9A787AE2855215800D9177B /* ListingSearchModelItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787AD2855215800D9177B /* ListingSearchModelItemMapper.swift */; };
+		C9A787B02855217B00D9177B /* DetailsSearchItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787AF2855217B00D9177B /* DetailsSearchItemMapper.swift */; };
 		C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */; };
 		C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */; };
 		C9E64C172827A2AF006283E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E64C162827A2AF006283E7 /* Assets.xcassets */; };
@@ -55,13 +56,14 @@
 		C9A7864E283CE78E00D9177B /* ModuleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78651283CFA4900D9177B /* ModuleSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A78654283CFA9000D9177B /* ModuleDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubSearchItem+DetailsSearchItem.swift"; sourceTree = "<group>"; };
 		C9A7869D283E8E1500D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7878F2854E1F200D9177B /* ModuleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A787A128551C4C00D9177B /* RepositoryListAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListAPIService.swift; sourceTree = "<group>"; };
 		C9A787A528551DE600D9177B /* RepositoryDetailsUIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsUIFactory.swift; sourceTree = "<group>"; };
 		C9A787A928551FCC00D9177B /* SearchControllerStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchControllerStatusMapper.swift; sourceTree = "<group>"; };
 		C9A787AB2855200500D9177B /* ListingSearchStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingSearchStatusMapper.swift; sourceTree = "<group>"; };
+		C9A787AD2855215800D9177B /* ListingSearchModelItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingSearchModelItemMapper.swift; sourceTree = "<group>"; };
+		C9A787AF2855217B00D9177B /* DetailsSearchItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSearchItemMapper.swift; sourceTree = "<group>"; };
 		C9E64C0A2827A2AE006283E7 /* ModularExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +157,7 @@
 		C9A787982855194000D9177B /* Listing+Details */ = {
 			isa = PBXGroup;
 			children = (
-				C9A7866C283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift */,
+				C9A787AD2855215800D9177B /* ListingSearchModelItemMapper.swift */,
 			);
 			path = "Listing+Details";
 			sourceTree = "<group>";
@@ -171,6 +173,7 @@
 		C9A787A428551D8100D9177B /* Details+Listing */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787AF2855217B00D9177B /* DetailsSearchItemMapper.swift */,
 				C9A787A528551DE600D9177B /* RepositoryDetailsUIFactory.swift */,
 			);
 			path = "Details+Listing";
@@ -292,8 +295,9 @@
 			files = (
 				C9A787A228551C4C00D9177B /* RepositoryListAPIService.swift in Sources */,
 				C9E64C66282FB121006283E7 /* UIFactory.swift in Sources */,
-				C9A7866D283D21FC00D9177B /* GithubSearchItem+DetailsSearchItem.swift in Sources */,
 				C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */,
+				C9A787B02855217B00D9177B /* DetailsSearchItemMapper.swift in Sources */,
+				C9A787AE2855215800D9177B /* ListingSearchModelItemMapper.swift in Sources */,
 				C9A787AC2855200500D9177B /* ListingSearchStatusMapper.swift in Sources */,
 				C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */,
 				C9A787AA28551FCC00D9177B /* SearchControllerStatusMapper.swift in Sources */,
