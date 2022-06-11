@@ -14,6 +14,9 @@
       location = "group:ModuleSearch/ModuleSearch.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:ModuleDesignSystem/ModuleDesignSystem.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ModuleUI/ModuleUI.xcodeproj">
    </FileRef>
    <FileRef
