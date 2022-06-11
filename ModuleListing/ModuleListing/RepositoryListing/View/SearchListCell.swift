@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleDesignSystem
 
 final class SearchListCell: UITableViewCell {
     private lazy var titleLabel = DesignSystem.TitleLabel()

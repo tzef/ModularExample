@@ -29,10 +29,23 @@
 		C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78674283D9D8900D9177B /* GithubSearchModel.swift */; };
 		C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A78677283D9DC600D9177B /* SearchStatus.swift */; };
 		C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */; };
-		C9A787582854D8DD00D9177B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787572854D8DD00D9177B /* DesignSystem.swift */; };
-		C9A7875A2854D8EE00D9177B /* DesignSystemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787592854D8EE00D9177B /* DesignSystemFactory.swift */; };
-		C9A7875C2854D96500D9177B /* TableViewRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7875B2854D96500D9177B /* TableViewRefreshController.swift */; };
+		C9A7877A2854DC2B00D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */; };
+		C9A7877B2854DC2B00D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A7877C2854DC2C00D9177B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9A7877B2854DC2B00D9177B /* ModuleDesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9A78519283A53B400D9177B /* ModuleListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuleListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +77,7 @@
 		C9A78677283D9DC600D9177B /* SearchStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStatus.swift; sourceTree = "<group>"; };
 		C9A78679283DB34800D9177B /* ModuleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
-		C9A787572854D8DD00D9177B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
-		C9A787592854D8EE00D9177B /* DesignSystemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemFactory.swift; sourceTree = "<group>"; };
-		C9A7875B2854D96500D9177B /* TableViewRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRefreshController.swift; sourceTree = "<group>"; };
+		C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A7877A2854DC2B00D9177B /* ModuleDesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +112,6 @@
 		C9A7851B283A53B400D9177B /* ModuleListing */ = {
 			isa = PBXGroup;
 			children = (
-				C9A787562854D8CC00D9177B /* DesignSystem */,
 				C9A7853B283A563000D9177B /* API */,
 				C9A7854B283A567400D9177B /* Composer */,
 				C9A78645283CE04300D9177B /* ExternalComponent */,
@@ -200,6 +211,7 @@
 		C9A78582283A6D4100D9177B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */,
 				C9A78679283DB34800D9177B /* ModuleAPI.framework */,
 				C9A78611283A7A6F00D9177B /* ModuleCore.framework */,
 				C9A7860E283A7A6A00D9177B /* ModuleSearch.framework */,
@@ -244,16 +256,6 @@
 			path = Status;
 			sourceTree = "<group>";
 		};
-		C9A787562854D8CC00D9177B /* DesignSystem */ = {
-			isa = PBXGroup;
-			children = (
-				C9A787572854D8DD00D9177B /* DesignSystem.swift */,
-				C9A787592854D8EE00D9177B /* DesignSystemFactory.swift */,
-				C9A7875B2854D96500D9177B /* TableViewRefreshController.swift */,
-			);
-			path = DesignSystem;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -276,6 +278,7 @@
 				C9A78515283A53B400D9177B /* Sources */,
 				C9A78516283A53B400D9177B /* Frameworks */,
 				C9A78517283A53B400D9177B /* Resources */,
+				C9A7877C2854DC2C00D9177B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,12 +341,10 @@
 				C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */,
 				C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */,
 				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
-				C9A7875A2854D8EE00D9177B /* DesignSystemFactory.swift in Sources */,
 				C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
 				C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */,
 				C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */,
-				C9A7875C2854D96500D9177B /* TableViewRefreshController.swift in Sources */,
 				C9A78671283D9D3D00D9177B /* Array+Subscript.swift in Sources */,
 				C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */,
 				C9A78658283D034E00D9177B /* SearchStatus+RefreshStatus.swift in Sources */,
@@ -353,7 +354,6 @@
 				C9A7853F283A563B00D9177B /* GithubSearchResponse.swift in Sources */,
 				C9A78552283A56CE00D9177B /* GithubSearchItem+ViewModel.swift in Sources */,
 				C9A7854D283A567E00D9177B /* UIFactory.swift in Sources */,
-				C9A787582854D8DD00D9177B /* DesignSystem.swift in Sources */,
 				C9A7852D283A552900D9177B /* SearchListCellViewModel.swift in Sources */,
 				C9A7851E283A53B400D9177B /* ModuleListing.docc in Sources */,
 				C9A78532283A554200D9177B /* LoadingCell.swift in Sources */,

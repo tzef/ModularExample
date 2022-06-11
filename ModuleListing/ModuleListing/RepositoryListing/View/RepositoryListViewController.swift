@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import ModuleDesignSystem
 
 public final class RepositoryListViewController: UIViewController {
     private lazy var refreshController: TableViewRefreshController = {
