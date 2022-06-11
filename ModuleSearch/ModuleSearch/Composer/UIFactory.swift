@@ -10,7 +10,7 @@ public final class UIFactory {
 
     public static func searchController(
         designSystemFactory: DesignSystemFactory
-    ) -> GithubSearchController {
+    ) -> SearchControllerService {
         DesignSystem.setup(factory: designSystemFactory)
         return GithubSearchController()
     }

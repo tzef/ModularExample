@@ -15,6 +15,7 @@
 		C9A787822854DCFB00D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787812854DCFB00D9177B /* ModuleDesignSystem.framework */; };
 		C9A787832854DCFB00D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787812854DCFB00D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A787872854E05100D9177B /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787862854E05100D9177B /* UIFactory.swift */; };
+		C9A787C5285527B000D9177B /* SearchControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787C4285527B000D9177B /* SearchControllerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		C9A78660283D125300D9177B /* SearchControllerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchControllerStatus.swift; sourceTree = "<group>"; };
 		C9A787812854DCFB00D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A787862854E05100D9177B /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		C9A787C4285527B000D9177B /* SearchControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchControllerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		C9A784FA2839AC0100D9177B /* SearchController */ = {
 			isa = PBXGroup;
 			children = (
+				C9A787C4285527B000D9177B /* SearchControllerService.swift */,
 				C9A784FC2839AC2200D9177B /* GithubSearchController.swift */,
 			);
 			path = SearchController;
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A784FD2839AC2200D9177B /* GithubSearchController.swift in Sources */,
+				C9A787C5285527B000D9177B /* SearchControllerService.swift in Sources */,
 				C9A787872854E05100D9177B /* UIFactory.swift in Sources */,
 				C9A784F32839AB8300D9177B /* ModuleSearch.docc in Sources */,
 				C9A784FF2839AC2700D9177B /* GithubSearchResultController.swift in Sources */,

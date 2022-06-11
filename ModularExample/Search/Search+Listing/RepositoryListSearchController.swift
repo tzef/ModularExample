@@ -9,7 +9,7 @@ import ModuleSearch
 import ModuleListing
 
 final class RepositoryListSearchController: ModuleListing.RepositoryListSearchController {
-    private let controller = ModuleSearch.UIFactory.searchController(
+    private var controller = ModuleSearch.UIFactory.searchController(
         designSystemFactory: ModuleUI.DesignSystemFactory()
     )
 
