@@ -6,6 +6,12 @@
 import Foundation
 
 final class GithubSearchRepository: GithubSearchService {
+    private let apiService: APIService
+
+    init(apiService: APIService) {
+        self.apiService = apiService
+    }
+
     func search(
         keyword: String,
         page: Int,
@@ -15,8 +21,8 @@ final class GithubSearchRepository: GithubSearchService {
             keyword: keyword,
             page: page
         )
-        let request = APIRequest<GithubSearchResponse>(url: resource.url())
-        APIClient.shared.request(request) { [weak self] result in
+        let request = APIRequest<GithubSearchResponse>(resource: resource)
+        apiService.request(request) { [weak self] result in
             guard let self = self else {
                 return
             }

@@ -32,6 +32,9 @@
 		C9A7877A2854DC2B00D9177B /* ModuleDesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */; };
 		C9A7877B2854DC2B00D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A7879A28551A9100D9177B /* GithubSearchRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879928551A9100D9177B /* GithubSearchRespository.swift */; };
+		C9A7879C28551B5200D9177B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879B28551B5200D9177B /* APIRequest.swift */; };
+		C9A7879E28551B6E00D9177B /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879D28551B6E00D9177B /* APIResource.swift */; };
+		C9A787A028551B9600D9177B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7879F28551B9600D9177B /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +83,9 @@
 		C9A7874D2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		C9A787792854DC2B00D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7879928551A9100D9177B /* GithubSearchRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchRespository.swift; sourceTree = "<group>"; };
+		C9A7879B28551B5200D9177B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		C9A7879D28551B6E00D9177B /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
+		C9A7879F28551B9600D9177B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 		C9A78538283A561000D9177B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7879F28551B9600D9177B /* APIService.swift */,
 				C9A78539283A561800D9177B /* GithubSearchService.swift */,
 			);
 			path = Service;
@@ -178,6 +185,8 @@
 		C9A7853B283A563000D9177B /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7879B28551B5200D9177B /* APIRequest.swift */,
+				C9A7879D28551B6E00D9177B /* APIResource.swift */,
 				C9A7853E283A563B00D9177B /* GithubResource.swift */,
 				C9A7853C283A563B00D9177B /* GithubSearchResponse.swift */,
 				C9A7879928551A9100D9177B /* GithubSearchRespository.swift */,
@@ -340,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A7879A28551A9100D9177B /* GithubSearchRespository.swift in Sources */,
+				C9A787A028551B9600D9177B /* APIService.swift in Sources */,
 				C9A78534283A554200D9177B /* RepositoryListViewController.swift in Sources */,
 				C9A78672283D9D3D00D9177B /* Observer.swift in Sources */,
 				C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */,
@@ -349,6 +359,7 @@
 				C9A78533283A554200D9177B /* SearchListCell.swift in Sources */,
 				C9A78647283CE09C00D9177B /* RepositoryListSearchController.swift in Sources */,
 				C9A78678283D9DC600D9177B /* SearchStatus.swift in Sources */,
+				C9A7879C28551B5200D9177B /* APIRequest.swift in Sources */,
 				C9A78671283D9D3D00D9177B /* Array+Subscript.swift in Sources */,
 				C9A78551283A56CE00D9177B /* GithubSearchResponse+DomainModel.swift in Sources */,
 				C9A78658283D034E00D9177B /* SearchStatus+RefreshStatus.swift in Sources */,
@@ -360,6 +371,7 @@
 				C9A7854D283A567E00D9177B /* UIFactory.swift in Sources */,
 				C9A7852D283A552900D9177B /* SearchListCellViewModel.swift in Sources */,
 				C9A7851E283A53B400D9177B /* ModuleListing.docc in Sources */,
+				C9A7879E28551B6E00D9177B /* APIResource.swift in Sources */,
 				C9A78532283A554200D9177B /* LoadingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
