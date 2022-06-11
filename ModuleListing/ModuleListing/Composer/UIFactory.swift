@@ -10,12 +10,13 @@ public final class UIFactory {
 
     public static func repositoryListViewController(
         delegate: RepositoryListRouterDelegate,
-        githubSearchService: GithubSearchService,
+        apiService: APIService,
         searchController: RepositoryListSearchController,
         designSystemFactory: DesignSystemFactory
     ) -> RepositoryListViewController {
+        let searchService = GithubSearchRepository(apiService: apiService)
         let viewModel = RepositoryListViewModel(
-            githubSearchService: githubSearchService
+            githubSearchService: searchService
         )
         let router = RepositoryListRouter(
             delegate: delegate
