@@ -5,23 +5,25 @@
 
 import UIKit
 
-public protocol RepositoryListRouterDelegate {
-    func showRepositoryDetailsPage(
-        with item: GithubSearchModel.Item,
-        from viewController: UIViewController?
-    )
+public protocol RepositoryDetailsUIFactory {
+    func repositoryDetailsViewController(
+        with item: GithubSearchModel.Item
+    ) -> UIViewController
 }
 
 final class RepositoryListRouter {
     weak var viewController: UIViewController?
 
-    var delegate: RepositoryListRouterDelegate
+    var uiFactory: RepositoryDetailsUIFactory
 
-    init(delegate: RepositoryListRouterDelegate) {
-        self.delegate = delegate
+    init(uiFactory: RepositoryDetailsUIFactory) {
+        self.uiFactory = uiFactory
     }
 
     func showRepositoryDetailsPage(with item: GithubSearchModel.Item) {
-        delegate.showRepositoryDetailsPage(with: item, from: viewController)
+        let detailsPage = uiFactory.repositoryDetailsViewController(
+            with: item
+        )
+        viewController?.show(detailsPage, sender: nil)
     }
 }

@@ -9,7 +9,7 @@ public final class UIFactory {
     private init() {}
 
     public static func repositoryListViewController(
-        delegate: RepositoryListRouterDelegate,
+        uiFactory: RepositoryDetailsUIFactory,
         apiService: APIService,
         searchController: RepositoryListSearchController,
         designSystemFactory: DesignSystemFactory
@@ -19,7 +19,7 @@ public final class UIFactory {
             githubSearchService: searchService
         )
         let router = RepositoryListRouter(
-            delegate: delegate
+            uiFactory: uiFactory
         )
         let viewController = RepositoryListViewController(
             router: router,
