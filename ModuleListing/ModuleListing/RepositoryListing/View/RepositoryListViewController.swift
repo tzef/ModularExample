@@ -6,7 +6,7 @@
 import UIKit
 import ModuleDesignSystem
 
-public final class RepositoryListViewController: UIViewController {
+final class RepositoryListViewController: UIViewController {
     private lazy var refreshController: TableViewRefreshController = {
         let refreshController = DesignSystem.RefreshController(tableView: tableView)
         refreshController.onRefresh = { [weak self] in
@@ -53,14 +53,14 @@ public final class RepositoryListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupBinded()
         searchController.defaultSearch()
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: selectedIndexPath, animated: true)
@@ -96,7 +96,7 @@ public final class RepositoryListViewController: UIViewController {
 }
 
 extension RepositoryListViewController: UITableViewDelegate {
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let item = viewModel.searchItemAt(indexPath.row) else {
             assertionFailure(
                 "Search model item for index \(indexPath.row) shouldn't be empty"
@@ -108,14 +108,14 @@ extension RepositoryListViewController: UITableViewDelegate {
 }
 
 extension RepositoryListViewController: UITableViewDataSource {
-    public func tableView(
+    func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
         viewModel.numberOfRows + (viewModel.hasNextPage ? 1 : 0)
     }
 
-    public func tableView(
+    func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {

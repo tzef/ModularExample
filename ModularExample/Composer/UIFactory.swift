@@ -3,13 +3,14 @@
 //  ModularExample
 //
 
+import UIKit
 import ModuleUI
 import ModuleListing
 
 final class UIFactory {
     private init() {}
 
-    static func repositoryListViewController() -> RepositoryListViewController {
+    static func repositoryListViewController() -> UIViewController {
         let apiService = RepositoryListAPIService()
         let itemMapper = ListingSearchModelItemMapper()
         let uiFactory = RepositoryDetailsUIFactory(

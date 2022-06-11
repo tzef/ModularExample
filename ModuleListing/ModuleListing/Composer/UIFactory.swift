@@ -3,6 +3,7 @@
 //  ModuleListing
 //
 
+import UIKit
 import ModuleDesignSystem
 
 public final class UIFactory {
@@ -13,7 +14,7 @@ public final class UIFactory {
         apiService: APIService,
         searchController: RepositoryListSearchController,
         designSystemFactory: DesignSystemFactory
-    ) -> RepositoryListViewController {
+    ) -> UIViewController {
         let responseMapper = GithubSearchAPIResponseMapper()
         let searchService = GithubSearchRepository(
             apiService: apiService,
