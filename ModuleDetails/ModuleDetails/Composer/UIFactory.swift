@@ -10,12 +10,12 @@ public final class UIFactory {
     private init() {}
 
     public static func repositoryDetailsViewController(
-        item: SearchItemModel,
+        item: SearchItemDisplaying,
         designSystemFactory: DesignSystemFactory
     ) -> UIViewController {
         let viewModelMapper = DetailsCellViewModelMapper()
         let viewModel = RepositoryDetailsViewModel(
-            item: item,
+            item: SearchItemModel(representable: item),
             viewModelMapper: viewModelMapper
         )
         let viewController = RepositoryDetailsViewController(

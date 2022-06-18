@@ -1,11 +1,12 @@
 //
-//  SearchItemModel.swift
-//  ModuleDetails
+//  SearchModelDTO.swift
+//  ModularExample
 //
 
-import Foundation
+import ModuleDetails
+import ModuleListing
 
-struct SearchItemModel {
+struct SearchItemDTO: ModuleDetails.SearchItemDisplaying {
     var id: Int
     var name: String
     var owner: String
@@ -21,7 +22,7 @@ struct SearchItemModel {
     var createdAt: Date?
     var updatedAt: Date?
 
-    init(representable: SearchItemDisplaying) {
+    init(representable: ModuleListing.ListingItemDisplaying) {
         self.id = representable.id
         self.name = representable.name
         self.owner = representable.owner
@@ -38,4 +39,3 @@ struct SearchItemModel {
         self.updatedAt = representable.updatedAt
     }
 }
-

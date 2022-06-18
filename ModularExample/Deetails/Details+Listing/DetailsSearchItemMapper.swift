@@ -9,5 +9,5 @@ import ModuleListing
 protocol DetailsSearchItemMapper {
     func toDetailsSearchItemModel (
         from item: ListingItemDisplaying
-    ) -> ModuleDetails.SearchItemModel
+    ) -> ModuleDetails.SearchItemDisplaying
 }

@@ -23,6 +23,7 @@
 		C9A7877F2854DCB100D9177B /* ModuleDesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9A7877D2854DCB100D9177B /* ModuleDesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A787B32855224B00D9177B /* DetailsCellViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787B22855224B00D9177B /* DetailsCellViewModelMapper.swift */; };
 		C9A787B52855226F00D9177B /* RepositoryDetailsViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787B42855226F00D9177B /* RepositoryDetailsViewModelMapper.swift */; };
+		C9A787C7285E16E500D9177B /* SearchItemDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787C6285E16E500D9177B /* SearchItemDisplaying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,7 @@
 		C9A7877D2854DCB100D9177B /* ModuleDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A787B22855224B00D9177B /* DetailsCellViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCellViewModelMapper.swift; sourceTree = "<group>"; };
 		C9A787B42855226F00D9177B /* RepositoryDetailsViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModelMapper.swift; sourceTree = "<group>"; };
+		C9A787C6285E16E500D9177B /* SearchItemDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemDisplaying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A78665283D205500D9177B /* SearchItemModel.swift */,
+				C9A787C6285E16E500D9177B /* SearchItemDisplaying.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				C9A787502854D81E00D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				C9A78598283A6E8700D9177B /* SharedDateFormatter.swift in Sources */,
 				C9A787B32855224B00D9177B /* DetailsCellViewModelMapper.swift in Sources */,
+				C9A787C7285E16E500D9177B /* SearchItemDisplaying.swift in Sources */,
 				C9A78570283A66C400D9177B /* ModuleDetails.docc in Sources */,
 				C9A78666283D205500D9177B /* SearchItemModel.swift in Sources */,
 				C9A7857C283A680300D9177B /* LabelValueCellViewModel.swift in Sources */,
