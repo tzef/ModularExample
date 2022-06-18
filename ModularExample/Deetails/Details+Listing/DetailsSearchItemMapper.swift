@@ -8,6 +8,6 @@ import ModuleListing
 
 protocol DetailsSearchItemMapper {
     func toDetailsSearchItemModel (
-        from item: GithubSearchModel.Item
+        from item: ListingItemDisplaying
     ) -> ModuleDetails.SearchItemModel
 }

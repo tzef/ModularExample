@@ -7,7 +7,7 @@ import UIKit
 
 public protocol RepositoryDetailsUIFactory {
     func repositoryDetailsViewController(
-        with item: GithubSearchModel.Item
+        with item: ListingItemDisplaying
     ) -> UIViewController
 }
 

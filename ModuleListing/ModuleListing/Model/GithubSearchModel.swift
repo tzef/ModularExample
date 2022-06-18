@@ -3,29 +3,24 @@
 //  ModuleListing
 //
 
-public struct GithubSearchModel {
+struct GithubSearchModel {
     var total: Int
     var items: [Item]
 
-    public init(total: Int, items: [Item]) {
-        self.total = total
-        self.items = items
-    }
-
-    public struct Item {
-        public var id: Int
-        public var name: String
-        public var owner: String
-        public var fullName: String
-        public var description: String
-        public var language: String
-        public var forks: Int
-        public var watchers: Int
-        public var openIssues: Int
-        public var url: String
-        public var homePage: String
-        public var license: String
-        public var createdAt: Date?
-        public var updatedAt: Date?
+    struct Item {
+        var id: Int
+        var name: String
+        var owner: String
+        var fullName: String
+        var description: String
+        var language: String
+        var forks: Int
+        var watchers: Int
+        var openIssues: Int
+        var url: String
+        var homePage: String
+        var license: String
+        var createdAt: Date?
+        var updatedAt: Date?
     }
 }

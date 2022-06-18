@@ -8,7 +8,7 @@ import ModuleListing
 
 final class ListingSearchModelItemMapper: DetailsSearchItemMapper {
     func toDetailsSearchItemModel (
-        from item: GithubSearchModel.Item
+        from item: ListingItemDisplaying
     ) -> ModuleDetails.SearchItemModel {
         SearchItemModel(
             id: item.id,

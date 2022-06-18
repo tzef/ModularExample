@@ -16,7 +16,7 @@ final class RepositoryDetailsUIFactory: ModuleListing.RepositoryDetailsUIFactory
     }
 
     func repositoryDetailsViewController(
-        with item: GithubSearchModel.Item
+        with item: ListingItemDisplaying
     ) -> UIViewController {
         ModuleDetails.UIFactory.repositoryDetailsViewController(
             item: itemMapper.toDetailsSearchItemModel(from: item),

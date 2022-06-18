@@ -39,6 +39,7 @@
 		C9A787BD285523EF00D9177B /* GithubSearchAPIResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787BC285523EF00D9177B /* GithubSearchAPIResponseMapper.swift */; };
 		C9A787BF2855246D00D9177B /* RepositoryListViewModelStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787BE2855246D00D9177B /* RepositoryListViewModelStatusMapper.swift */; };
 		C9A787C12855248400D9177B /* ListingSearchStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787C02855248400D9177B /* ListingSearchStatusMapper.swift */; };
+		C9A787C32855268D00D9177B /* ListingItemDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787C22855268D00D9177B /* ListingItemDisplaying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +95,7 @@
 		C9A787BC285523EF00D9177B /* GithubSearchAPIResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchAPIResponseMapper.swift; sourceTree = "<group>"; };
 		C9A787BE2855246D00D9177B /* RepositoryListViewModelStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModelStatusMapper.swift; sourceTree = "<group>"; };
 		C9A787C02855248400D9177B /* ListingSearchStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingSearchStatusMapper.swift; sourceTree = "<group>"; };
+		C9A787C22855268D00D9177B /* ListingItemDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemDisplaying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A78674283D9D8900D9177B /* GithubSearchModel.swift */,
+				C9A787C22855268D00D9177B /* ListingItemDisplaying.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				C9A78672283D9D3D00D9177B /* Observer.swift in Sources */,
 				C9A78675283D9D8900D9177B /* GithubSearchModel.swift in Sources */,
 				C9A78559283A572A00D9177B /* SharedNumberFormatter.swift in Sources */,
+				C9A787C32855268D00D9177B /* ListingItemDisplaying.swift in Sources */,
 				C9A787BF2855246D00D9177B /* RepositoryListViewModelStatusMapper.swift in Sources */,
 				C9A7852C283A552900D9177B /* RepositoryListViewModel.swift in Sources */,
 				C9A7874E2854D80800D9177B /* UITableViewCell+ReuseIdentifier.swift in Sources */,
