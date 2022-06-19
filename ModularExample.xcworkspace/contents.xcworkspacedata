@@ -4,22 +4,4 @@
    <FileRef
       location = "group:ModularExample/ModularExample.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:ModuleListing/ModuleListing.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ModuleDetails/ModuleDetails.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ModuleSearch/ModuleSearch.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ModuleDesignSystem/ModuleDesignSystem.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ModuleUI/ModuleUI.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ModuleAPI/ModuleAPI.xcodeproj">
-   </FileRef>
 </Workspace>
