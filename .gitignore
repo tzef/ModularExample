@@ -1,2 +1,6 @@
 ## User settings
 xcuserdata/
+
+## SPM
+.build/
+.swiftpm/xcode/xcuserdata
