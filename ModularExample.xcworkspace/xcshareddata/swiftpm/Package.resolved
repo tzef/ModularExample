@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tzef/ModularExample-Search.git",
       "state" : {
-        "revision" : "59e30793873f73ff6ec23eb3ffe2b6d69e5972af",
-        "version" : "1.0.0"
+        "revision" : "c2a9c5f90515242aa2741fa27587d9f360a5ded6",
+        "version" : "1.1.0"
       }
     },
     {
