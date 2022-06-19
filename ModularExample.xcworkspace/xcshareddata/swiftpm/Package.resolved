@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "modularexample-api",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tzef/ModularExample-API.git",
+      "state" : {
+        "revision" : "70f1561938dba97d4faae5f29b27760ea955550d",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "modularexample-designsystem",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tzef/ModularExample-DesignSystem.git",
+      "state" : {
+        "revision" : "a1a774d9f72f81ac56b3f10d75f0d643974d76f8",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "modularexample-details",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tzef/ModularExample-Details.git",
+      "state" : {
+        "revision" : "650a9df26e6d4589e4f9a261d37230dadd7f33b7",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "modularexample-listing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tzef/ModularExample-Listing.git",
+      "state" : {
+        "revision" : "ca8880185928766092aea92376f98ea72a6aee02",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "modularexample-search",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tzef/ModularExample-Search.git",
+      "state" : {
+        "revision" : "59e30793873f73ff6ec23eb3ffe2b6d69e5972af",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "modularexample-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tzef/ModularExample-UI.git",
+      "state" : {
+        "revision" : "e9f0105336849cb77f4f20255e528d6531306aef",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

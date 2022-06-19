@@ -3,6 +3,7 @@
 //  ModularExample
 //
 
+import Foundation
 import ModuleDetails
 import ModuleListing
 

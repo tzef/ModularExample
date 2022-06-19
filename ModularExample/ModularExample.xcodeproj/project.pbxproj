@@ -15,6 +15,11 @@
 		C9A787AE2855215800D9177B /* ListingSearchModelItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787AD2855215800D9177B /* ListingSearchModelItemMapper.swift */; };
 		C9A787B02855217B00D9177B /* DetailsSearchItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787AF2855217B00D9177B /* DetailsSearchItemMapper.swift */; };
 		C9A787C9285E1B0800D9177B /* SearchItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A787C8285E1B0800D9177B /* SearchItemDTO.swift */; };
+		C9A787CC285EC85700D9177B /* ModuleAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C9A787CB285EC85700D9177B /* ModuleAPI */; };
+		C9A787DE285EDA9A00D9177B /* ModuleListing in Frameworks */ = {isa = PBXBuildFile; productRef = C9A787DD285EDA9A00D9177B /* ModuleListing */; };
+		C9A787E1285EDAC100D9177B /* ModuleDetails in Frameworks */ = {isa = PBXBuildFile; productRef = C9A787E0285EDAC100D9177B /* ModuleDetails */; };
+		C9A787E4285EDADB00D9177B /* ModuleSearch in Frameworks */ = {isa = PBXBuildFile; productRef = C9A787E3285EDADB00D9177B /* ModuleSearch */; };
+		C9A787E7285EDAF400D9177B /* ModuleUI in Frameworks */ = {isa = PBXBuildFile; productRef = C9A787E6285EDAF400D9177B /* ModuleUI */; };
 		C9E64C0E2827A2AE006283E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0D2827A2AE006283E7 /* AppDelegate.swift */; };
 		C9E64C102827A2AE006283E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64C0F2827A2AE006283E7 /* SceneDelegate.swift */; };
 		C9E64C172827A2AF006283E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E64C162827A2AF006283E7 /* Assets.xcassets */; };
@@ -53,6 +58,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A787E4285EDADB00D9177B /* ModuleSearch in Frameworks */,
+				C9A787E7285EDAF400D9177B /* ModuleUI in Frameworks */,
+				C9A787CC285EC85700D9177B /* ModuleAPI in Frameworks */,
+				C9A787E1285EDAC100D9177B /* ModuleDetails in Frameworks */,
+				C9A787DE285EDA9A00D9177B /* ModuleListing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +218,13 @@
 			dependencies = (
 			);
 			name = ModularExample;
+			packageProductDependencies = (
+				C9A787CB285EC85700D9177B /* ModuleAPI */,
+				C9A787DD285EDA9A00D9177B /* ModuleListing */,
+				C9A787E0285EDAC100D9177B /* ModuleDetails */,
+				C9A787E3285EDADB00D9177B /* ModuleSearch */,
+				C9A787E6285EDAF400D9177B /* ModuleUI */,
+			);
 			productName = ModularExample;
 			productReference = C9E64C0A2827A2AE006283E7 /* ModularExample.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +253,13 @@
 				Base,
 			);
 			mainGroup = C9E64C012827A2AE006283E7;
+			packageReferences = (
+				C9A787CA285EC85700D9177B /* XCRemoteSwiftPackageReference "ModularExample-API" */,
+				C9A787DC285EDA9A00D9177B /* XCRemoteSwiftPackageReference "ModularExample-Listing" */,
+				C9A787DF285EDAC100D9177B /* XCRemoteSwiftPackageReference "ModularExample-Details" */,
+				C9A787E2285EDADB00D9177B /* XCRemoteSwiftPackageReference "ModularExample-Search" */,
+				C9A787E5285EDAF400D9177B /* XCRemoteSwiftPackageReference "ModularExample-UI" */,
+			);
 			productRefGroup = C9E64C0B2827A2AE006283E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -481,6 +505,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9A787CA285EC85700D9177B /* XCRemoteSwiftPackageReference "ModularExample-API" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tzef/ModularExample-API.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		C9A787DC285EDA9A00D9177B /* XCRemoteSwiftPackageReference "ModularExample-Listing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tzef/ModularExample-Listing.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		C9A787DF285EDAC100D9177B /* XCRemoteSwiftPackageReference "ModularExample-Details" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tzef/ModularExample-Details.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		C9A787E2285EDADB00D9177B /* XCRemoteSwiftPackageReference "ModularExample-Search" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tzef/ModularExample-Search.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		C9A787E5285EDAF400D9177B /* XCRemoteSwiftPackageReference "ModularExample-UI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tzef/ModularExample-UI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9A787CB285EC85700D9177B /* ModuleAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9A787CA285EC85700D9177B /* XCRemoteSwiftPackageReference "ModularExample-API" */;
+			productName = ModuleAPI;
+		};
+		C9A787DD285EDA9A00D9177B /* ModuleListing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9A787DC285EDA9A00D9177B /* XCRemoteSwiftPackageReference "ModularExample-Listing" */;
+			productName = ModuleListing;
+		};
+		C9A787E0285EDAC100D9177B /* ModuleDetails */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9A787DF285EDAC100D9177B /* XCRemoteSwiftPackageReference "ModularExample-Details" */;
+			productName = ModuleDetails;
+		};
+		C9A787E3285EDADB00D9177B /* ModuleSearch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9A787E2285EDADB00D9177B /* XCRemoteSwiftPackageReference "ModularExample-Search" */;
+			productName = ModuleSearch;
+		};
+		C9A787E6285EDAF400D9177B /* ModuleUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9A787E5285EDAF400D9177B /* XCRemoteSwiftPackageReference "ModularExample-UI" */;
+			productName = ModuleUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9E64C022827A2AE006283E7 /* Project object */;
 }
