@@ -1,5 +1,5 @@
 # ModularExample
-This is a example project for module design in practice
+This is an example project for module design in practice
 
 # Project demo
 Our example is a GitHub repository search application
